@@ -1,0 +1,181 @@
+id_vendedor;id_empresa;nome_vendedor;nivel;id_superior;data_nascimento;telefone;email;estado;cidade;bairro;rua;numero;cep;imagem
+1;1;Gabriel Barbosa;gerente;;1987-10-10;(57) 98556-1882;gabriel.barbosa@empresa.com;MG;Contagem;Industrial;Rua das Palmeiras;756;32763-654;vendedor_1.jpg
+2;1;Mariana Freitas;gerente;;1993-04-18;(62) 99302-8017;mariana.freitas@empresa.com;PE;Recife;Graças;Avenida Atlântica;1671;50273-195;vendedor_2.jpg
+3;1;Priscila Correia;gerente;;1979-09-15;(28) 99911-8146;priscila.correia@empresa.com;RJ;Rio de Janeiro;Centro;Avenida Rio Branco;701;20914-538;vendedor_3.jpg
+4;1;André Melo;gerente;;1996-02-24;(16) 96178-8101;andre.melo@empresa.com;SP;Ribeirão Preto;Centro;Avenida Paulista;945;14907-570;vendedor_4.jpg
+5;1;Flávia Araújo;gerente;;1984-10-05;(98) 93165-1443;flavia.araujo@empresa.com;SP;São José dos Campos;Centro;Avenida Brasil;344;12907-465;vendedor_5.jpg
+6;1;Nicolas Freitas;gerente;;2000-04-23;(99) 94597-1419;nicolas.freitas@empresa.com;PE;Jaboatão dos Guararapes;Piedade;Avenida Beira Mar;300;54118-487;vendedor_6.jpg
+7;1;Eduardo Rodrigues;gerente;;1994-02-16;(73) 91516-6101;eduardo.rodrigues@empresa.com;ES;Serra;Centro;Rua das Palmeiras;1661;29694-448;vendedor_7.jpg
+8;1;Camila Carvalho;gerente;;1990-08-17;(27) 99712-9746;camila.carvalho@empresa.com;RJ;Petrópolis;Mosela;Rua da Liberdade;1653;25556-566;vendedor_8.jpg
+9;1;Isabela Vieira;gerente;;1996-02-09;(65) 95078-5264;isabela.vieira@empresa.com;RJ;Petrópolis;Quitandinha;Rua José Bonifácio;1578;25560-041;vendedor_9.jpg
+10;1;Samuel Araújo;gerente;;1985-08-12;(46) 98961-2143;samuel.araujo@empresa.com;PR;Londrina;Centro;Avenida Paulista;856;86855-568;vendedor_10.jpg
+11;1;Renato Pereira;gerente;;1987-02-15;(89) 98584-9838;renato.pereira@empresa.com;RJ;Rio de Janeiro;Madureira;Rua da Paz;494;20672-931;vendedor_11.jpg
+12;1;Ricardo Vieira;gerente;;1978-07-20;(77) 96229-9178;ricardo.vieira@empresa.com;CE;Caucaia;Centro;Avenida Paulista;1622;61765-985;vendedor_12.jpg
+13;1;Priscila Andrade;gerente;;2000-06-05;(29) 90675-9178;priscila.andrade@empresa.com;PE;Recife;Casa Forte;Avenida Presidente Vargas;1572;50806-739;vendedor_13.jpg
+14;1;Wagner Nascimento;gerente;;1990-04-30;(74) 97453-6749;wagner.nascimento@empresa.com;PR;Curitiba;Batel;Rua Marechal Deodoro;158;80823-842;vendedor_14.jpg
+15;1;Giovana Barbosa;gerente;;1996-12-30;(26) 91553-2265;giovana.barbosa@empresa.com;SC;Blumenau;Centro;Rua José Bonifácio;1943;89553-506;vendedor_15.jpg
+16;1;Larissa Rocha;gerente;;1993-01-21;(82) 99518-5843;larissa.rocha@empresa.com;MG;Uberlândia;Santa Mônica;Rua Castro Alves;1889;38575-972;vendedor_16.jpg
+17;1;Camila Freitas;gerente;;1975-03-08;(52) 91777-1944;camila.freitas@empresa.com;ES;Serra;Carapina;Avenida Brasil;1972;29468-767;vendedor_17.jpg
+18;1;João Marques;gerente;;1976-02-26;(15) 98251-4878;joao.marques@empresa.com;SC;Florianópolis;Centro;Avenida Paulista;532;88461-202;vendedor_18.jpg
+19;1;Ulisses Nascimento;vendedor;1;1979-12-04;(45) 91481-4375;ulisses.nascimento@empresa.com;SP;Santos;Boqueirão;Rua das Palmeiras;1812;11502-221;vendedor_19.jpg
+20;1;Renato Gomes;vendedor;2;1989-08-23;(40) 94183-3250;renato.gomes@empresa.com;MG;Contagem;Industrial;Rua Marechal Deodoro;1721;32590-965;vendedor_20.jpg
+21;1;Ricardo Andrade;vendedor;3;1995-04-11;(53) 98543-2237;ricardo.andrade@empresa.com;GO;Aparecida de Goiânia;Centro;Rua Dom Pedro II;266;74226-803;vendedor_21.jpg
+22;1;Priscila Campos;vendedor;4;1984-01-28;(90) 91010-8696;priscila.campos@empresa.com;RJ;Volta Redonda;Centro;Rua Marechal Deodoro;1032;27847-702;vendedor_22.jpg
+23;1;Natália Martins;vendedor;5;1984-12-21;(58) 95943-2172;natalia.martins@empresa.com;RS;Porto Alegre;Moinhos de Vento;Avenida Rio Branco;14;90432-482;vendedor_23.jpg
+24;1;Tales Araújo;vendedor;6;1976-08-21;(52) 91175-2217;tales.araujo@empresa.com;RJ;Niterói;São Francisco;Avenida Independência;1052;24302-793;vendedor_24.jpg
+25;1;William Souza;vendedor;7;1982-12-21;(65) 90114-9596;william.souza@empresa.com;GO;Aparecida de Goiânia;Centro;Rua Machado de Assis;746;74148-350;vendedor_25.jpg
+26;1;Felipe Carvalho;vendedor;8;1994-06-11;(24) 97240-1770;felipe.carvalho@empresa.com;RJ;Volta Redonda;Aterrado;Avenida Getúlio Vargas;1165;27656-905;vendedor_26.jpg
+27;1;Olivia Santos;vendedor;9;1990-07-13;(68) 91396-4111;olivia.santos@empresa.com;SC;Blumenau;Vila Nova;Avenida Beira Mar;1957;89366-953;vendedor_27.jpg
+28;1;Beatriz Andrade;vendedor;10;1990-01-12;(89) 98418-9816;beatriz.andrade@empresa.com;MG;Contagem;Eldorado;Rua da Liberdade;1585;32333-585;vendedor_28.jpg
+29;1;Zilda Vieira;vendedor;11;1987-08-21;(23) 90549-2698;zilda.vieira@empresa.com;PR;Curitiba;Mercês;Avenida Central;203;80840-171;vendedor_29.jpg
+30;1;Samuel Gomes;vendedor;12;1977-05-10;(51) 92951-4793;samuel.gomes@empresa.com;SP;Ribeirão Preto;Jardim Paulista;Avenida Presidente Vargas;1351;14165-113;vendedor_30.jpg
+31;1;Ximena Campos;vendedor;13;1987-02-13;(11) 92161-1200;ximena.campos@empresa.com;DF;Brasília;Águas Claras;Rua Sete de Setembro;692;70585-974;vendedor_31.jpg
+32;1;Diana Carvalho;vendedor;14;1991-02-02;(17) 95002-9169;diana.carvalho@empresa.com;SP;Santos;Boqueirão;Rua Santos Dumont;1406;11363-281;vendedor_32.jpg
+33;1;Samuel Souza;vendedor;15;1996-01-10;(24) 92611-3508;samuel.souza@empresa.com;GO;Aparecida de Goiânia;Centro;Rua da Paz;1270;74857-982;vendedor_33.jpg
+34;1;Ulisses Lima;vendedor;16;1985-12-21;(23) 95674-2233;ulisses.lima@empresa.com;BA;Feira de Santana;Cidade Nova;Rua José Bonifácio;806;44672-421;vendedor_34.jpg
+35;1;André Cardoso;vendedor;17;1999-02-03;(41) 94175-1188;andre.cardoso@empresa.com;PR;Curitiba;Bigorrilho;Rua Machado de Assis;1400;80914-143;vendedor_35.jpg
+36;1;Leonardo Rocha;vendedor;18;1975-12-19;(97) 91258-6599;leonardo.rocha@empresa.com;RS;Porto Alegre;Menino Deus;Avenida Paulista;1366;90258-298;vendedor_36.jpg
+37;1;Nicolas Nunes;vendedor;1;1985-11-19;(59) 99578-4884;nicolas.nunes@empresa.com;DF;Brasília;Sudoeste;Avenida Getúlio Vargas;163;70444-530;vendedor_37.jpg
+38;1;Karen Costa;vendedor;2;1986-05-09;(86) 93252-8640;karen.costa@empresa.com;PE;Jaboatão dos Guararapes;Centro;Rua XV de Novembro;1202;54352-226;vendedor_38.jpg
+39;1;Julia Martins;vendedor;3;1998-07-15;(83) 94473-2358;julia.martins@empresa.com;RS;Canoas;Niterói;Rua Marechal Deodoro;1729;92149-070;vendedor_39.jpg
+40;1;André Alves;vendedor;4;1998-10-11;(30) 94874-2445;andre.alves@empresa.com;PE;Olinda;Centro;Avenida Independência;1696;53989-324;vendedor_40.jpg
+41;1;Ingrid Mendes;vendedor;5;1999-12-31;(91) 90550-2234;ingrid.mendes@empresa.com;GO;Goiânia;Setor Marista;Avenida Presidente Vargas;1981;74274-362;vendedor_41.jpg
+42;1;Vanessa Dias;vendedor;6;1986-11-22;(82) 97399-8537;vanessa.dias@empresa.com;BA;Vitória da Conquista;Candeias;Rua São Paulo;1636;45586-836;vendedor_42.jpg
+43;1;Tales Cardoso;vendedor;7;1996-02-09;(71) 97437-7711;tales.cardoso@empresa.com;PR;Londrina;Jardim Higienópolis;Rua da Liberdade;20;86705-703;vendedor_43.jpg
+44;1;Priscila Pinto;vendedor;8;1993-06-06;(66) 97799-3290;priscila.pinto@empresa.com;SP;São José dos Campos;Centro;Rua XV de Novembro;930;12447-863;vendedor_44.jpg
+45;1;Aline Marques;vendedor;9;1986-03-19;(50) 92963-6638;aline.marques@empresa.com;RJ;Rio de Janeiro;Ipanema;Avenida Paulista;1526;20756-487;vendedor_45.jpg
+46;1;Sabrina Barros;vendedor;10;1985-07-26;(43) 98257-2040;sabrina.barros@empresa.com;RS;Porto Alegre;Moinhos de Vento;Rua Marechal Deodoro;150;90106-771;vendedor_46.jpg
+47;1;Leonardo Martins;vendedor;11;1997-01-30;(83) 91507-4003;leonardo.martins@empresa.com;SC;Blumenau;Vila Nova;Avenida Beira Mar;93;89339-264;vendedor_47.jpg
+48;1;Helena Barbosa;vendedor;12;1981-11-21;(62) 90953-3069;helena.barbosa@empresa.com;GO;Aparecida de Goiânia;Garavelo;Rua Castro Alves;1845;74113-311;vendedor_48.jpg
+49;1;Diana Araújo;vendedor;13;1983-10-14;(69) 94188-8961;diana.araujo@empresa.com;CE;Fortaleza;Varjota;Rua Santos Dumont;1347;60930-243;vendedor_49.jpg
+50;1;Diana Nascimento;vendedor;14;1988-09-19;(18) 99099-9960;diana.nascimento@empresa.com;SP;Campinas;Barão Geraldo;Rua José Bonifácio;634;13461-827;vendedor_50.jpg
+51;1;Larissa Nunes;vendedor;15;1976-02-17;(73) 92638-6408;larissa.nunes@empresa.com;RS;Caxias do Sul;Exposição;Rua das Palmeiras;740;95399-917;vendedor_51.jpg
+52;1;Aline Pinto;vendedor;16;1975-10-25;(57) 97551-5627;aline.pinto@empresa.com;CE;Caucaia;Jurema;Avenida Atlântica;249;61497-553;vendedor_52.jpg
+53;1;João Barros;vendedor;17;1991-04-20;(76) 93260-3212;joao.barros@empresa.com;MG;Belo Horizonte;Savassi;Rua Castro Alves;680;30721-933;vendedor_53.jpg
+54;1;Eduardo Nunes;vendedor;18;1977-03-09;(77) 90802-3393;eduardo.nunes@empresa.com;SC;Joinville;Anita Garibaldi;Rua São Paulo;649;89596-921;vendedor_54.jpg
+55;1;Mariana Dias;vendedor;1;1998-08-16;(21) 90099-2821;mariana.dias@empresa.com;RS;Porto Alegre;Bom Fim;Rua Sete de Setembro;989;90912-117;vendedor_55.jpg
+56;1;Rafaela Dias;vendedor;2;1999-02-07;(28) 96464-3191;rafaela.dias@empresa.com;DF;Brasília;Noroeste;Rua XV de Novembro;895;70292-345;vendedor_56.jpg
+57;1;Viviane Lima;vendedor;3;1993-07-21;(24) 93227-9598;viviane.lima@empresa.com;GO;Goiânia;Jardim Goiás;Rua do Comércio;1426;74259-555;vendedor_57.jpg
+58;1;Viviane Nascimento;vendedor;4;1984-07-22;(60) 91157-5523;viviane.nascimento@empresa.com;RS;Canoas;Mathias Velho;Avenida Paulista;1823;92219-472;vendedor_58.jpg
+59;1;Caio Oliveira;vendedor;5;1977-08-21;(65) 95267-7554;caio.oliveira@empresa.com;RS;Caxias do Sul;Centro;Avenida Getúlio Vargas;311;95371-729;vendedor_59.jpg
+60;1;Isabela Costa;vendedor;6;1992-09-01;(96) 93004-1584;isabela.costa@empresa.com;RJ;Niterói;Ingá;Rua Sete de Setembro;1231;24772-257;vendedor_60.jpg
+61;1;Helena Santos;vendedor;7;1991-06-10;(76) 98224-8109;helena.santos@empresa.com;ES;Vila Velha;Glória;Avenida Central;1195;29413-658;vendedor_61.jpg
+62;1;Sofia Campos;vendedor;8;1980-03-03;(63) 90239-7142;sofia.campos@empresa.com;SP;Ribeirão Preto;Campos Elíseos;Rua das Flores;516;14819-561;vendedor_62.jpg
+63;1;William Pereira;vendedor;9;1992-04-19;(44) 97431-9428;william.pereira@empresa.com;PR;Londrina;Jardim Higienópolis;Rua Tiradentes;1754;86841-689;vendedor_63.jpg
+64;1;Douglas Barros;vendedor;10;1982-10-28;(60) 93130-4305;douglas.barros@empresa.com;MG;Uberlândia;Santa Mônica;Avenida Getúlio Vargas;1731;38983-122;vendedor_64.jpg
+65;1;Sofia Rocha;vendedor;11;1996-05-27;(67) 99373-4836;sofia.rocha@empresa.com;RS;Porto Alegre;Centro Histórico;Avenida Independência;1797;90958-888;vendedor_65.jpg
+66;1;Marcos Alves;vendedor;12;1995-11-17;(23) 98241-4327;marcos.alves@empresa.com;SC;Florianópolis;Coqueiros;Avenida Presidente Vargas;807;88395-228;vendedor_66.jpg
+67;1;Douglas Carvalho;vendedor;13;1977-07-04;(17) 95697-2618;douglas.carvalho@empresa.com;DF;Brasília;Lago Sul;Rua da Paz;219;70475-065;vendedor_67.jpg
+68;1;Yasmin Marques;vendedor;14;1993-07-16;(13) 94062-3300;yasmin.marques@empresa.com;ES;Serra;Carapina;Rua Tiradentes;1673;29683-408;vendedor_68.jpg
+69;1;Aline Silva;vendedor;15;1992-05-28;(87) 90152-6868;aline.silva@empresa.com;RJ;Rio de Janeiro;Copacabana;Avenida Atlântica;139;20372-411;vendedor_69.jpg
+70;1;Rafaela Ferreira;vendedor;16;1977-03-24;(89) 99320-2103;rafaela.ferreira@empresa.com;PR;Maringá;Zona 3;Rua da Paz;1673;87162-492;vendedor_70.jpg
+71;1;Natália Freitas;vendedor;17;1981-12-04;(95) 93866-5563;natalia.freitas@empresa.com;SC;Florianópolis;Trindade;Rua Marechal Deodoro;853;88332-584;vendedor_71.jpg
+72;1;Tatiana Pinto;vendedor;18;1995-02-01;(52) 97180-6171;tatiana.pinto@empresa.com;ES;Vitória;Jardim Camburi;Avenida Beira Mar;1392;29173-423;vendedor_72.jpg
+73;1;Samuel Martins;vendedor;1;1982-04-10;(75) 98996-1272;samuel.martins@empresa.com;SC;Florianópolis;Centro;Rua São Paulo;568;88443-667;vendedor_73.jpg
+74;1;Otávio Correia;vendedor;2;1976-08-11;(42) 92567-9343;otavio.correia@empresa.com;RJ;Petrópolis;Quitandinha;Avenida Getúlio Vargas;1744;25521-442;vendedor_74.jpg
+75;1;Ximena Mendes;vendedor;3;1993-11-15;(22) 93226-6002;ximena.mendes@empresa.com;GO;Aparecida de Goiânia;Centro;Rua José Bonifácio;97;74470-874;vendedor_75.jpg
+76;1;William Santos;vendedor;4;1990-04-07;(37) 91063-8345;william.santos@empresa.com;SC;Joinville;Bucarein;Rua Santos Dumont;785;89582-496;vendedor_76.jpg
+77;1;Helena Lima;vendedor;5;1976-02-20;(35) 95594-1646;helena.lima@empresa.com;BA;Vitória da Conquista;Candeias;Rua da Liberdade;550;45289-309;vendedor_77.jpg
+78;1;Giovana Campos;vendedor;6;1988-12-05;(83) 91663-3315;giovana.campos@empresa.com;ES;Vila Velha;Itapuã;Rua das Palmeiras;833;29772-957;vendedor_78.jpg
+79;1;Fernanda Lima;vendedor;7;1986-07-09;(37) 91456-3266;fernanda.lima@empresa.com;ES;Vitória;Jardim Camburi;Rua das Palmeiras;867;29877-903;vendedor_79.jpg
+80;1;João Nascimento;vendedor;8;1984-10-09;(42) 98203-1323;joao.nascimento@empresa.com;GO;Goiânia;Setor Bueno;Avenida Brasil;1430;74358-793;vendedor_80.jpg
+81;1;Ulisses Dias;vendedor;9;1985-02-23;(31) 98937-7767;ulisses.dias@empresa.com;BA;Feira de Santana;Tomba;Avenida Brasil;1289;44378-118;vendedor_81.jpg
+82;1;Karen Nunes;vendedor;10;2000-10-25;(79) 98719-4877;karen.nunes@empresa.com;SC;Florianópolis;Trindade;Rua Tiradentes;1748;88705-926;vendedor_82.jpg
+83;1;Leonardo Silva;vendedor;11;1988-02-29;(81) 95230-3606;leonardo.silva@empresa.com;MG;Contagem;Eldorado;Rua Santos Dumont;790;32476-321;vendedor_83.jpg
+84;1;Eduardo Ribeiro;vendedor;12;1997-01-12;(66) 91090-1019;eduardo.ribeiro@empresa.com;BA;Salvador;Itaigara;Avenida Rio Branco;1775;40524-332;vendedor_84.jpg
+85;1;Valéria Moreira;vendedor;13;1993-05-13;(21) 91764-7540;valeria.moreira@empresa.com;SP;Campinas;Cambuí;Rua XV de Novembro;1270;13683-757;vendedor_85.jpg
+86;1;Caio Alves;vendedor;14;1985-06-16;(95) 91006-1928;caio.alves@empresa.com;SC;Joinville;Anita Garibaldi;Avenida Beira Mar;83;89574-511;vendedor_86.jpg
+87;1;Giovana Ribeiro;vendedor;15;1983-10-30;(83) 99952-3865;giovana.ribeiro@empresa.com;ES;Serra;Jacaraípe;Avenida Independência;308;29673-101;vendedor_87.jpg
+88;1;Maria Vieira;vendedor;16;1988-07-28;(33) 98690-9969;maria.vieira@empresa.com;ES;Vila Velha;Centro;Rua das Flores;1290;29764-451;vendedor_88.jpg
+89;1;Ulisses Oliveira;vendedor;17;1989-01-11;(49) 99995-9590;ulisses.oliveira@empresa.com;CE;Caucaia;Centro;Rua Tiradentes;870;61583-416;vendedor_89.jpg
+90;1;Thiago Melo;vendedor;18;1986-04-23;(77) 93430-9435;thiago.melo@empresa.com;RS;Canoas;Mathias Velho;Rua das Palmeiras;1747;92288-803;vendedor_90.jpg
+91;1;Wesley Martins;vendedor;1;1980-10-09;(70) 92875-7068;wesley.martins@empresa.com;ES;Vila Velha;Itapuã;Rua José Bonifácio;1154;29604-887;vendedor_91.jpg
+92;1;Vanessa Andrade;vendedor;2;1979-09-12;(65) 95997-2676;vanessa.andrade@empresa.com;BA;Vitória da Conquista;Centro;Rua José Bonifácio;1402;45883-620;vendedor_92.jpg
+93;1;Henrique Costa;vendedor;3;1997-07-23;(80) 94642-1986;henrique.costa@empresa.com;PE;Jaboatão dos Guararapes;Candeias;Rua Dom Pedro II;1063;54149-718;vendedor_93.jpg
+94;1;Natália Correia;vendedor;4;1985-05-05;(36) 97803-8082;natalia.correia@empresa.com;MG;Juiz de Fora;Cascatinha;Rua Machado de Assis;1267;36973-082;vendedor_94.jpg
+95;1;Thiago Gomes;vendedor;5;1992-01-03;(43) 97714-3057;thiago.gomes@empresa.com;RJ;Petrópolis;Itaipava;Avenida Central;351;25342-340;vendedor_95.jpg
+96;1;Douglas Barbosa;vendedor;6;2000-06-10;(44) 92695-9183;douglas.barbosa@empresa.com;RS;Canoas;Niterói;Rua Santos Dumont;543;92858-468;vendedor_96.jpg
+97;1;Sabrina Lima;vendedor;7;1985-12-29;(20) 93635-8846;sabrina.lima@empresa.com;RJ;Rio de Janeiro;Madureira;Avenida Atlântica;379;20228-970;vendedor_97.jpg
+98;1;Natália Melo;vendedor;8;1991-07-06;(36) 92794-5505;natalia.melo@empresa.com;CE;Caucaia;Centro;Rua do Comércio;1294;61346-808;vendedor_98.jpg
+99;1;Sabrina Ferreira;vendedor;9;2000-01-17;(86) 94372-1641;sabrina.ferreira@empresa.com;RS;Canoas;Mathias Velho;Rua Castro Alves;1865;92544-863;vendedor_99.jpg
+100;1;Igor Barros;vendedor;10;1976-04-23;(18) 97185-4932;igor.barros@empresa.com;BA;Salvador;Rio Vermelho;Rua das Palmeiras;1640;40575-241;vendedor_100.jpg
+101;1;Elias Martins;vendedor;11;1999-09-24;(49) 90202-5817;elias.martins@empresa.com;PR;Londrina;Gleba Palhano;Rua Tiradentes;20;86776-976;vendedor_101.jpg
+102;1;Natália Silva;vendedor;12;1976-01-22;(21) 92133-7880;natalia.silva@empresa.com;DF;Brasília;Asa Norte;Avenida Presidente Vargas;129;70293-326;vendedor_102.jpg
+103;1;Daniela Costa;vendedor;13;1984-09-29;(89) 95623-5355;daniela.costa@empresa.com;DF;Brasília;Asa Norte;Rua Machado de Assis;1059;70993-965;vendedor_103.jpg
+104;1;Lucas Melo;vendedor;14;1995-07-13;(87) 94754-1716;lucas.melo@empresa.com;MG;Belo Horizonte;Serra;Rua da Paz;1979;30271-082;vendedor_104.jpg
+105;1;Caio Araújo;vendedor;15;1983-05-05;(53) 97843-8468;caio.araujo@empresa.com;RS;Caxias do Sul;São Pelegrino;Avenida Getúlio Vargas;228;95183-145;vendedor_105.jpg
+106;1;Sofia Gomes;vendedor;16;1990-02-13;(96) 94040-9928;sofia.gomes@empresa.com;CE;Caucaia;Centro;Rua Marechal Deodoro;1709;61805-473;vendedor_106.jpg
+107;1;Carlos Nascimento;vendedor;17;1986-10-25;(12) 98748-6926;carlos.nascimento@empresa.com;CE;Fortaleza;Fátima;Rua da Liberdade;1899;60394-408;vendedor_107.jpg
+108;1;Natália Rocha;vendedor;18;1999-04-01;(98) 93455-4545;natalia.rocha@empresa.com;GO;Aparecida de Goiânia;Centro;Avenida Independência;664;74658-750;vendedor_108.jpg
+109;1;Helena Andrade;vendedor;1;1985-11-23;(49) 91626-6480;helena.andrade@empresa.com;SP;São Paulo;Pinheiros;Avenida Presidente Vargas;1004;01922-969;vendedor_109.jpg
+110;1;Helena Marques;vendedor;2;1982-05-07;(77) 96909-7030;helena.marques@empresa.com;RS;Porto Alegre;Menino Deus;Avenida Paulista;10;90549-370;vendedor_110.jpg
+111;1;Wagner Lima;vendedor;3;1990-07-18;(45) 93748-3696;wagner.lima@empresa.com;MG;Uberlândia;Centro;Rua da Paz;1302;38423-175;vendedor_111.jpg
+112;1;Diana Costa;vendedor;4;1985-08-09;(64) 91592-1756;diana.costa@empresa.com;MG;Belo Horizonte;Santo Agostinho;Rua da Paz;843;30512-168;vendedor_112.jpg
+113;1;Valéria Ribeiro;vendedor;5;1995-08-29;(92) 95444-2699;valeria.ribeiro@empresa.com;GO;Goiânia;Centro;Avenida Brasil;341;74814-315;vendedor_113.jpg
+114;1;William Melo;vendedor;6;1992-12-27;(80) 99776-9076;william.melo@empresa.com;RJ;Petrópolis;Quitandinha;Rua Santos Dumont;1831;25324-654;vendedor_114.jpg
+115;1;Camila Oliveira;vendedor;7;1980-02-10;(34) 90205-8992;camila.oliveira@empresa.com;DF;Brasília;Asa Sul;Rua Marechal Deodoro;960;70471-742;vendedor_115.jpg
+116;1;Otávio Oliveira;vendedor;8;1988-03-04;(92) 97428-7383;otavio.oliveira@empresa.com;RS;Caxias do Sul;Exposição;Avenida Rio Branco;1156;95433-693;vendedor_116.jpg
+117;1;Eduardo Gomes;vendedor;9;1977-07-15;(42) 99380-5873;eduardo.gomes@empresa.com;CE;Caucaia;Jurema;Avenida Rio Branco;52;61434-705;vendedor_117.jpg
+118;1;Henrique Oliveira;vendedor;10;1998-03-08;(24) 91811-6018;henrique.oliveira@empresa.com;PR;Curitiba;Batel;Rua Castro Alves;56;80585-684;vendedor_118.jpg
+119;1;Elias Pinto;vendedor;11;1992-09-25;(63) 95291-2242;elias.pinto@empresa.com;BA;Salvador;Barra;Avenida Presidente Vargas;1993;40797-504;vendedor_119.jpg
+120;1;Eduardo Mendes;vendedor;12;1986-02-21;(30) 95329-6083;eduardo.mendes@empresa.com;PE;Jaboatão dos Guararapes;Candeias;Avenida Brasil;1657;54232-300;vendedor_120.jpg
+121;1;Felipe Rodrigues;vendedor;13;1984-10-07;(80) 97163-6160;felipe.rodrigues@empresa.com;CE;Caucaia;Jurema;Rua das Flores;106;61492-531;vendedor_121.jpg
+122;1;Maria Moreira;vendedor;14;1995-08-09;(66) 99587-1178;maria.moreira@empresa.com;CE;Caucaia;Tabapuá;Avenida Paulista;1595;61104-462;vendedor_122.jpg
+123;1;José Alves;vendedor;15;1982-04-25;(36) 97825-8523;jose.alves@empresa.com;BA;Vitória da Conquista;Centro;Rua Castro Alves;244;45498-140;vendedor_123.jpg
+124;1;Pedro Gomes;vendedor;16;1983-05-24;(42) 96001-1299;pedro.gomes@empresa.com;RJ;Rio de Janeiro;Botafogo;Rua do Comércio;1501;20367-644;vendedor_124.jpg
+125;1;Mariana Correia;vendedor;17;2000-06-22;(15) 90343-6402;mariana.correia@empresa.com;BA;Vitória da Conquista;Centro;Rua Castro Alves;581;45156-214;vendedor_125.jpg
+126;1;Sabrina Cardoso;vendedor;18;1979-03-23;(46) 94602-2511;sabrina.cardoso@empresa.com;RS;Porto Alegre;Cidade Baixa;Avenida Beira Mar;394;90386-821;vendedor_126.jpg
+127;1;Helena Campos;vendedor;1;1990-09-07;(68) 93566-3940;helena.campos@empresa.com;DF;Brasília;Asa Norte;Rua Tiradentes;1640;70230-505;vendedor_127.jpg
+128;1;Yuri Freitas;vendedor;2;1979-04-02;(38) 99094-6469;yuri.freitas@empresa.com;PE;Olinda;Casa Caiada;Avenida Beira Mar;1739;53365-691;vendedor_128.jpg
+129;1;Nelson Araújo;vendedor;3;1993-11-19;(76) 96775-4987;nelson.araujo@empresa.com;PR;Maringá;Vila Esperança;Rua Marechal Deodoro;1029;87846-715;vendedor_129.jpg
+130;1;Lucas Silva;vendedor;4;1986-03-28;(79) 99224-3023;lucas.silva@empresa.com;PR;Curitiba;Mercês;Rua José Bonifácio;478;80746-327;vendedor_130.jpg
+131;1;Igor Rodrigues;vendedor;5;1986-01-27;(82) 94072-6759;igor.rodrigues@empresa.com;DF;Brasília;Asa Norte;Rua das Flores;379;70458-300;vendedor_131.jpg
+132;1;Igor Costa;vendedor;6;1986-11-22;(11) 97031-8976;igor.costa@empresa.com;ES;Vitória;Mata da Praia;Rua Machado de Assis;1432;29650-519;vendedor_132.jpg
+133;1;Carlos Pereira;vendedor;7;1978-01-28;(23) 92332-3105;carlos.pereira@empresa.com;CE;Fortaleza;Centro;Rua Marechal Deodoro;468;60144-480;vendedor_133.jpg
+134;1;Eduardo Oliveira;vendedor;8;1988-12-23;(21) 93902-8174;eduardo.oliveira@empresa.com;RJ;Niterói;Santa Rosa;Avenida Rio Branco;1203;24710-099;vendedor_134.jpg
+135;1;Leonardo Mendes;vendedor;9;1982-09-28;(24) 93022-4981;leonardo.mendes@empresa.com;PR;Curitiba;Batel;Rua Marechal Deodoro;1108;80738-827;vendedor_135.jpg
+136;1;Camila Gomes;vendedor;10;2000-03-18;(92) 93700-5468;camila.gomes@empresa.com;RJ;Volta Redonda;Vila Santa Cecília;Rua Marechal Deodoro;1875;27609-011;vendedor_136.jpg
+137;1;Ximena Costa;vendedor;11;1990-09-07;(84) 93902-4869;ximena.costa@empresa.com;SC;Blumenau;Victor Konder;Avenida Paulista;905;89159-117;vendedor_137.jpg
+138;1;Nicolas Martins;vendedor;12;1978-04-13;(16) 91711-8581;nicolas.martins@empresa.com;PR;Maringá;Zona 7;Avenida Getúlio Vargas;777;87822-257;vendedor_138.jpg
+139;1;Igor Silva;vendedor;13;1983-07-14;(98) 96282-2732;igor.silva@empresa.com;GO;Aparecida de Goiânia;Garavelo;Rua Marechal Deodoro;1839;74514-167;vendedor_139.jpg
+140;1;Felipe Costa;vendedor;14;1999-10-23;(61) 90232-4748;felipe.costa@empresa.com;MG;Uberlândia;Tibery;Rua Machado de Assis;1501;38845-210;vendedor_140.jpg
+141;1;William Alves;vendedor;15;1988-07-10;(57) 95714-1211;william.alves@empresa.com;PE;Recife;Aflitos;Rua Dom Pedro II;1241;50568-082;vendedor_141.jpg
+142;1;Ulisses Rodrigues;vendedor;16;1994-07-02;(75) 91376-2183;ulisses.rodrigues@empresa.com;GO;Goiânia;Setor Oeste;Rua José Bonifácio;532;74520-452;vendedor_142.jpg
+143;1;Viviane Alves;vendedor;17;1994-01-11;(95) 92405-2029;viviane.alves@empresa.com;RS;Canoas;Niterói;Rua das Palmeiras;1654;92971-097;vendedor_143.jpg
+144;1;Valéria Pereira;vendedor;18;1996-01-11;(43) 97971-8972;valeria.pereira@empresa.com;DF;Brasília;Águas Claras;Avenida Getúlio Vargas;744;70736-109;vendedor_144.jpg
+145;1;Bernardo Barbosa;vendedor;1;1975-03-24;(40) 94572-1581;bernardo.barbosa@empresa.com;MG;Belo Horizonte;Santo Agostinho;Rua Marechal Deodoro;1054;30209-174;vendedor_145.jpg
+146;1;William Carvalho;vendedor;2;1984-05-30;(27) 93118-5534;william.carvalho@empresa.com;PE;Olinda;Bairro Novo;Rua Sete de Setembro;1474;53341-709;vendedor_146.jpg
+147;1;Bruno Barros;vendedor;3;1986-12-19;(12) 92748-5744;bruno.barros@empresa.com;RS;Porto Alegre;Moinhos de Vento;Rua da Liberdade;1326;90700-897;vendedor_147.jpg
+148;1;Elisa Ferreira;vendedor;4;1983-08-17;(51) 97990-4242;elisa.ferreira@empresa.com;BA;Feira de Santana;Cidade Nova;Rua Santos Dumont;52;44949-572;vendedor_148.jpg
+149;1;Nicolas Carvalho;vendedor;5;1986-01-20;(23) 96134-8230;nicolas.carvalho@empresa.com;SP;São José dos Campos;Urbanova;Avenida Independência;896;12526-156;vendedor_149.jpg
+150;1;William Rocha;vendedor;6;1999-05-06;(38) 91483-5036;william.rocha@empresa.com;RJ;Niterói;Ingá;Rua das Palmeiras;677;24920-233;vendedor_150.jpg
+151;1;Henrique Santos;vendedor;7;1987-02-24;(65) 95562-5987;henrique.santos@empresa.com;ES;Serra;Laranjeiras;Avenida Presidente Vargas;1401;29115-020;vendedor_151.jpg
+152;1;Nicolas Rocha;vendedor;8;2000-08-17;(81) 98033-3363;nicolas.rocha@empresa.com;RS;Caxias do Sul;Centro;Rua da Paz;658;95133-133;vendedor_152.jpg
+153;1;Wesley Alves;vendedor;9;1991-03-29;(15) 94441-2584;wesley.alves@empresa.com;ES;Vila Velha;Centro;Rua Tiradentes;1329;29716-388;vendedor_153.jpg
+154;1;Yuri Gomes;vendedor;10;1975-11-24;(44) 96583-8470;yuri.gomes@empresa.com;PR;Londrina;Jardim Higienópolis;Rua Tiradentes;1160;86180-929;vendedor_154.jpg
+155;1;William Ferreira;vendedor;11;1992-06-24;(95) 95920-5132;william.ferreira@empresa.com;DF;Brasília;Asa Norte;Avenida Atlântica;1581;70604-656;vendedor_155.jpg
+156;1;Gabriel Ribeiro;vendedor;12;1988-01-11;(79) 95743-9243;gabriel.ribeiro@empresa.com;MG;Juiz de Fora;Granbery;Rua José Bonifácio;1263;36703-138;vendedor_156.jpg
+157;1;Samuel Dias;vendedor;13;1989-08-17;(50) 92173-1886;samuel.dias@empresa.com;MG;Juiz de Fora;Centro;Rua São Paulo;846;36293-639;vendedor_157.jpg
+158;1;Zilda Barbosa;vendedor;14;1978-04-03;(94) 95139-6965;zilda.barbosa@empresa.com;PE;Olinda;Casa Caiada;Avenida Brasil;1472;53717-520;vendedor_158.jpg
+159;1;Tales Pinto;vendedor;15;1992-09-30;(16) 95280-7621;tales.pinto@empresa.com;SP;São Paulo;Vila Mariana;Avenida Beira Mar;618;01288-536;vendedor_159.jpg
+160;1;Igor Correia;vendedor;16;1985-09-19;(16) 99331-2448;igor.correia@empresa.com;MG;Uberlândia;Santa Mônica;Avenida Presidente Vargas;803;38106-238;vendedor_160.jpg
+161;1;Tatiana Mendes;vendedor;17;1976-08-12;(80) 94791-8613;tatiana.mendes@empresa.com;BA;Vitória da Conquista;Centro;Avenida Getúlio Vargas;848;45874-831;vendedor_161.jpg
+162;1;Julia Campos;vendedor;18;1999-03-26;(53) 95615-5800;julia.campos@empresa.com;SC;Florianópolis;Ingleses;Rua XV de Novembro;443;88928-833;vendedor_162.jpg
+163;1;Flávia Pinto;vendedor;1;1991-12-12;(98) 93636-1500;flavia.pinto@empresa.com;BA;Salvador;Pituba;Avenida Brasil;1098;40373-679;vendedor_163.jpg
+164;1;Natália Costa;vendedor;2;1993-12-24;(94) 91327-4030;natalia.costa@empresa.com;SC;Florianópolis;Centro;Rua Sete de Setembro;1779;88723-732;vendedor_164.jpg
+165;1;Olivia Lima;vendedor;3;1999-12-15;(19) 99639-1999;olivia.lima@empresa.com;RJ;Petrópolis;Mosela;Rua Dom Pedro II;87;25276-558;vendedor_165.jpg
+166;1;Olivia Rocha;vendedor;4;1989-03-16;(76) 97944-6926;olivia.rocha@empresa.com;DF;Brasília;Noroeste;Avenida Paulista;1618;70516-637;vendedor_166.jpg
+167;1;Elisa Vieira;vendedor;5;1984-03-11;(42) 95940-3986;elisa.vieira@empresa.com;SP;São Paulo;Lapa;Avenida Presidente Vargas;391;01919-584;vendedor_167.jpg
+168;1;Bernardo Barros;vendedor;6;1997-01-06;(83) 95546-8579;bernardo.barros@empresa.com;SP;Guarulhos;Vila Galvão;Rua Tiradentes;856;07800-124;vendedor_168.jpg
+169;1;Flávia Rodrigues;vendedor;7;1976-12-07;(56) 96745-9009;flavia.rodrigues@empresa.com;SP;Ribeirão Preto;Jardim Paulista;Rua Sete de Setembro;1117;14446-690;vendedor_169.jpg
+170;1;Yuri Marques;vendedor;8;1977-03-25;(34) 97869-8592;yuri.marques@empresa.com;ES;Vitória;Jardim Camburi;Avenida Beira Mar;1655;29284-790;vendedor_170.jpg
+171;1;Otávio Ferreira;vendedor;9;1984-07-04;(16) 96346-3695;otavio.ferreira@empresa.com;SC;Blumenau;Victor Konder;Avenida Brasil;1632;89941-367;vendedor_171.jpg
+172;1;Felipe Barbosa;vendedor;10;1989-01-25;(14) 91271-6532;felipe.barbosa@empresa.com;BA;Feira de Santana;Cidade Nova;Rua do Comércio;43;44306-732;vendedor_172.jpg
+173;1;Bernardo Silva;vendedor;11;1986-06-20;(89) 98514-3063;bernardo.silva@empresa.com;CE;Caucaia;Jurema;Avenida Beira Mar;834;61833-052;vendedor_173.jpg
+174;1;João Ferreira;vendedor;12;1989-06-05;(28) 90023-1418;joao.ferreira@empresa.com;BA;Salvador;Pituba;Avenida Independência;1926;40381-604;vendedor_174.jpg
+175;1;Eduardo Dias;vendedor;13;1987-01-09;(41) 91759-1001;eduardo.dias@empresa.com;DF;Brasília;Asa Sul;Avenida Atlântica;734;70544-382;vendedor_175.jpg
+176;1;Leonardo Gomes;vendedor;14;1990-01-05;(88) 90316-8780;leonardo.gomes@empresa.com;DF;Brasília;Lago Norte;Rua Dom Pedro II;1076;70813-495;vendedor_176.jpg
+177;1;Henrique Correia;vendedor;15;1998-06-17;(72) 94812-2646;henrique.correia@empresa.com;ES;Serra;Laranjeiras;Avenida Paulista;1950;29155-776;vendedor_177.jpg
+178;1;Ingrid Ferreira;vendedor;16;1978-12-18;(46) 97678-4736;ingrid.ferreira@empresa.com;DF;Brasília;Taguatinga;Avenida Rio Branco;767;70507-455;vendedor_178.jpg
+179;1;Viviane Nunes;vendedor;17;2000-02-22;(47) 90653-9559;viviane.nunes@empresa.com;GO;Goiânia;Setor Oeste;Rua Tiradentes;1273;74982-206;vendedor_179.jpg
+180;1;Mariana Melo;vendedor;18;1984-10-23;(38) 93270-4590;mariana.melo@empresa.com;MG;Belo Horizonte;Funcionários;Avenida Atlântica;501;30836-685;vendedor_180.jpg

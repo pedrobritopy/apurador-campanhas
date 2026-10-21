@@ -1,0 +1,1001 @@
+id_produto;id_empresa;nome_produto;fabricante;marca;categoria;subcategoria;ean;preco_lista;custo_compra;margem_minima;status;imagem
+1;1;Creme Dental Sensodyne Repara e Protege 100g;Haleon;Sensodyne;Farmácia;Higiene Bucal;789893800019;27.31;17.78;15;True;produto_1.jpg
+2;1;Mucilon Arroz e Aveia 230g;Nestlé;Mucilon;Farmácia;Infantil;789475200022;7.92;6.28;15;True;produto_2.jpg
+3;1;Omeprazol 20mg 28 cápsulas;Medley;Medley Genérico;Farmácia;Digestivos e Antiácidos;789382500039;13.09;9.35;15;True;produto_3.jpg
+4;1;Allegra 120mg 10 comprimidos;Sanofi;Allegra;Farmácia;Antialérgicos;789154200044;46.84;33.44;15;True;produto_4.jpg
+5;1;Protetor Solar Anthelios FPS 60 50g;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789289400050;96.38;67.5;15;True;produto_5.jpg
+6;1;Alivium 400mg 10 cápsulas;Cosmed;Alivium;Farmácia;Analgésicos e Antitérmicos;789846700061;16.87;11.87;15;True;produto_6.jpg
+7;1;Hastes Flexíveis Cotonetes 75un;Kenvue;Cotonetes;Farmácia;Higiene Pessoal;789996700072;9.23;6.46;15;True;produto_7.jpg
+8;1;Soro Fisiológico 0,9% 250ml;Arboreto;Arboreto;Farmácia;Primeiros Socorros;789102200081;9.93;6.96;15;True;produto_8.jpg
+9;1;Cicaplast Baume B5 40ml;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789207100093;107.37;61.56;15;True;produto_9.jpg
+10;1;Enxaguante Colgate Plax 500ml;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789710800107;17.23;12.51;15;True;produto_10.jpg
+11;1;Bioderma Sensibio H2O 250ml;NAOS;Bioderma;Farmácia;Dermocosméticos;789461000115;113.13;69.83;15;True;produto_11.jpg
+12;1;Epocler Flaconete 10ml x 6;Hypera Pharma;Epocler;Farmácia;Digestivos e Antiácidos;789165600125;28.88;19.2;15;True;produto_12.jpg
+13;1;Meia de Compressão Kendall 3/4;Cardinal Health;Kendall;Farmácia;Equipamentos de Saúde;789200700131;72.38;49.48;15;True;produto_13.jpg
+14;1;Creme Dental Oral-B Pro-Saúde 70g;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789409200142;7.96;5.32;15;True;produto_14.jpg
+15;1;Gel de Limpeza CeraVe 227g;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789470100152;92.12;57.07;15;True;produto_15.jpg
+16;1;Álcool 70% Tupi 1L;Tupi;Tupi;Farmácia;Primeiros Socorros;789354000165;9.35;7.17;15;True;produto_16.jpg
+17;1;Dipirona Novalgina 1g 10 comprimidos;Sanofi;Novalgina;Farmácia;Analgésicos e Antitérmicos;789886500175;18.97;13.19;15;True;produto_17.jpg
+18;1;Mucosolvan Xarope Adulto 120ml;Sanofi;Mucosolvan;Farmácia;Gripe e Resfriado;789814300189;30.65;22.52;15;True;produto_18.jpg
+19;1;Água Termal Avène 300ml;Pierre Fabre;Avène;Farmácia;Dermocosméticos;789101800194;78.85;55.4;15;True;produto_19.jpg
+20;1;Sonrisal Original 30 comprimidos;Haleon;Sonrisal;Farmácia;Digestivos e Antiácidos;789242300205;35.14;23.39;15;True;produto_20.jpg
+21;1;Lacto-Purga 6 comprimidos;Hypera Pharma;Lacto-Purga;Farmácia;Digestivos e Antiácidos;789637600215;11.22;7.96;15;True;produto_21.jpg
+22;1;Paracetamol 750mg 20 comprimidos;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789604600226;9.1;5.99;15;True;produto_22.jpg
+23;1;Lavitan Hair 60 cápsulas;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789674100233;48.97;33.31;15;True;produto_23.jpg
+24;1;Neutrogena Hydro Boost Gel 50g;Kenvue;Neutrogena;Farmácia;Dermocosméticos;789614000249;81.98;48.2;15;True;produto_24.jpg
+25;1;Cebion Vitamina C 1g 10 efervescentes;Merck;Cebion;Farmácia;Vitaminas e Suplementos;789346400254;23.57;14.25;15;True;produto_25.jpg
+26;1;Enxaguante Listerine Cool Mint 500ml;Kenvue;Listerine;Farmácia;Higiene Bucal;789267700268;27.56;19.6;15;True;produto_26.jpg
+27;1;Sorine Adulto Spray 30ml;Aché;Sorine;Farmácia;Gripe e Resfriado;789571500277;18.23;13.17;15;True;produto_27.jpg
+28;1;Lavitan Mais Vitaminas 60 comprimidos;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789725900289;41.82;24.83;15;True;produto_28.jpg
+29;1;Desodorante Rexona Clinical 48g;Unilever;Rexona;Farmácia;Higiene Pessoal;789961200297;26.16;18;15;True;produto_29.jpg
+30;1;Hidratante CeraVe Loção 200ml;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789420100306;100.05;62.22;15;True;produto_30.jpg
+31;1;Oxímetro de Pulso G-Tech;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789629600317;148.42;106.56;15;True;produto_31.jpg
+32;1;Vitamina C 10 Vichy Liftactiv;L'Oréal;Vichy;Farmácia;Dermocosméticos;789417300322;224.1;138.01;15;True;produto_32.jpg
+33;1;Shampoo Pantene Restauração 400ml;Procter & Gamble;Pantene;Farmácia;Higiene Pessoal;789754500335;23.23;16.75;15;True;produto_33.jpg
+34;1;Preservativo Jontex Lubrificado 6un;Kenvue;Jontex;Farmácia;Equipamentos de Saúde;789496500343;13.2;9.49;15;True;produto_34.jpg
+35;1;Imuno Max 30 comprimidos;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789885300356;31.82;21.6;15;True;produto_35.jpg
+36;1;Engov 6 comprimidos;Hypera Pharma;Engov;Farmácia;Digestivos e Antiácidos;789969000365;8.71;6.69;15;True;produto_36.jpg
+37;1;Minancora Pomada 30g;Minancora;Minancora;Farmácia;Dermatológicos;789186800377;9.87;7.12;15;True;produto_37.jpg
+38;1;Tamarine 20 cápsulas;Hypera Pharma;Tamarine;Farmácia;Digestivos e Antiácidos;789377700389;50.39;35.61;15;True;produto_38.jpg
+39;1;Afrin Spray Nasal 30ml;Bayer;Afrin;Farmácia;Gripe e Resfriado;789603600399;39.75;29.02;15;True;produto_39.jpg
+40;1;Curativo Band-Aid Transparente 40un;Kenvue;Band-Aid;Farmácia;Primeiros Socorros;789848600400;12.36;9.42;15;True;produto_40.jpg
+41;1;Corega Ultra Creme Fixador 40g;Haleon;Corega;Farmácia;Higiene Bucal;789210300417;29.41;20.29;15;True;produto_41.jpg
+42;1;Buscopan Composto 20 comprimidos;Hypera Pharma;Buscopan;Farmácia;Analgésicos e Antitérmicos;789572500423;30.59;20.28;15;True;produto_42.jpg
+43;1;Nivea Creme Lata 97g;Beiersdorf;Nivea;Farmácia;Dermocosméticos;789987600433;16.11;10.01;15;True;produto_43.jpg
+44;1;Vick Pastilhas Mentol 20un;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789767100445;6.74;4.68;15;True;produto_44.jpg
+45;1;Leite Nan Supreme 1 800g;Nestlé;Nan;Farmácia;Infantil;789186100453;132.35;96.71;15;True;produto_45.jpg
+46;1;Sabonete Dove Original 90g;Unilever;Dove;Farmácia;Higiene Pessoal;789153100464;4.11;2.83;15;True;produto_46.jpg
+47;1;Merthiolate Spray 45ml;Cosmed;Merthiolate;Farmácia;Primeiros Socorros;789810200474;27.55;17.87;15;True;produto_47.jpg
+48;1;Teste de Gravidez Clearblue Digital;SPD Swiss Precision;Clearblue;Farmácia;Equipamentos de Saúde;789982800481;51.54;36.96;15;True;produto_48.jpg
+49;1;Glicosímetro Accu-Chek Guide;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789323700492;102.81;74.86;15;True;produto_49.jpg
+50;1;Advil 400mg 8 cápsulas;Haleon;Advil;Farmácia;Analgésicos e Antitérmicos;789580600506;20.28;14.72;15;True;produto_50.jpg
+51;1;Sabonete Protex Antibacteriano 85g;Colgate-Palmolive;Protex;Farmácia;Higiene Pessoal;789401500514;4.13;2.69;15;True;produto_51.jpg
+52;1;Bepantol Derma Creme 40g;Bayer;Bepantol;Farmácia;Dermatológicos;789587100528;43.41;28.63;15;True;produto_52.jpg
+53;1;Doril 20 comprimidos;Hypera Pharma;Doril;Farmácia;Analgésicos e Antitérmicos;789790800534;18.34;12.85;15;True;produto_53.jpg
+54;1;Polaramine 2mg 20 comprimidos;Bayer;Polaramine;Farmácia;Antialérgicos;789738000543;26.83;20.58;15;True;produto_54.jpg
+55;1;Bromexina Xarope 120ml;Sanofi;Bisolvon;Farmácia;Gripe e Resfriado;789679400554;29.75;21.24;15;True;produto_55.jpg
+56;1;Absorvente Always Noturno 8un;Procter & Gamble;Always;Farmácia;Higiene Pessoal;789889400566;11.51;8.43;15;True;produto_56.jpg
+57;1;Tiras Accu-Chek Guide 50un;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789679200574;112.56;78.6;15;True;produto_57.jpg
+58;1;Floratil 200mg 6 cápsulas;Merck;Floratil;Farmácia;Digestivos e Antiácidos;789207600584;37.99;24.02;15;True;produto_58.jpg
+59;1;Redoxon Vitamina C 1g 10 efervescentes;Bayer;Redoxon;Farmácia;Vitaminas e Suplementos;789279000596;24.68;17.44;15;True;produto_59.jpg
+60;1;Chupeta MAM Air 6-16m;MAM Babyartikel;MAM;Farmácia;Infantil;789459000608;32.29;24.48;15;True;produto_60.jpg
+61;1;Mamadeira Avent Natural 260ml;Philips;Philips Avent;Farmácia;Infantil;789858900619;64.95;48.21;15;True;produto_61.jpg
+62;1;Naldecon Dia 12 comprimidos;Bristol-Myers Squibb;Naldecon;Farmácia;Gripe e Resfriado;789550300627;20.28;15.23;15;True;produto_62.jpg
+63;1;Lenço Umedecido Huggies 48un;Kimberly-Clark;Huggies;Farmácia;Infantil;789360400630;13.38;9.97;15;True;produto_63.jpg
+64;1;Fenergan Creme 30g;Sanofi;Fenergan;Farmácia;Dermatológicos;789441300646;19.84;14.89;15;True;produto_64.jpg
+65;1;Salonpas Emplastro 10un;Hisamitsu;Salonpas;Farmácia;Dermatológicos;789196000657;18.54;13.07;15;True;produto_65.jpg
+66;1;Centrum Mulher 60 comprimidos;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789693400666;82.37;58.11;15;True;produto_66.jpg
+67;1;Nebacetin Pomada 15g;Takeda;Nebacetin;Farmácia;Dermatológicos;789920500671;26.39;17.6;15;True;produto_67.jpg
+68;1;Tylenol Bebê Gotas 15ml;Kenvue;Tylenol;Farmácia;Infantil;789291800688;28.88;19.5;15;True;produto_68.jpg
+69;1;Andolba Spray 45ml;Hypera Pharma;Andolba;Farmácia;Dermatológicos;789757900697;34.49;21.83;15;True;produto_69.jpg
+70;1;Álcool em Gel 70% Asseptgel 500ml;Start Química;Asseptgel;Farmácia;Higiene Pessoal;789717600700;10.56;7.19;15;True;produto_70.jpg
+71;1;Biotônico Fontoura 400ml;Hypera Pharma;Biotônico Fontoura;Farmácia;Vitaminas e Suplementos;789378100717;28.49;20.78;15;True;produto_71.jpg
+72;1;Dipirona 500mg/ml gotas 20ml;Medley;Medley Genérico;Farmácia;Analgésicos e Antitérmicos;789802500722;6.53;4.89;15;True;produto_72.jpg
+73;1;Gaze Estéril Cremer 13 fios 10un;Cremer;Cremer;Farmácia;Primeiros Socorros;789397800739;4.69;3.24;15;True;produto_73.jpg
+74;1;Nebulizador Inalar Compact NS;NS Indústria;NS;Farmácia;Equipamentos de Saúde;789183500740;185.47;126.13;15;True;produto_74.jpg
+75;1;Protetor Solar Sundown FPS 50 200ml;Kenvue;Sundown;Farmácia;Dermocosméticos;789151100752;67.64;45.37;15;True;produto_75.jpg
+76;1;Plasil 10mg 20 comprimidos;Sanofi;Plasil;Farmácia;Digestivos e Antiácidos;789188100767;26.3;18.27;15;True;produto_76.jpg
+77;1;Papel Higiênico Neve Folha Dupla 12un;Kimberly-Clark;Neve;Farmácia;Higiene Pessoal;789226000776;31.11;23.19;15;True;produto_77.jpg
+78;1;Cicatricure Gel 30g;Genomma Lab;Cicatricure;Farmácia;Dermatológicos;789205600784;63.19;43.34;15;True;produto_78.jpg
+79;1;Cimegripe 20 cápsulas;Cimed;Cimegripe;Farmácia;Analgésicos e Antitérmicos;789117900796;13.15;9.62;15;True;produto_79.jpg
+80;1;Magnésio Dimalato 60 cápsulas;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789621100802;49.53;35.09;15;True;produto_80.jpg
+81;1;Loratadina 10mg 12 comprimidos;EMS;EMS Genérico;Farmácia;Antialérgicos;789511700819;8.7;6.22;15;True;produto_81.jpg
+82;1;Strepsils Mel e Limão 8 pastilhas;Reckitt;Strepsils;Farmácia;Gripe e Resfriado;789279000824;15.62;10;15;True;produto_82.jpg
+83;1;Shampoo Head & Shoulders 400ml;Procter & Gamble;Head & Shoulders;Farmácia;Higiene Pessoal;789191500833;37.02;25.81;15;True;produto_83.jpg
+84;1;Rinosoro 0,9% Spray 50ml;Farmasa;Rinosoro;Farmácia;Gripe e Resfriado;789285000843;21.07;15.27;15;True;produto_84.jpg
+85;1;Dramin B6 10 comprimidos;Takeda;Dramin;Farmácia;Digestivos e Antiácidos;789434400850;18.27;13.77;15;True;produto_85.jpg
+86;1;Dipirona Gotas Infantil Novalgina 20ml;Sanofi;Novalgina;Farmácia;Infantil;789406000860;18.77;13.16;15;True;produto_86.jpg
+87;1;Termômetro Digital G-Tech TH150;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789524400876;27.66;18.59;15;True;produto_87.jpg
+88;1;Cataflam Emulgel 60g;Haleon;Cataflam;Farmácia;Dermatológicos;789951400889;40.14;29.32;15;True;produto_88.jpg
+89;1;Estomazil Pó 5g x 6;Hypera Pharma;Estomazil;Farmácia;Digestivos e Antiácidos;789531600890;11.79;7.78;15;True;produto_89.jpg
+90;1;Medidor de Pressão Omron HEM-7122;Omron Healthcare;Omron;Farmácia;Equipamentos de Saúde;789489700909;235.35;183.65;15;True;produto_90.jpg
+91;1;Effaclar Gel Concentrado 150g;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789992500915;122.01;70.2;15;True;produto_91.jpg
+92;1;Escova Dental Curaprox CS 5460;Curaden;Curaprox;Farmácia;Higiene Bucal;789117800928;33;23.4;15;True;produto_92.jpg
+93;1;Escova Dental Oral-B Indicator Plus;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789666200936;9.55;6.24;15;True;produto_93.jpg
+94;1;Torsilax 30 comprimidos;Neo Química;Torsilax;Farmácia;Analgésicos e Antitérmicos;789513400940;15.16;9.49;15;True;produto_94.jpg
+95;1;Addera D3 7000UI 8 comprimidos;Hypera Pharma;Addera;Farmácia;Vitaminas e Suplementos;789510500957;42.97;27.73;15;True;produto_95.jpg
+96;1;Gaviscon Suspensão Sachê 10ml x 12;Reckitt;Gaviscon;Farmácia;Digestivos e Antiácidos;789845600968;40.88;28.11;15;True;produto_96.jpg
+97;1;Aptamil Profutura 1 800g;Danone;Aptamil;Farmácia;Infantil;789362700978;134.26;101.98;15;True;produto_97.jpg
+98;1;Neosaldina 30 drágeas;Hypera Pharma;Neosaldina;Farmácia;Analgésicos e Antitérmicos;789878500985;36.84;23.77;15;True;produto_98.jpg
+99;1;Vick VapoRub 30g;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789667700992;21.44;16.02;15;True;produto_99.jpg
+100;1;Atadura Crepom Cremer 10cm;Cremer;Cremer;Farmácia;Primeiros Socorros;789732501004;4.89;3.11;15;True;produto_100.jpg
+101;1;Preservativo Olla Lubrificado 6un;Hypera Pharma;Olla;Farmácia;Equipamentos de Saúde;789927801010;7.88;5.73;15;True;produto_101.jpg
+102;1;Eno Sal de Frutas Tradicional 5g x 2;Haleon;Eno;Farmácia;Digestivos e Antiácidos;789978201027;4.31;2.85;15;True;produto_102.jpg
+103;1;Eucerin Urea Repair 10% 250ml;Beiersdorf;Eucerin;Farmácia;Dermocosméticos;789295301033;96.76;67.12;15;True;produto_103.jpg
+104;1;Histamin Xarope 100ml;Neo Química;Histamin;Farmácia;Antialérgicos;789824901048;15.64;10.17;15;True;produto_104.jpg
+105;1;Resfenol 20 cápsulas;Kley Hertz;Resfenol;Farmácia;Gripe e Resfriado;789555501054;18.35;12.17;15;True;produto_105.jpg
+106;1;Calminex Pomada 30g;Hypera Pharma;Calminex;Farmácia;Dermatológicos;789845001060;22.46;16.85;15;True;produto_106.jpg
+107;1;Hipoglós Pomada 80g;Kenvue;Hipoglós;Farmácia;Dermatológicos;789530701077;30.61;20.96;15;True;produto_107.jpg
+108;1;Simeticona Gotas 15ml;Neo Química;Neo Química Genérico;Farmácia;Digestivos e Antiácidos;789878901087;7.28;5.14;15;True;produto_108.jpg
+109;1;Tylenol 750mg 20 comprimidos;Kenvue;Tylenol;Farmácia;Analgésicos e Antitérmicos;789651001094;23.8;17.66;15;True;produto_109.jpg
+110;1;Dorflex 36 comprimidos;Sanofi;Dorflex;Farmácia;Analgésicos e Antitérmicos;789575701102;28.9;19.09;15;True;produto_110.jpg
+111;1;Pharmaton 30 cápsulas;Sanofi;Pharmaton;Farmácia;Vitaminas e Suplementos;789624701116;71.65;51.17;15;True;produto_111.jpg
+112;1;Luftal 40mg 20 comprimidos;Reckitt;Luftal;Farmácia;Digestivos e Antiácidos;789681601129;27.24;17.33;15;True;produto_112.jpg
+113;1;Colágeno Verisol 30 sachês;Sanavita;Sanavita;Farmácia;Vitaminas e Suplementos;789678401130;90.64;64.01;15;True;produto_113.jpg
+114;1;Fio Dental Oral-B Essential 50m;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789108201143;8.34;6.03;15;True;produto_114.jpg
+115;1;Algodão Hidrófilo Apolo 50g;Apolo;Apolo;Farmácia;Primeiros Socorros;789367601159;4.55;3.09;15;True;produto_115.jpg
+116;1;Absorvente Intimus Gel 8un;Kimberly-Clark;Intimus;Farmácia;Higiene Pessoal;789316101161;10.96;8;15;True;produto_116.jpg
+117;1;Desodorante Dove Original Aerossol 150ml;Unilever;Dove;Farmácia;Higiene Pessoal;789145901178;16.6;11.96;15;True;produto_117.jpg
+118;1;Fralda Huggies Tripla Proteção M 48un;Kimberly-Clark;Huggies;Farmácia;Infantil;789467001189;70.45;49.36;15;True;produto_118.jpg
+119;1;Coristina D 16 comprimidos;Hypera Pharma;Coristina;Farmácia;Gripe e Resfriado;789512801197;19.14;13.16;15;True;produto_119.jpg
+120;1;Aparelho Gillette Mach3;Procter & Gamble;Gillette;Farmácia;Higiene Pessoal;789364501201;33.15;23.5;15;True;produto_120.jpg
+121;1;Fralda Pampers Confort Sec G 46un;Procter & Gamble;Pampers;Farmácia;Infantil;789174801212;93.41;62.42;15;True;produto_121.jpg
+122;1;Desalex 5mg 10 comprimidos;Organon;Desalex;Farmácia;Antialérgicos;789435201229;42.42;30.54;15;True;produto_122.jpg
+123;1;Supradyn Energia 30 comprimidos;Bayer;Supradyn;Farmácia;Vitaminas e Suplementos;789796301239;81.31;58.87;15;True;produto_123.jpg
+124;1;Creme Dental Colgate Total 12 90g;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789970201243;10.8;7.89;15;True;produto_124.jpg
+125;1;Neosoro Gotas 30ml;Neo Química;Neosoro;Farmácia;Gripe e Resfriado;789666501251;10.56;6.7;15;True;produto_125.jpg
+126;1;Claritin 10mg 12 comprimidos;Bayer;Claritin;Farmácia;Antialérgicos;789594601265;55.29;39.94;15;True;produto_126.jpg
+127;1;Água Oxigenada 10 Volumes 100ml;Farmax;Farmax;Farmácia;Primeiros Socorros;789305101271;4.18;2.62;15;True;produto_127.jpg
+128;1;Ibuprofeno 600mg 20 comprimidos;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789688501280;12.62;9.53;15;True;produto_128.jpg
+129;1;Gelol Spray 150ml;Hypera Pharma;Gelol;Farmácia;Dermatológicos;789560001293;25.72;19.49;15;True;produto_129.jpg
+130;1;Esparadrapo Missner 10cm x 4,5m;Missner;Missner;Farmácia;Primeiros Socorros;789764901302;12;8.95;15;True;produto_130.jpg
+131;1;Aspirina 500mg 20 comprimidos;Bayer;Aspirina;Farmácia;Analgésicos e Antitérmicos;789393001312;14.93;10.56;15;True;produto_131.jpg
+132;1;Ômega 3 1000mg 120 cápsulas;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789479101321;83.42;59.76;15;True;produto_132.jpg
+133;1;Vick 44E Xarope 120ml;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789731701333;26.16;19.52;15;True;produto_133.jpg
+134;1;Centrum Homem 60 comprimidos;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789809601349;110.43;66.21;15;True;produto_134.jpg
+135;1;Benegrip 12 comprimidos;Hypera Pharma;Benegrip;Farmácia;Gripe e Resfriado;789902501357;23.55;15.91;15;True;produto_135.jpg
+136;1;Protetor Solar Episol Color FPS 70;Mantecorp Skincare;Episol;Farmácia;Dermocosméticos;789467201363;87.5;61.74;15;True;produto_136.jpg
+137;1;Shampoo Johnson's Baby 200ml;Kenvue;Johnson's Baby;Farmácia;Infantil;789604701376;23.13;16.18;15;True;produto_137.jpg
+138;1;Creme Dental Sensodyne Repara e Protege 100g 2;Haleon;Sensodyne;Farmácia;Higiene Bucal;789980501382;27.17;19.22;15;True;produto_138.jpg
+139;1;Mucilon Arroz e Aveia 230g 2;Nestlé;Mucilon;Farmácia;Infantil;789703901392;12.82;9.01;15;True;produto_139.jpg
+140;1;Omeprazol 20mg 28 cápsulas 2;Medley;Medley Genérico;Farmácia;Digestivos e Antiácidos;789662501402;15.93;11.59;15;True;produto_140.jpg
+141;1;Allegra 120mg 10 comprimidos 2;Sanofi;Allegra;Farmácia;Antialérgicos;789294401415;55.67;36.39;15;True;produto_141.jpg
+142;1;Protetor Solar Anthelios FPS 60 50g 2;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789899001425;109.31;71.33;15;True;produto_142.jpg
+143;1;Alivium 400mg 10 cápsulas 2;Cosmed;Alivium;Farmácia;Analgésicos e Antitérmicos;789674601431;24.11;15.11;15;True;produto_143.jpg
+144;1;Hastes Flexíveis Cotonetes 75un 2;Kenvue;Cotonetes;Farmácia;Higiene Pessoal;789405701449;8.75;5.67;15;True;produto_144.jpg
+145;1;Soro Fisiológico 0,9% 250ml 2;Arboreto;Arboreto;Farmácia;Primeiros Socorros;789906101456;7.01;4.52;15;True;produto_145.jpg
+146;1;Cicaplast Baume B5 40ml 2;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789630901461;71.86;50.38;15;True;produto_146.jpg
+147;1;Enxaguante Colgate Plax 500ml 2;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789673301473;22.56;14.67;15;True;produto_147.jpg
+148;1;Bioderma Sensibio H2O 250ml 2;NAOS;Bioderma;Farmácia;Dermocosméticos;789774601483;126.25;73.48;15;True;produto_148.jpg
+149;1;Epocler Flaconete 10ml x 6 2;Hypera Pharma;Epocler;Farmácia;Digestivos e Antiácidos;789389901495;25.52;16.71;15;True;produto_149.jpg
+150;1;Meia de Compressão Kendall 3/4 2;Cardinal Health;Kendall;Farmácia;Equipamentos de Saúde;789746201509;63.13;48.05;15;True;produto_150.jpg
+151;1;Creme Dental Oral-B Pro-Saúde 70g 2;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789562101515;7.48;5.24;15;True;produto_151.jpg
+152;1;Gel de Limpeza CeraVe 227g 2;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789895601528;88.46;58.96;15;True;produto_152.jpg
+153;1;Álcool 70% Tupi 1L 2;Tupi;Tupi;Farmácia;Primeiros Socorros;789782701539;11.14;8.08;15;True;produto_153.jpg
+154;1;Dipirona Novalgina 1g 10 comprimidos 2;Sanofi;Novalgina;Farmácia;Analgésicos e Antitérmicos;789472301542;25.24;17.94;15;True;produto_154.jpg
+155;1;Mucosolvan Xarope Adulto 120ml 2;Sanofi;Mucosolvan;Farmácia;Gripe e Resfriado;789998501554;40.89;27.16;15;True;produto_155.jpg
+156;1;Água Termal Avène 300ml 2;Pierre Fabre;Avène;Farmácia;Dermocosméticos;789557801569;96.82;55.27;15;True;produto_156.jpg
+157;1;Sonrisal Original 30 comprimidos 2;Haleon;Sonrisal;Farmácia;Digestivos e Antiácidos;789245001572;34.15;25.4;15;True;produto_157.jpg
+158;1;Lacto-Purga 6 comprimidos 2;Hypera Pharma;Lacto-Purga;Farmácia;Digestivos e Antiácidos;789113801585;14.38;9.04;15;True;produto_158.jpg
+159;1;Paracetamol 750mg 20 comprimidos 2;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789295801597;7.42;5.34;15;True;produto_159.jpg
+160;1;Lavitan Hair 60 cápsulas 2;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789650401604;49.9;34.8;15;True;produto_160.jpg
+161;1;Neutrogena Hydro Boost Gel 50g 2;Kenvue;Neutrogena;Farmácia;Dermocosméticos;789582401617;74.77;46.54;15;True;produto_161.jpg
+162;1;Cebion Vitamina C 1g 10 efervescentes 2;Merck;Cebion;Farmácia;Vitaminas e Suplementos;789664301620;25.24;16.77;15;True;produto_162.jpg
+163;1;Enxaguante Listerine Cool Mint 500ml 2;Kenvue;Listerine;Farmácia;Higiene Bucal;789867101636;21.89;14.58;15;True;produto_163.jpg
+164;1;Sorine Adulto Spray 30ml 2;Aché;Sorine;Farmácia;Gripe e Resfriado;789706201646;17.92;11.39;15;True;produto_164.jpg
+165;1;Lavitan Mais Vitaminas 60 comprimidos 2;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789396301657;37.06;23.09;15;True;produto_165.jpg
+166;1;Desodorante Rexona Clinical 48g 2;Unilever;Rexona;Farmácia;Higiene Pessoal;789990901660;20.59;14.75;15;True;produto_166.jpg
+167;1;Hidratante CeraVe Loção 200ml 2;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789696701672;82.05;47.31;15;True;produto_167.jpg
+168;1;Oxímetro de Pulso G-Tech 2;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789493601687;126.01;86.34;15;True;produto_168.jpg
+169;1;Vitamina C 10 Vichy Liftactiv 2;L'Oréal;Vichy;Farmácia;Dermocosméticos;789169501691;259.68;160.1;15;True;produto_169.jpg
+170;1;Shampoo Pantene Restauração 400ml 2;Procter & Gamble;Pantene;Farmácia;Higiene Pessoal;789601101706;32.4;21.27;15;True;produto_170.jpg
+171;1;Preservativo Jontex Lubrificado 6un 2;Kenvue;Jontex;Farmácia;Equipamentos de Saúde;789830101719;15.1;11.66;15;True;produto_171.jpg
+172;1;Imuno Max 30 comprimidos 2;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789517801721;44.16;28.21;15;True;produto_172.jpg
+173;1;Engov 6 comprimidos 2;Hypera Pharma;Engov;Farmácia;Digestivos e Antiácidos;789912601735;8.08;5.11;15;True;produto_173.jpg
+174;1;Minancora Pomada 30g 2;Minancora;Minancora;Farmácia;Dermatológicos;789325401744;14.79;10.98;15;True;produto_174.jpg
+175;1;Tamarine 20 cápsulas 2;Hypera Pharma;Tamarine;Farmácia;Digestivos e Antiácidos;789743501754;36.88;26.97;15;True;produto_175.jpg
+176;1;Afrin Spray Nasal 30ml 2;Bayer;Afrin;Farmácia;Gripe e Resfriado;789831001762;32.96;24.22;15;True;produto_176.jpg
+177;1;Curativo Band-Aid Transparente 40un 2;Kenvue;Band-Aid;Farmácia;Primeiros Socorros;789701001777;13.61;8.94;15;True;produto_177.jpg
+178;1;Corega Ultra Creme Fixador 40g 2;Haleon;Corega;Farmácia;Higiene Bucal;789166401789;41.5;28.75;15;True;produto_178.jpg
+179;1;Buscopan Composto 20 comprimidos 2;Hypera Pharma;Buscopan;Farmácia;Analgésicos e Antitérmicos;789918001797;29.12;18.61;15;True;produto_179.jpg
+180;1;Nivea Creme Lata 97g 2;Beiersdorf;Nivea;Farmácia;Dermocosméticos;789593501807;21.82;13.99;15;True;produto_180.jpg
+181;1;Vick Pastilhas Mentol 20un 2;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789673101819;4.96;3.38;15;True;produto_181.jpg
+182;1;Leite Nan Supreme 1 800g 2;Nestlé;Nan;Farmácia;Infantil;789223601820;116.08;77.68;15;True;produto_182.jpg
+183;1;Sabonete Dove Original 90g 2;Unilever;Dove;Farmácia;Higiene Pessoal;789745901833;4.42;3.05;15;True;produto_183.jpg
+184;1;Merthiolate Spray 45ml 2;Cosmed;Merthiolate;Farmácia;Primeiros Socorros;789587301844;20.57;15.35;15;True;produto_184.jpg
+185;1;Teste de Gravidez Clearblue Digital 2;SPD Swiss Precision;Clearblue;Farmácia;Equipamentos de Saúde;789130901855;45.98;35.54;15;True;produto_185.jpg
+186;1;Glicosímetro Accu-Chek Guide 2;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789443001864;112.33;82.6;15;True;produto_186.jpg
+187;1;Advil 400mg 8 cápsulas 2;Haleon;Advil;Farmácia;Analgésicos e Antitérmicos;789204101879;20.49;13.1;15;True;produto_187.jpg
+188;1;Sabonete Protex Antibacteriano 85g 2;Colgate-Palmolive;Protex;Farmácia;Higiene Pessoal;789825801888;4.04;2.97;15;True;produto_188.jpg
+189;1;Bepantol Derma Creme 40g 2;Bayer;Bepantol;Farmácia;Dermatológicos;789850901898;45.51;31.27;15;True;produto_189.jpg
+190;1;Doril 20 comprimidos 2;Hypera Pharma;Doril;Farmácia;Analgésicos e Antitérmicos;789665501908;17.4;11.1;15;True;produto_190.jpg
+191;1;Polaramine 2mg 20 comprimidos 2;Bayer;Polaramine;Farmácia;Antialérgicos;789683001916;24.66;16.45;15;True;produto_191.jpg
+192;1;Bromexina Xarope 120ml 2;Sanofi;Bisolvon;Farmácia;Gripe e Resfriado;789538201926;23.61;15.58;15;True;produto_192.jpg
+193;1;Absorvente Always Noturno 8un 2;Procter & Gamble;Always;Farmácia;Higiene Pessoal;789940001938;16.73;11.33;15;True;produto_193.jpg
+194;1;Tiras Accu-Chek Guide 50un 2;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789667801945;122.56;95.98;15;True;produto_194.jpg
+195;1;Floratil 200mg 6 cápsulas 2;Merck;Floratil;Farmácia;Digestivos e Antiácidos;789706801950;42.35;29.64;15;True;produto_195.jpg
+196;1;Redoxon Vitamina C 1g 10 efervescentes 2;Bayer;Redoxon;Farmácia;Vitaminas e Suplementos;789502601969;27.84;18.93;15;True;produto_196.jpg
+197;1;Chupeta MAM Air 6-16m 2;MAM Babyartikel;MAM;Farmácia;Infantil;789751201974;34.21;24.12;15;True;produto_197.jpg
+198;1;Mamadeira Avent Natural 260ml 2;Philips;Philips Avent;Farmácia;Infantil;789762301988;77.03;59.03;15;True;produto_198.jpg
+199;1;Naldecon Dia 12 comprimidos 2;Bristol-Myers Squibb;Naldecon;Farmácia;Gripe e Resfriado;789573701995;22.28;14.42;15;True;produto_199.jpg
+200;1;Lenço Umedecido Huggies 48un 2;Kimberly-Clark;Huggies;Farmácia;Infantil;789290202001;14.1;9.69;15;True;produto_200.jpg
+201;1;Fenergan Creme 30g 2;Sanofi;Fenergan;Farmácia;Dermatológicos;789637502010;22.27;14.7;15;True;produto_201.jpg
+202;1;Salonpas Emplastro 10un 2;Hisamitsu;Salonpas;Farmácia;Dermatológicos;789461302022;15.9;11.43;15;True;produto_202.jpg
+203;1;Centrum Mulher 60 comprimidos 2;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789435302032;115.95;79.02;15;True;produto_203.jpg
+204;1;Nebacetin Pomada 15g 2;Takeda;Nebacetin;Farmácia;Dermatológicos;789475502045;23.55;15.56;15;True;produto_204.jpg
+205;1;Tylenol Bebê Gotas 15ml 2;Kenvue;Tylenol;Farmácia;Infantil;789263202050;24.19;18.03;15;True;produto_205.jpg
+206;1;Andolba Spray 45ml 2;Hypera Pharma;Andolba;Farmácia;Dermatológicos;789620502067;27.47;17.6;15;True;produto_206.jpg
+207;1;Álcool em Gel 70% Asseptgel 500ml 2;Start Química;Asseptgel;Farmácia;Higiene Pessoal;789439602073;10.94;8.15;15;True;produto_207.jpg
+208;1;Biotônico Fontoura 400ml 2;Hypera Pharma;Biotônico Fontoura;Farmácia;Vitaminas e Suplementos;789188602089;29.61;18.97;15;True;produto_208.jpg
+209;1;Dipirona 500mg/ml gotas 20ml 2;Medley;Medley Genérico;Farmácia;Analgésicos e Antitérmicos;789112802091;8.06;5.32;15;True;produto_209.jpg
+210;1;Gaze Estéril Cremer 13 fios 10un 2;Cremer;Cremer;Farmácia;Primeiros Socorros;789255602103;7;4.55;15;True;produto_210.jpg
+211;1;Nebulizador Inalar Compact NS 2;NS Indústria;NS;Farmácia;Equipamentos de Saúde;789393002117;129.9;100;15;True;produto_211.jpg
+212;1;Protetor Solar Sundown FPS 50 200ml 2;Kenvue;Sundown;Farmácia;Dermocosméticos;789268202125;60.98;37.25;15;True;produto_212.jpg
+213;1;Plasil 10mg 20 comprimidos 2;Sanofi;Plasil;Farmácia;Digestivos e Antiácidos;789512502135;21.22;14.08;15;True;produto_213.jpg
+214;1;Papel Higiênico Neve Folha Dupla 12un 2;Kimberly-Clark;Neve;Farmácia;Higiene Pessoal;789714002147;24.07;18.48;15;True;produto_214.jpg
+215;1;Cicatricure Gel 30g 2;Genomma Lab;Cicatricure;Farmácia;Dermatológicos;789180202157;57.45;44.05;15;True;produto_215.jpg
+216;1;Cimegripe 20 cápsulas 2;Cimed;Cimegripe;Farmácia;Analgésicos e Antitérmicos;789915302163;14.34;10.95;15;True;produto_216.jpg
+217;1;Magnésio Dimalato 60 cápsulas 2;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789542202171;73.45;46.4;15;True;produto_217.jpg
+218;1;Loratadina 10mg 12 comprimidos 2;EMS;EMS Genérico;Farmácia;Antialérgicos;789453602185;14.53;9.74;15;True;produto_218.jpg
+219;1;Strepsils Mel e Limão 8 pastilhas 2;Reckitt;Strepsils;Farmácia;Gripe e Resfriado;789680802192;16.81;11.36;15;True;produto_219.jpg
+220;1;Shampoo Head & Shoulders 400ml 2;Procter & Gamble;Head & Shoulders;Farmácia;Higiene Pessoal;789277002208;33.03;22.39;15;True;produto_220.jpg
+221;1;Rinosoro 0,9% Spray 50ml 2;Farmasa;Rinosoro;Farmácia;Gripe e Resfriado;789466002215;18.43;13.21;15;True;produto_221.jpg
+222;1;Dramin B6 10 comprimidos 2;Takeda;Dramin;Farmácia;Digestivos e Antiácidos;789517702226;21.13;13.92;15;True;produto_222.jpg
+223;1;Dipirona Gotas Infantil Novalgina 20ml 2;Sanofi;Novalgina;Farmácia;Infantil;789126802238;25.69;17.35;15;True;produto_223.jpg
+224;1;Termômetro Digital G-Tech TH150 2;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789404502249;25.39;18.87;15;True;produto_224.jpg
+225;1;Cataflam Emulgel 60g 2;Haleon;Cataflam;Farmácia;Dermatológicos;789818902259;52.01;39.31;15;True;produto_225.jpg
+226;1;Estomazil Pó 5g x 6 2;Hypera Pharma;Estomazil;Farmácia;Digestivos e Antiácidos;789223402265;12.05;8.81;15;True;produto_226.jpg
+227;1;Medidor de Pressão Omron HEM-7122 2;Omron Healthcare;Omron;Farmácia;Equipamentos de Saúde;789317302271;284.99;196.38;15;True;produto_227.jpg
+228;1;Effaclar Gel Concentrado 150g 2;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789238802283;102.14;68.97;15;True;produto_228.jpg
+229;1;Escova Dental Curaprox CS 5460 2;Curaden;Curaprox;Farmácia;Higiene Bucal;789681002294;41.58;27.93;15;True;produto_229.jpg
+230;1;Escova Dental Oral-B Indicator Plus 2;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789804602307;11.24;7.26;15;True;produto_230.jpg
+231;1;Torsilax 30 comprimidos 2;Neo Química;Torsilax;Farmácia;Analgésicos e Antitérmicos;789207602315;17.08;10.75;15;True;produto_231.jpg
+232;1;Addera D3 7000UI 8 comprimidos 2;Hypera Pharma;Addera;Farmácia;Vitaminas e Suplementos;789938002323;41.7;25.39;15;True;produto_232.jpg
+233;1;Gaviscon Suspensão Sachê 10ml x 12 2;Reckitt;Gaviscon;Farmácia;Digestivos e Antiácidos;789956302333;37.7;24.09;15;True;produto_233.jpg
+234;1;Aptamil Profutura 1 800g 2;Danone;Aptamil;Farmácia;Infantil;789351402344;151;113.98;15;True;produto_234.jpg
+235;1;Neosaldina 30 drágeas 2;Hypera Pharma;Neosaldina;Farmácia;Analgésicos e Antitérmicos;789614602357;24.66;18.11;15;True;produto_235.jpg
+236;1;Vick VapoRub 30g 2;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789576802365;21.17;14.75;15;True;produto_236.jpg
+237;1;Atadura Crepom Cremer 10cm 2;Cremer;Cremer;Farmácia;Primeiros Socorros;789238502374;3.56;2.7;15;True;produto_237.jpg
+238;1;Preservativo Olla Lubrificado 6un 2;Hypera Pharma;Olla;Farmácia;Equipamentos de Saúde;789515702383;8.39;5.96;15;True;produto_238.jpg
+239;1;Eno Sal de Frutas Tradicional 5g x 2 2;Haleon;Eno;Farmácia;Digestivos e Antiácidos;789909702399;3.87;2.97;15;True;produto_239.jpg
+240;1;Eucerin Urea Repair 10% 250ml 2;Beiersdorf;Eucerin;Farmácia;Dermocosméticos;789873202404;101.16;62.42;15;True;produto_240.jpg
+241;1;Histamin Xarope 100ml 2;Neo Química;Histamin;Farmácia;Antialérgicos;789777002416;17.44;11.47;15;True;produto_241.jpg
+242;1;Resfenol 20 cápsulas 2;Kley Hertz;Resfenol;Farmácia;Gripe e Resfriado;789633802426;23.94;16.34;15;True;produto_242.jpg
+243;1;Calminex Pomada 30g 2;Hypera Pharma;Calminex;Farmácia;Dermatológicos;789706102433;19.31;13.75;15;True;produto_243.jpg
+244;1;Hipoglós Pomada 80g 2;Kenvue;Hipoglós;Farmácia;Dermatológicos;789605602443;33.52;23.44;15;True;produto_244.jpg
+245;1;Simeticona Gotas 15ml 2;Neo Química;Neo Química Genérico;Farmácia;Digestivos e Antiácidos;789359202458;9.27;6.22;15;True;produto_245.jpg
+246;1;Tylenol 750mg 20 comprimidos 2;Kenvue;Tylenol;Farmácia;Analgésicos e Antitérmicos;789300702464;26.57;20.05;15;True;produto_246.jpg
+247;1;Dorflex 36 comprimidos 2;Sanofi;Dorflex;Farmácia;Analgésicos e Antitérmicos;789140902473;22.9;14.82;15;True;produto_247.jpg
+248;1;Pharmaton 30 cápsulas 2;Sanofi;Pharmaton;Farmácia;Vitaminas e Suplementos;789175102482;112.78;70.84;15;True;produto_248.jpg
+249;1;Luftal 40mg 20 comprimidos 2;Reckitt;Luftal;Farmácia;Digestivos e Antiácidos;789834202496;23.14;15.32;15;True;produto_249.jpg
+250;1;Colágeno Verisol 30 sachês 2;Sanavita;Sanavita;Farmácia;Vitaminas e Suplementos;789298802506;138.25;83.97;15;True;produto_250.jpg
+251;1;Fio Dental Oral-B Essential 50m 2;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789617402518;9.53;6.48;15;True;produto_251.jpg
+252;1;Algodão Hidrófilo Apolo 50g 2;Apolo;Apolo;Farmácia;Primeiros Socorros;789969602525;5.63;3.97;15;True;produto_252.jpg
+253;1;Absorvente Intimus Gel 8un 2;Kimberly-Clark;Intimus;Farmácia;Higiene Pessoal;789998302537;9.98;6.57;15;True;produto_253.jpg
+254;1;Desodorante Dove Original Aerossol 150ml 2;Unilever;Dove;Farmácia;Higiene Pessoal;789644902546;16.83;12.73;15;True;produto_254.jpg
+255;1;Fralda Huggies Tripla Proteção M 48un 2;Kimberly-Clark;Huggies;Farmácia;Infantil;789534002558;70.45;47.54;15;True;produto_255.jpg
+256;1;Coristina D 16 comprimidos 2;Hypera Pharma;Coristina;Farmácia;Gripe e Resfriado;789748902569;19.23;13.91;15;True;produto_256.jpg
+257;1;Aparelho Gillette Mach3 2;Procter & Gamble;Gillette;Farmácia;Higiene Pessoal;789402902579;34.29;24.42;15;True;produto_257.jpg
+258;1;Fralda Pampers Confort Sec G 46un 2;Procter & Gamble;Pampers;Farmácia;Infantil;789990802581;91.18;65.02;15;True;produto_258.jpg
+259;1;Desalex 5mg 10 comprimidos 2;Organon;Desalex;Farmácia;Antialérgicos;789949702599;50.68;33.07;15;True;produto_259.jpg
+260;1;Supradyn Energia 30 comprimidos 2;Bayer;Supradyn;Farmácia;Vitaminas e Suplementos;789799802605;81.85;57.5;15;True;produto_260.jpg
+261;1;Creme Dental Colgate Total 12 90g 2;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789591802614;9.57;7.08;15;True;produto_261.jpg
+262;1;Neosoro Gotas 30ml 2;Neo Química;Neosoro;Farmácia;Gripe e Resfriado;789764202627;13.31;8.5;15;True;produto_262.jpg
+263;1;Claritin 10mg 12 comprimidos 2;Bayer;Claritin;Farmácia;Antialérgicos;789215502630;51.63;37.07;15;True;produto_263.jpg
+264;1;Água Oxigenada 10 Volumes 100ml 2;Farmax;Farmax;Farmácia;Primeiros Socorros;789986502648;4.61;3.45;15;True;produto_264.jpg
+265;1;Ibuprofeno 600mg 20 comprimidos 2;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789895502652;11.62;7.75;15;True;produto_265.jpg
+266;1;Gelol Spray 150ml 2;Hypera Pharma;Gelol;Farmácia;Dermatológicos;789410202669;29.74;20.01;15;True;produto_266.jpg
+267;1;Esparadrapo Missner 10cm x 4,5m 2;Missner;Missner;Farmácia;Primeiros Socorros;789314502676;14.85;10.07;15;True;produto_267.jpg
+268;1;Aspirina 500mg 20 comprimidos 2;Bayer;Aspirina;Farmácia;Analgésicos e Antitérmicos;789653402686;17.87;12.81;15;True;produto_268.jpg
+269;1;Ômega 3 1000mg 120 cápsulas 2;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789327302696;91.94;55.75;15;True;produto_269.jpg
+270;1;Vick 44E Xarope 120ml 2;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789172402707;30.31;22.62;15;True;produto_270.jpg
+271;1;Centrum Homem 60 comprimidos 2;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789115802719;113.17;75.52;15;True;produto_271.jpg
+272;1;Benegrip 12 comprimidos 2;Hypera Pharma;Benegrip;Farmácia;Gripe e Resfriado;789268502724;19.18;12.13;15;True;produto_272.jpg
+273;1;Protetor Solar Episol Color FPS 70 2;Mantecorp Skincare;Episol;Farmácia;Dermocosméticos;789388002733;102.94;62.18;15;True;produto_273.jpg
+274;1;Shampoo Johnson's Baby 200ml 2;Kenvue;Johnson's Baby;Farmácia;Infantil;789534102742;20.91;14.3;15;True;produto_274.jpg
+275;1;Creme Dental Sensodyne Repara e Protege 100g 3;Haleon;Sensodyne;Farmácia;Higiene Bucal;789704902750;22.56;14.97;15;True;produto_275.jpg
+276;1;Mucilon Arroz e Aveia 230g 3;Nestlé;Mucilon;Farmácia;Infantil;789933002762;10.85;7.63;15;True;produto_276.jpg
+277;1;Omeprazol 20mg 28 cápsulas 3;Medley;Medley Genérico;Farmácia;Digestivos e Antiácidos;789298002771;11.98;8.84;15;True;produto_277.jpg
+278;1;Allegra 120mg 10 comprimidos 3;Sanofi;Allegra;Farmácia;Antialérgicos;789155802788;46.49;32.71;15;True;produto_278.jpg
+279;1;Protetor Solar Anthelios FPS 60 50g 3;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789673202792;122.64;74.68;15;True;produto_279.jpg
+280;1;Alivium 400mg 10 cápsulas 3;Cosmed;Alivium;Farmácia;Analgésicos e Antitérmicos;789670902800;15.64;11.88;15;True;produto_280.jpg
+281;1;Hastes Flexíveis Cotonetes 75un 3;Kenvue;Cotonetes;Farmácia;Higiene Pessoal;789104102817;6.82;4.45;15;True;produto_281.jpg
+282;1;Soro Fisiológico 0,9% 250ml 3;Arboreto;Arboreto;Farmácia;Primeiros Socorros;789739702824;9.48;6.59;15;True;produto_282.jpg
+283;1;Cicaplast Baume B5 40ml 3;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789618602832;74.7;45.27;15;True;produto_283.jpg
+284;1;Enxaguante Colgate Plax 500ml 3;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789154702843;16.82;12.65;15;True;produto_284.jpg
+285;1;Bioderma Sensibio H2O 250ml 3;NAOS;Bioderma;Farmácia;Dermocosméticos;789397602854;122.92;71.64;15;True;produto_285.jpg
+286;1;Epocler Flaconete 10ml x 6 3;Hypera Pharma;Epocler;Farmácia;Digestivos e Antiácidos;789776602866;21.69;16.64;15;True;produto_286.jpg
+287;1;Meia de Compressão Kendall 3/4 3;Cardinal Health;Kendall;Farmácia;Equipamentos de Saúde;789667602876;72.79;56.2;15;True;produto_287.jpg
+288;1;Creme Dental Oral-B Pro-Saúde 70g 3;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789164602889;9.14;6.85;15;True;produto_288.jpg
+289;1;Gel de Limpeza CeraVe 227g 3;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789349702898;91.69;57.12;15;True;produto_289.jpg
+290;1;Álcool 70% Tupi 1L 3;Tupi;Tupi;Farmácia;Primeiros Socorros;789101602909;13.92;10.55;15;True;produto_290.jpg
+291;1;Dipirona Novalgina 1g 10 comprimidos 3;Sanofi;Novalgina;Farmácia;Analgésicos e Antitérmicos;789389902917;24.32;17.87;15;True;produto_291.jpg
+292;1;Mucosolvan Xarope Adulto 120ml 3;Sanofi;Mucosolvan;Farmácia;Gripe e Resfriado;789279502924;29.54;22.17;15;True;produto_292.jpg
+293;1;Água Termal Avène 300ml 3;Pierre Fabre;Avène;Farmácia;Dermocosméticos;789225402931;90.84;55.56;15;True;produto_293.jpg
+294;1;Sonrisal Original 30 comprimidos 3;Haleon;Sonrisal;Farmácia;Digestivos e Antiácidos;789214202946;39.45;25.5;15;True;produto_294.jpg
+295;1;Lacto-Purga 6 comprimidos 3;Hypera Pharma;Lacto-Purga;Farmácia;Digestivos e Antiácidos;789155702956;11.9;8.76;15;True;produto_295.jpg
+296;1;Paracetamol 750mg 20 comprimidos 3;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789982002964;9.07;6.92;15;True;produto_296.jpg
+297;1;Lavitan Hair 60 cápsulas 3;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789818402971;62.02;38.58;15;True;produto_297.jpg
+298;1;Neutrogena Hydro Boost Gel 50g 3;Kenvue;Neutrogena;Farmácia;Dermocosméticos;789245602982;97;57.31;15;True;produto_298.jpg
+299;1;Cebion Vitamina C 1g 10 efervescentes 3;Merck;Cebion;Farmácia;Vitaminas e Suplementos;789837602998;29.97;19.11;15;True;produto_299.jpg
+300;1;Enxaguante Listerine Cool Mint 500ml 3;Kenvue;Listerine;Farmácia;Higiene Bucal;789433703006;27.68;19.02;15;True;produto_300.jpg
+301;1;Sorine Adulto Spray 30ml 3;Aché;Sorine;Farmácia;Gripe e Resfriado;789748903018;14.48;9.13;15;True;produto_301.jpg
+302;1;Lavitan Mais Vitaminas 60 comprimidos 3;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789189803029;38.87;25.91;15;True;produto_302.jpg
+303;1;Desodorante Rexona Clinical 48g 3;Unilever;Rexona;Farmácia;Higiene Pessoal;789788803033;26.16;17.62;15;True;produto_303.jpg
+304;1;Hidratante CeraVe Loção 200ml 3;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789403803044;80.06;46.37;15;True;produto_304.jpg
+305;1;Oxímetro de Pulso G-Tech 3;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789617803054;114.04;82.59;15;True;produto_305.jpg
+306;1;Vitamina C 10 Vichy Liftactiv 3;L'Oréal;Vichy;Farmácia;Dermocosméticos;789840603067;254.72;149.64;15;True;produto_306.jpg
+307;1;Shampoo Pantene Restauração 400ml 3;Procter & Gamble;Pantene;Farmácia;Higiene Pessoal;789331703078;24.62;17.07;15;True;produto_307.jpg
+308;1;Preservativo Jontex Lubrificado 6un 3;Kenvue;Jontex;Farmácia;Equipamentos de Saúde;789790203087;13.66;10.24;15;True;produto_308.jpg
+309;1;Imuno Max 30 comprimidos 3;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789410403091;39.26;24.73;15;True;produto_309.jpg
+310;1;Engov 6 comprimidos 3;Hypera Pharma;Engov;Farmácia;Digestivos e Antiácidos;789181803102;8.47;6.46;15;True;produto_310.jpg
+311;1;Minancora Pomada 30g 3;Minancora;Minancora;Farmácia;Dermatológicos;789284903118;13.03;8.65;15;True;produto_311.jpg
+312;1;Tamarine 20 cápsulas 3;Hypera Pharma;Tamarine;Farmácia;Digestivos e Antiácidos;789342403129;49.45;35.47;15;True;produto_312.jpg
+313;1;Afrin Spray Nasal 30ml 3;Bayer;Afrin;Farmácia;Gripe e Resfriado;789975703135;40.4;30.9;15;True;produto_313.jpg
+314;1;Curativo Band-Aid Transparente 40un 3;Kenvue;Band-Aid;Farmácia;Primeiros Socorros;789703003140;13.6;8.83;15;True;produto_314.jpg
+315;1;Corega Ultra Creme Fixador 40g 3;Haleon;Corega;Farmácia;Higiene Bucal;789176303158;29.03;20.11;15;True;produto_315.jpg
+316;1;Buscopan Composto 20 comprimidos 3;Hypera Pharma;Buscopan;Farmácia;Analgésicos e Antitérmicos;789362103166;31.79;21.84;15;True;produto_316.jpg
+317;1;Nivea Creme Lata 97g 3;Beiersdorf;Nivea;Farmácia;Dermocosméticos;789711003172;20.26;14.31;15;True;produto_317.jpg
+318;1;Vick Pastilhas Mentol 20un 3;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789541003184;5.95;3.74;15;True;produto_318.jpg
+319;1;Leite Nan Supreme 1 800g 3;Nestlé;Nan;Farmácia;Infantil;789954603195;127.89;93.22;15;True;produto_319.jpg
+320;1;Sabonete Dove Original 90g 3;Unilever;Dove;Farmácia;Higiene Pessoal;789123903208;5.11;3.43;15;True;produto_320.jpg
+321;1;Merthiolate Spray 45ml 3;Cosmed;Merthiolate;Farmácia;Primeiros Socorros;789143303211;23.57;17.03;15;True;produto_321.jpg
+322;1;Teste de Gravidez Clearblue Digital 3;SPD Swiss Precision;Clearblue;Farmácia;Equipamentos de Saúde;789721903224;41.35;31.01;15;True;produto_322.jpg
+323;1;Glicosímetro Accu-Chek Guide 3;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789484503231;113.64;86.6;15;True;produto_323.jpg
+324;1;Advil 400mg 8 cápsulas 3;Haleon;Advil;Farmácia;Analgésicos e Antitérmicos;789295503242;23.17;17.44;15;True;produto_324.jpg
+325;1;Sabonete Protex Antibacteriano 85g 3;Colgate-Palmolive;Protex;Farmácia;Higiene Pessoal;789881603255;5.13;3.33;15;True;produto_325.jpg
+326;1;Bepantol Derma Creme 40g 3;Bayer;Bepantol;Farmácia;Dermatológicos;789827203266;46.43;29.16;15;True;produto_326.jpg
+327;1;Doril 20 comprimidos 3;Hypera Pharma;Doril;Farmácia;Analgésicos e Antitérmicos;789882103275;14.64;9.57;15;True;produto_327.jpg
+328;1;Polaramine 2mg 20 comprimidos 3;Bayer;Polaramine;Farmácia;Antialérgicos;789114503282;26.17;18.21;15;True;produto_328.jpg
+329;1;Bromexina Xarope 120ml 3;Sanofi;Bisolvon;Farmácia;Gripe e Resfriado;789350803290;23.02;16.39;15;True;produto_329.jpg
+330;1;Absorvente Always Noturno 8un 3;Procter & Gamble;Always;Farmácia;Higiene Pessoal;789744103300;12.82;9.85;15;True;produto_330.jpg
+331;1;Tiras Accu-Chek Guide 50un 3;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789979603310;111.85;87.59;15;True;produto_331.jpg
+332;1;Floratil 200mg 6 cápsulas 3;Merck;Floratil;Farmácia;Digestivos e Antiácidos;789982803327;38.69;27.96;15;True;produto_332.jpg
+333;1;Redoxon Vitamina C 1g 10 efervescentes 3;Bayer;Redoxon;Farmácia;Vitaminas e Suplementos;789688203333;36.13;21.89;15;True;produto_333.jpg
+334;1;Chupeta MAM Air 6-16m 3;MAM Babyartikel;MAM;Farmácia;Infantil;789589603348;41.2;29.75;15;True;produto_334.jpg
+335;1;Mamadeira Avent Natural 260ml 3;Philips;Philips Avent;Farmácia;Infantil;789466303354;70.96;54.81;15;True;produto_335.jpg
+336;1;Naldecon Dia 12 comprimidos 3;Bristol-Myers Squibb;Naldecon;Farmácia;Gripe e Resfriado;789268103365;15;11.24;15;True;produto_336.jpg
+337;1;Lenço Umedecido Huggies 48un 3;Kimberly-Clark;Huggies;Farmácia;Infantil;789902403374;14.04;10.24;15;True;produto_337.jpg
+338;1;Fenergan Creme 30g 3;Sanofi;Fenergan;Farmácia;Dermatológicos;789350703389;21.4;16.24;15;True;produto_338.jpg
+339;1;Salonpas Emplastro 10un 3;Hisamitsu;Salonpas;Farmácia;Dermatológicos;789551903397;17.49;11.16;15;True;produto_339.jpg
+340;1;Centrum Mulher 60 comprimidos 3;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789735903407;87.8;58.42;15;True;produto_340.jpg
+341;1;Nebacetin Pomada 15g 3;Takeda;Nebacetin;Farmácia;Dermatológicos;789686003410;19.41;13.06;15;True;produto_341.jpg
+342;1;Tylenol Bebê Gotas 15ml 3;Kenvue;Tylenol;Farmácia;Infantil;789235303426;28.02;22.15;15;True;produto_342.jpg
+343;1;Andolba Spray 45ml 3;Hypera Pharma;Andolba;Farmácia;Dermatológicos;789610503438;27.54;17.3;15;True;produto_343.jpg
+344;1;Álcool em Gel 70% Asseptgel 500ml 3;Start Química;Asseptgel;Farmácia;Higiene Pessoal;789897403443;11.14;7.29;15;True;produto_344.jpg
+345;1;Biotônico Fontoura 400ml 3;Hypera Pharma;Biotônico Fontoura;Farmácia;Vitaminas e Suplementos;789887503452;28.4;18.14;15;True;produto_345.jpg
+346;1;Dipirona 500mg/ml gotas 20ml 3;Medley;Medley Genérico;Farmácia;Analgésicos e Antitérmicos;789974903464;4.57;3.06;15;True;produto_346.jpg
+347;1;Gaze Estéril Cremer 13 fios 10un 3;Cremer;Cremer;Farmácia;Primeiros Socorros;789621303472;6.43;4.16;15;True;produto_347.jpg
+348;1;Nebulizador Inalar Compact NS 3;NS Indústria;NS;Farmácia;Equipamentos de Saúde;789548503489;159.69;108.03;15;True;produto_348.jpg
+349;1;Protetor Solar Sundown FPS 50 200ml 3;Kenvue;Sundown;Farmácia;Dermocosméticos;789484603498;76.82;43.41;15;True;produto_349.jpg
+350;1;Plasil 10mg 20 comprimidos 3;Sanofi;Plasil;Farmácia;Digestivos e Antiácidos;789648303503;22.12;16.58;15;True;produto_350.jpg
+351;1;Papel Higiênico Neve Folha Dupla 12un 3;Kimberly-Clark;Neve;Farmácia;Higiene Pessoal;789792203513;23.52;16.32;15;True;produto_351.jpg
+352;1;Cicatricure Gel 30g 3;Genomma Lab;Cicatricure;Farmácia;Dermatológicos;789932603528;46.98;32.76;15;True;produto_352.jpg
+353;1;Cimegripe 20 cápsulas 3;Cimed;Cimegripe;Farmácia;Analgésicos e Antitérmicos;789373303531;14.98;9.45;15;True;produto_353.jpg
+354;1;Magnésio Dimalato 60 cápsulas 3;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789368803541;75.35;52.39;15;True;produto_354.jpg
+355;1;Loratadina 10mg 12 comprimidos 3;EMS;EMS Genérico;Farmácia;Antialérgicos;789493003557;11.2;7.39;15;True;produto_355.jpg
+356;1;Strepsils Mel e Limão 8 pastilhas 3;Reckitt;Strepsils;Farmácia;Gripe e Resfriado;789988903568;19.63;13.2;15;True;produto_356.jpg
+357;1;Shampoo Head & Shoulders 400ml 3;Procter & Gamble;Head & Shoulders;Farmácia;Higiene Pessoal;789801103577;33.37;23.89;15;True;produto_357.jpg
+358;1;Rinosoro 0,9% Spray 50ml 3;Farmasa;Rinosoro;Farmácia;Gripe e Resfriado;789422903585;19.2;13.18;15;True;produto_358.jpg
+359;1;Dramin B6 10 comprimidos 3;Takeda;Dramin;Farmácia;Digestivos e Antiácidos;789948103597;24.58;15.89;15;True;produto_359.jpg
+360;1;Dipirona Gotas Infantil Novalgina 20ml 3;Sanofi;Novalgina;Farmácia;Infantil;789795603608;20.27;14.14;15;True;produto_360.jpg
+361;1;Termômetro Digital G-Tech TH150 3;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789130303619;27.96;19.77;15;True;produto_361.jpg
+362;1;Cataflam Emulgel 60g 3;Haleon;Cataflam;Farmácia;Dermatológicos;789673303620;42.07;30.49;15;True;produto_362.jpg
+363;1;Estomazil Pó 5g x 6 3;Hypera Pharma;Estomazil;Farmácia;Digestivos e Antiácidos;789446103631;9.91;6.25;15;True;produto_363.jpg
+364;1;Medidor de Pressão Omron HEM-7122 3;Omron Healthcare;Omron;Farmácia;Equipamentos de Saúde;789337803644;244.62;180.17;15;True;produto_364.jpg
+365;1;Effaclar Gel Concentrado 150g 3;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789295803656;120.41;70.99;15;True;produto_365.jpg
+366;1;Escova Dental Curaprox CS 5460 3;Curaden;Curaprox;Farmácia;Higiene Bucal;789434803668;34.52;22.79;15;True;produto_366.jpg
+367;1;Escova Dental Oral-B Indicator Plus 3;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789686003678;13.68;9.87;15;True;produto_367.jpg
+368;1;Torsilax 30 comprimidos 3;Neo Química;Torsilax;Farmácia;Analgésicos e Antitérmicos;789183003681;19.73;12.43;15;True;produto_368.jpg
+369;1;Addera D3 7000UI 8 comprimidos 3;Hypera Pharma;Addera;Farmácia;Vitaminas e Suplementos;789282303697;36.61;24.11;15;True;produto_369.jpg
+370;1;Gaviscon Suspensão Sachê 10ml x 12 3;Reckitt;Gaviscon;Farmácia;Digestivos e Antiácidos;789160803709;45.44;30.95;15;True;produto_370.jpg
+371;1;Aptamil Profutura 1 800g 3;Danone;Aptamil;Farmácia;Infantil;789920703719;119.35;85.18;15;True;produto_371.jpg
+372;1;Neosaldina 30 drágeas 3;Hypera Pharma;Neosaldina;Farmácia;Analgésicos e Antitérmicos;789478003721;30.54;21.44;15;True;produto_372.jpg
+373;1;Vick VapoRub 30g 3;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789274003738;20.09;13.38;15;True;produto_373.jpg
+374;1;Atadura Crepom Cremer 10cm 3;Cremer;Cremer;Farmácia;Primeiros Socorros;789789703749;4.42;2.99;15;True;produto_374.jpg
+375;1;Preservativo Olla Lubrificado 6un 3;Hypera Pharma;Olla;Farmácia;Equipamentos de Saúde;789622603759;10.48;7.34;15;True;produto_375.jpg
+376;1;Eno Sal de Frutas Tradicional 5g x 2 3;Haleon;Eno;Farmácia;Digestivos e Antiácidos;789320903760;4.22;2.8;15;True;produto_376.jpg
+377;1;Eucerin Urea Repair 10% 250ml 3;Beiersdorf;Eucerin;Farmácia;Dermocosméticos;789953603772;133.25;79.87;15;True;produto_377.jpg
+378;1;Histamin Xarope 100ml 3;Neo Química;Histamin;Farmácia;Antialérgicos;789288403786;14.43;9.53;15;True;produto_378.jpg
+379;1;Resfenol 20 cápsulas 3;Kley Hertz;Resfenol;Farmácia;Gripe e Resfriado;789727803795;17.65;13;15;True;produto_379.jpg
+380;1;Calminex Pomada 30g 3;Hypera Pharma;Calminex;Farmácia;Dermatológicos;789986003800;21.72;15.65;15;True;produto_380.jpg
+381;1;Hipoglós Pomada 80g 3;Kenvue;Hipoglós;Farmácia;Dermatológicos;789786303812;32.34;20.84;15;True;produto_381.jpg
+382;1;Simeticona Gotas 15ml 3;Neo Química;Neo Química Genérico;Farmácia;Digestivos e Antiácidos;789177303827;7.39;5.56;15;True;produto_382.jpg
+383;1;Tylenol 750mg 20 comprimidos 3;Kenvue;Tylenol;Farmácia;Analgésicos e Antitérmicos;789652803833;30.26;19.77;15;True;produto_383.jpg
+384;1;Dorflex 36 comprimidos 3;Sanofi;Dorflex;Farmácia;Analgésicos e Antitérmicos;789334403841;23.04;15.44;15;True;produto_384.jpg
+385;1;Pharmaton 30 cápsulas 3;Sanofi;Pharmaton;Farmácia;Vitaminas e Suplementos;789449103854;103.37;63.29;15;True;produto_385.jpg
+386;1;Luftal 40mg 20 comprimidos 3;Reckitt;Luftal;Farmácia;Digestivos e Antiácidos;789366803866;21.1;15.95;15;True;produto_386.jpg
+387;1;Colágeno Verisol 30 sachês 3;Sanavita;Sanavita;Farmácia;Vitaminas e Suplementos;789317503870;112.14;82.94;15;True;produto_387.jpg
+388;1;Fio Dental Oral-B Essential 50m 3;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789572103886;11.75;8.26;15;True;produto_388.jpg
+389;1;Algodão Hidrófilo Apolo 50g 3;Apolo;Apolo;Farmácia;Primeiros Socorros;789387903897;4.74;3.04;15;True;produto_389.jpg
+390;1;Absorvente Intimus Gel 8un 3;Kimberly-Clark;Intimus;Farmácia;Higiene Pessoal;789640203906;8.2;5.97;15;True;produto_390.jpg
+391;1;Desodorante Dove Original Aerossol 150ml 3;Unilever;Dove;Farmácia;Higiene Pessoal;789379803918;18.56;13.84;15;True;produto_391.jpg
+392;1;Fralda Huggies Tripla Proteção M 48un 3;Kimberly-Clark;Huggies;Farmácia;Infantil;789349903929;64.63;50.7;15;True;produto_392.jpg
+393;1;Coristina D 16 comprimidos 3;Hypera Pharma;Coristina;Farmácia;Gripe e Resfriado;789416203934;16.05;12.02;15;True;produto_393.jpg
+394;1;Aparelho Gillette Mach3 3;Procter & Gamble;Gillette;Farmácia;Higiene Pessoal;789583203942;40.28;27.71;15;True;produto_394.jpg
+395;1;Fralda Pampers Confort Sec G 46un 3;Procter & Gamble;Pampers;Farmácia;Infantil;789469703953;77.46;61.51;15;True;produto_395.jpg
+396;1;Desalex 5mg 10 comprimidos 3;Organon;Desalex;Farmácia;Antialérgicos;789810303966;48.9;34.26;15;True;produto_396.jpg
+397;1;Supradyn Energia 30 comprimidos 3;Bayer;Supradyn;Farmácia;Vitaminas e Suplementos;789494603974;65.23;42.87;15;True;produto_397.jpg
+398;1;Creme Dental Colgate Total 12 90g 3;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789487103980;10.65;7.59;15;True;produto_398.jpg
+399;1;Neosoro Gotas 30ml 3;Neo Química;Neosoro;Farmácia;Gripe e Resfriado;789292303997;8.07;6.16;15;True;produto_399.jpg
+400;1;Claritin 10mg 12 comprimidos 3;Bayer;Claritin;Farmácia;Antialérgicos;789823504006;42.97;31.34;15;True;produto_400.jpg
+401;1;Água Oxigenada 10 Volumes 100ml 3;Farmax;Farmax;Farmácia;Primeiros Socorros;789561404017;4.54;2.95;15;True;produto_401.jpg
+402;1;Ibuprofeno 600mg 20 comprimidos 3;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789590604024;10.47;7.33;15;True;produto_402.jpg
+403;1;Gelol Spray 150ml 3;Hypera Pharma;Gelol;Farmácia;Dermatológicos;789832704033;30.77;20.51;15;True;produto_403.jpg
+404;1;Esparadrapo Missner 10cm x 4,5m 3;Missner;Missner;Farmácia;Primeiros Socorros;789836304044;11.96;7.88;15;True;produto_404.jpg
+405;1;Aspirina 500mg 20 comprimidos 3;Bayer;Aspirina;Farmácia;Analgésicos e Antitérmicos;789963404055;15.53;11.91;15;True;produto_405.jpg
+406;1;Ômega 3 1000mg 120 cápsulas 3;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789907304069;84.79;50.1;15;True;produto_406.jpg
+407;1;Vick 44E Xarope 120ml 3;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789883404074;25.69;18.33;15;True;produto_407.jpg
+408;1;Centrum Homem 60 comprimidos 3;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789882204088;81.57;56.75;15;True;produto_408.jpg
+409;1;Benegrip 12 comprimidos 3;Hypera Pharma;Benegrip;Farmácia;Gripe e Resfriado;789272604092;16.84;11.92;15;True;produto_409.jpg
+410;1;Protetor Solar Episol Color FPS 70 3;Mantecorp Skincare;Episol;Farmácia;Dermocosméticos;789212804102;102.48;59.57;15;True;produto_410.jpg
+411;1;Shampoo Johnson's Baby 200ml 3;Kenvue;Johnson's Baby;Farmácia;Infantil;789320204119;17.91;13.89;15;True;produto_411.jpg
+412;1;Creme Dental Sensodyne Repara e Protege 100g 4;Haleon;Sensodyne;Farmácia;Higiene Bucal;789592004121;23.02;15.72;15;True;produto_412.jpg
+413;1;Mucilon Arroz e Aveia 230g 4;Nestlé;Mucilon;Farmácia;Infantil;789334504131;9.32;6.79;15;True;produto_413.jpg
+414;1;Omeprazol 20mg 28 cápsulas 4;Medley;Medley Genérico;Farmácia;Digestivos e Antiácidos;789879704144;18.54;12.8;15;True;produto_414.jpg
+415;1;Allegra 120mg 10 comprimidos 4;Sanofi;Allegra;Farmácia;Antialérgicos;789406404154;46.25;34.77;15;True;produto_415.jpg
+416;1;Protetor Solar Anthelios FPS 60 50g 4;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789964004162;121.12;73.78;15;True;produto_416.jpg
+417;1;Alivium 400mg 10 cápsulas 4;Cosmed;Alivium;Farmácia;Analgésicos e Antitérmicos;789627704178;22.33;14.31;15;True;produto_417.jpg
+418;1;Hastes Flexíveis Cotonetes 75un 4;Kenvue;Cotonetes;Farmácia;Higiene Pessoal;789948304187;7.62;5.68;15;True;produto_418.jpg
+419;1;Soro Fisiológico 0,9% 250ml 4;Arboreto;Arboreto;Farmácia;Primeiros Socorros;789422904195;7.9;5.6;15;True;produto_419.jpg
+420;1;Cicaplast Baume B5 40ml 4;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789982704202;94.44;60.72;15;True;produto_420.jpg
+421;1;Enxaguante Colgate Plax 500ml 4;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789634804218;16.07;11.08;15;True;produto_421.jpg
+422;1;Bioderma Sensibio H2O 250ml 4;NAOS;Bioderma;Farmácia;Dermocosméticos;789938404220;105.71;72.54;15;True;produto_422.jpg
+423;1;Epocler Flaconete 10ml x 6 4;Hypera Pharma;Epocler;Farmácia;Digestivos e Antiácidos;789877404231;23.45;16.61;15;True;produto_423.jpg
+424;1;Meia de Compressão Kendall 3/4 4;Cardinal Health;Kendall;Farmácia;Equipamentos de Saúde;789792004240;71.4;55.21;15;True;produto_424.jpg
+425;1;Creme Dental Oral-B Pro-Saúde 70g 4;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789833804251;7.76;5.51;15;True;produto_425.jpg
+426;1;Gel de Limpeza CeraVe 227g 4;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789247904264;71.59;49.51;15;True;produto_426.jpg
+427;1;Álcool 70% Tupi 1L 4;Tupi;Tupi;Farmácia;Primeiros Socorros;789564104279;14.68;9.9;15;True;produto_427.jpg
+428;1;Dipirona Novalgina 1g 10 comprimidos 4;Sanofi;Novalgina;Farmácia;Analgésicos e Antitérmicos;789755104280;24.12;15.43;15;True;produto_428.jpg
+429;1;Mucosolvan Xarope Adulto 120ml 4;Sanofi;Mucosolvan;Farmácia;Gripe e Resfriado;789606104294;30.15;20.89;15;True;produto_429.jpg
+430;1;Água Termal Avène 300ml 4;Pierre Fabre;Avène;Farmácia;Dermocosméticos;789777504303;74.36;52.01;15;True;produto_430.jpg
+431;1;Sonrisal Original 30 comprimidos 4;Haleon;Sonrisal;Farmácia;Digestivos e Antiácidos;789405004319;33.14;23.07;15;True;produto_431.jpg
+432;1;Lacto-Purga 6 comprimidos 4;Hypera Pharma;Lacto-Purga;Farmácia;Digestivos e Antiácidos;789605404328;15.02;10.77;15;True;produto_432.jpg
+433;1;Paracetamol 750mg 20 comprimidos 4;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789621004331;10.69;6.79;15;True;produto_433.jpg
+434;1;Lavitan Hair 60 cápsulas 4;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789767004345;52.9;38.88;15;True;produto_434.jpg
+435;1;Neutrogena Hydro Boost Gel 50g 4;Kenvue;Neutrogena;Farmácia;Dermocosméticos;789429304358;72.93;41.38;15;True;produto_435.jpg
+436;1;Cebion Vitamina C 1g 10 efervescentes 4;Merck;Cebion;Farmácia;Vitaminas e Suplementos;789637004369;30.5;18.55;15;True;produto_436.jpg
+437;1;Enxaguante Listerine Cool Mint 500ml 4;Kenvue;Listerine;Farmácia;Higiene Bucal;789162904376;21.1;16.22;15;True;produto_437.jpg
+438;1;Sorine Adulto Spray 30ml 4;Aché;Sorine;Farmácia;Gripe e Resfriado;789316204389;18.5;12.34;15;True;produto_438.jpg
+439;1;Lavitan Mais Vitaminas 60 comprimidos 4;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789449604399;37.24;27;15;True;produto_439.jpg
+440;1;Desodorante Rexona Clinical 48g 4;Unilever;Rexona;Farmácia;Higiene Pessoal;789191704402;24.63;17.8;15;True;produto_440.jpg
+441;1;Hidratante CeraVe Loção 200ml 4;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789142904411;70.92;46.25;15;True;produto_441.jpg
+442;1;Oxímetro de Pulso G-Tech 4;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789173504428;118.74;87.24;15;True;produto_442.jpg
+443;1;Vitamina C 10 Vichy Liftactiv 4;L'Oréal;Vichy;Farmácia;Dermocosméticos;789226004435;266.3;157.95;15;True;produto_443.jpg
+444;1;Shampoo Pantene Restauração 400ml 4;Procter & Gamble;Pantene;Farmácia;Higiene Pessoal;789292204447;28.92;19.3;15;True;produto_444.jpg
+445;1;Preservativo Jontex Lubrificado 6un 4;Kenvue;Jontex;Farmácia;Equipamentos de Saúde;789773304459;13.5;9.73;15;True;produto_445.jpg
+446;1;Imuno Max 30 comprimidos 4;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789544104466;35.01;22.26;15;True;produto_446.jpg
+447;1;Engov 6 comprimidos 4;Hypera Pharma;Engov;Farmácia;Digestivos e Antiácidos;789583204473;8.81;6.58;15;True;produto_447.jpg
+448;1;Minancora Pomada 30g 4;Minancora;Minancora;Farmácia;Dermatológicos;789483904488;15.71;10.68;15;True;produto_448.jpg
+449;1;Tamarine 20 cápsulas 4;Hypera Pharma;Tamarine;Farmácia;Digestivos e Antiácidos;789955404494;35.88;25.71;15;True;produto_449.jpg
+450;1;Afrin Spray Nasal 30ml 4;Bayer;Afrin;Farmácia;Gripe e Resfriado;789624404505;41.53;26.98;15;True;produto_450.jpg
+451;1;Curativo Band-Aid Transparente 40un 4;Kenvue;Band-Aid;Farmácia;Primeiros Socorros;789820704517;14.65;9.93;15;True;produto_451.jpg
+452;1;Corega Ultra Creme Fixador 40g 4;Haleon;Corega;Farmácia;Higiene Bucal;789469404520;32.45;23.32;15;True;produto_452.jpg
+453;1;Buscopan Composto 20 comprimidos 4;Hypera Pharma;Buscopan;Farmácia;Analgésicos e Antitérmicos;789263304534;36.99;23.66;15;True;produto_453.jpg
+454;1;Nivea Creme Lata 97g 4;Beiersdorf;Nivea;Farmácia;Dermocosméticos;789470604542;18.7;11.4;15;True;produto_454.jpg
+455;1;Vick Pastilhas Mentol 20un 4;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789334504557;4.43;3.16;15;True;produto_455.jpg
+456;1;Leite Nan Supreme 1 800g 4;Nestlé;Nan;Farmácia;Infantil;789869304565;106.42;79.46;15;True;produto_456.jpg
+457;1;Sabonete Dove Original 90g 4;Unilever;Dove;Farmácia;Higiene Pessoal;789179304574;4.63;3.48;15;True;produto_457.jpg
+458;1;Merthiolate Spray 45ml 4;Cosmed;Merthiolate;Farmácia;Primeiros Socorros;789170904584;17.17;12.36;15;True;produto_458.jpg
+459;1;Teste de Gravidez Clearblue Digital 4;SPD Swiss Precision;Clearblue;Farmácia;Equipamentos de Saúde;789708804599;46.61;32.52;15;True;produto_459.jpg
+460;1;Glicosímetro Accu-Chek Guide 4;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789170604602;95.15;69.29;15;True;produto_460.jpg
+461;1;Advil 400mg 8 cápsulas 4;Haleon;Advil;Farmácia;Analgésicos e Antitérmicos;789809504611;25.78;17.06;15;True;produto_461.jpg
+462;1;Sabonete Protex Antibacteriano 85g 4;Colgate-Palmolive;Protex;Farmácia;Higiene Pessoal;789103804626;4.94;3.43;15;True;produto_462.jpg
+463;1;Bepantol Derma Creme 40g 4;Bayer;Bepantol;Farmácia;Dermatológicos;789132304630;38.4;24.41;15;True;produto_463.jpg
+464;1;Doril 20 comprimidos 4;Hypera Pharma;Doril;Farmácia;Analgésicos e Antitérmicos;789327404648;11.88;8.77;15;True;produto_464.jpg
+465;1;Polaramine 2mg 20 comprimidos 4;Bayer;Polaramine;Farmácia;Antialérgicos;789534204651;27.47;19.57;15;True;produto_465.jpg
+466;1;Bromexina Xarope 120ml 4;Sanofi;Bisolvon;Farmácia;Gripe e Resfriado;789219504663;27.6;19.13;15;True;produto_466.jpg
+467;1;Absorvente Always Noturno 8un 4;Procter & Gamble;Always;Farmácia;Higiene Pessoal;789632404670;13.08;8.74;15;True;produto_467.jpg
+468;1;Tiras Accu-Chek Guide 50un 4;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789838904680;142.21;95.38;15;True;produto_468.jpg
+469;1;Floratil 200mg 6 cápsulas 4;Merck;Floratil;Farmácia;Digestivos e Antiácidos;789903104692;37.93;28.38;15;True;produto_469.jpg
+470;1;Redoxon Vitamina C 1g 10 efervescentes 4;Bayer;Redoxon;Farmácia;Vitaminas e Suplementos;789924904705;26.96;18.66;15;True;produto_470.jpg
+471;1;Chupeta MAM Air 6-16m 4;MAM Babyartikel;MAM;Farmácia;Infantil;789499704719;39.83;30.18;15;True;produto_471.jpg
+472;1;Mamadeira Avent Natural 260ml 4;Philips;Philips Avent;Farmácia;Infantil;789573504727;74.24;55.18;15;True;produto_472.jpg
+473;1;Naldecon Dia 12 comprimidos 4;Bristol-Myers Squibb;Naldecon;Farmácia;Gripe e Resfriado;789435104731;22.54;14.09;15;True;produto_473.jpg
+474;1;Lenço Umedecido Huggies 48un 4;Kimberly-Clark;Huggies;Farmácia;Infantil;789900804746;9.58;7.28;15;True;produto_474.jpg
+475;1;Fenergan Creme 30g 4;Sanofi;Fenergan;Farmácia;Dermatológicos;789390704755;22.25;14.95;15;True;produto_475.jpg
+476;1;Salonpas Emplastro 10un 4;Hisamitsu;Salonpas;Farmácia;Dermatológicos;789324204764;20.96;15.69;15;True;produto_476.jpg
+477;1;Centrum Mulher 60 comprimidos 4;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789245004773;88.11;60.98;15;True;produto_477.jpg
+478;1;Nebacetin Pomada 15g 4;Takeda;Nebacetin;Farmácia;Dermatológicos;789454804780;24.78;16.36;15;True;produto_478.jpg
+479;1;Tylenol Bebê Gotas 15ml 4;Kenvue;Tylenol;Farmácia;Infantil;789608604798;31.34;20.92;15;True;produto_479.jpg
+480;1;Andolba Spray 45ml 4;Hypera Pharma;Andolba;Farmácia;Dermatológicos;789536004806;24.25;17.75;15;True;produto_480.jpg
+481;1;Álcool em Gel 70% Asseptgel 500ml 4;Start Química;Asseptgel;Farmácia;Higiene Pessoal;789165604811;14.28;9.41;15;True;produto_481.jpg
+482;1;Biotônico Fontoura 400ml 4;Hypera Pharma;Biotônico Fontoura;Farmácia;Vitaminas e Suplementos;789585704825;36.07;24.99;15;True;produto_482.jpg
+483;1;Dipirona 500mg/ml gotas 20ml 4;Medley;Medley Genérico;Farmácia;Analgésicos e Antitérmicos;789271504838;6.24;4.16;15;True;produto_483.jpg
+484;1;Gaze Estéril Cremer 13 fios 10un 4;Cremer;Cremer;Farmácia;Primeiros Socorros;789800304841;4.35;3.33;15;True;produto_484.jpg
+485;1;Nebulizador Inalar Compact NS 4;NS Indústria;NS;Farmácia;Equipamentos de Saúde;789844104856;165.92;111.71;15;True;produto_485.jpg
+486;1;Protetor Solar Sundown FPS 50 200ml 4;Kenvue;Sundown;Farmácia;Dermocosméticos;789560604869;62.84;39.68;15;True;produto_486.jpg
+487;1;Plasil 10mg 20 comprimidos 4;Sanofi;Plasil;Farmácia;Digestivos e Antiácidos;789413104872;23.97;17.53;15;True;produto_487.jpg
+488;1;Papel Higiênico Neve Folha Dupla 12un 4;Kimberly-Clark;Neve;Farmácia;Higiene Pessoal;789256104884;31.18;23.63;15;True;produto_488.jpg
+489;1;Cicatricure Gel 30g 4;Genomma Lab;Cicatricure;Farmácia;Dermatológicos;789569904896;62.02;43.61;15;True;produto_489.jpg
+490;1;Cimegripe 20 cápsulas 4;Cimed;Cimegripe;Farmácia;Analgésicos e Antitérmicos;789739704901;16.13;11.12;15;True;produto_490.jpg
+491;1;Magnésio Dimalato 60 cápsulas 4;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789665804911;77.01;52.93;15;True;produto_491.jpg
+492;1;Loratadina 10mg 12 comprimidos 4;EMS;EMS Genérico;Farmácia;Antialérgicos;789709804921;9.55;6.7;15;True;produto_492.jpg
+493;1;Strepsils Mel e Limão 8 pastilhas 4;Reckitt;Strepsils;Farmácia;Gripe e Resfriado;789681204935;18.82;12.63;15;True;produto_493.jpg
+494;1;Shampoo Head & Shoulders 400ml 4;Procter & Gamble;Head & Shoulders;Farmácia;Higiene Pessoal;789428104946;34.21;24.49;15;True;produto_494.jpg
+495;1;Rinosoro 0,9% Spray 50ml 4;Farmasa;Rinosoro;Farmácia;Gripe e Resfriado;789130804950;20.9;15.59;15;True;produto_495.jpg
+496;1;Dramin B6 10 comprimidos 4;Takeda;Dramin;Farmácia;Digestivos e Antiácidos;789189504960;19.73;12.88;15;True;produto_496.jpg
+497;1;Dipirona Gotas Infantil Novalgina 20ml 4;Sanofi;Novalgina;Farmácia;Infantil;789523604970;19.9;15.63;15;True;produto_497.jpg
+498;1;Termômetro Digital G-Tech TH150 4;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789943604985;25.28;17.24;15;True;produto_498.jpg
+499;1;Cataflam Emulgel 60g 4;Haleon;Cataflam;Farmácia;Dermatológicos;789157104990;47.05;30.25;15;True;produto_499.jpg
+500;1;Estomazil Pó 5g x 6 4;Hypera Pharma;Estomazil;Farmácia;Digestivos e Antiácidos;789855205009;11.88;8.63;15;True;produto_500.jpg
+501;1;Medidor de Pressão Omron HEM-7122 4;Omron Healthcare;Omron;Farmácia;Equipamentos de Saúde;789394805016;225.59;154.48;15;True;produto_501.jpg
+502;1;Effaclar Gel Concentrado 150g 4;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789269105023;128.06;71.33;15;True;produto_502.jpg
+503;1;Escova Dental Curaprox CS 5460 4;Curaden;Curaprox;Farmácia;Higiene Bucal;789570705033;31.44;22.38;15;True;produto_503.jpg
+504;1;Escova Dental Oral-B Indicator Plus 4;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789126905049;11.83;7.7;15;True;produto_504.jpg
+505;1;Torsilax 30 comprimidos 4;Neo Química;Torsilax;Farmácia;Analgésicos e Antitérmicos;789293405052;15.32;10.76;15;True;produto_505.jpg
+506;1;Addera D3 7000UI 8 comprimidos 4;Hypera Pharma;Addera;Farmácia;Vitaminas e Suplementos;789930105068;32.01;23.33;15;True;produto_506.jpg
+507;1;Gaviscon Suspensão Sachê 10ml x 12 4;Reckitt;Gaviscon;Farmácia;Digestivos e Antiácidos;789717505070;41.32;28.87;15;True;produto_507.jpg
+508;1;Aptamil Profutura 1 800g 4;Danone;Aptamil;Farmácia;Infantil;789610805080;122.78;89.27;15;True;produto_508.jpg
+509;1;Neosaldina 30 drágeas 4;Hypera Pharma;Neosaldina;Farmácia;Analgésicos e Antitérmicos;789751105096;38.02;27.82;15;True;produto_509.jpg
+510;1;Vick VapoRub 30g 4;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789817805108;22.46;14.13;15;True;produto_510.jpg
+511;1;Atadura Crepom Cremer 10cm 4;Cremer;Cremer;Farmácia;Primeiros Socorros;789586605114;3.99;2.81;15;True;produto_511.jpg
+512;1;Preservativo Olla Lubrificado 6un 4;Hypera Pharma;Olla;Farmácia;Equipamentos de Saúde;789162505120;7.04;5.3;15;True;produto_512.jpg
+513;1;Eno Sal de Frutas Tradicional 5g x 2 4;Haleon;Eno;Farmácia;Digestivos e Antiácidos;789985005139;3.55;2.66;15;True;produto_513.jpg
+514;1;Eucerin Urea Repair 10% 250ml 4;Beiersdorf;Eucerin;Farmácia;Dermocosméticos;789210805143;103.74;68.54;15;True;produto_514.jpg
+515;1;Histamin Xarope 100ml 4;Neo Química;Histamin;Farmácia;Antialérgicos;789575105159;12.68;9.21;15;True;produto_515.jpg
+516;1;Resfenol 20 cápsulas 4;Kley Hertz;Resfenol;Farmácia;Gripe e Resfriado;789985705169;22.79;17.08;15;True;produto_516.jpg
+517;1;Calminex Pomada 30g 4;Hypera Pharma;Calminex;Farmácia;Dermatológicos;789768505179;20.45;15.45;15;True;produto_517.jpg
+518;1;Hipoglós Pomada 80g 4;Kenvue;Hipoglós;Farmácia;Dermatológicos;789367905189;37.16;27.21;15;True;produto_518.jpg
+519;1;Simeticona Gotas 15ml 4;Neo Química;Neo Química Genérico;Farmácia;Digestivos e Antiácidos;789920805196;6.14;4.1;15;True;produto_519.jpg
+520;1;Tylenol 750mg 20 comprimidos 4;Kenvue;Tylenol;Farmácia;Analgésicos e Antitérmicos;789701705208;32.08;20.46;15;True;produto_520.jpg
+521;1;Dorflex 36 comprimidos 4;Sanofi;Dorflex;Farmácia;Analgésicos e Antitérmicos;789560205215;25.17;16.61;15;True;produto_521.jpg
+522;1;Pharmaton 30 cápsulas 4;Sanofi;Pharmaton;Farmácia;Vitaminas e Suplementos;789564505229;91.09;60.72;15;True;produto_522.jpg
+523;1;Luftal 40mg 20 comprimidos 4;Reckitt;Luftal;Farmácia;Digestivos e Antiácidos;789718305237;18.87;12.56;15;True;produto_523.jpg
+524;1;Colágeno Verisol 30 sachês 4;Sanavita;Sanavita;Farmácia;Vitaminas e Suplementos;789136005241;135.99;86.56;15;True;produto_524.jpg
+525;1;Fio Dental Oral-B Essential 50m 4;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789445105252;10.22;6.72;15;True;produto_525.jpg
+526;1;Algodão Hidrófilo Apolo 50g 4;Apolo;Apolo;Farmácia;Primeiros Socorros;789863205262;5.69;3.78;15;True;produto_526.jpg
+527;1;Absorvente Intimus Gel 8un 4;Kimberly-Clark;Intimus;Farmácia;Higiene Pessoal;789409705276;9.65;7.17;15;True;produto_527.jpg
+528;1;Desodorante Dove Original Aerossol 150ml 4;Unilever;Dove;Farmácia;Higiene Pessoal;789102905283;14.61;11.07;15;True;produto_528.jpg
+529;1;Fralda Huggies Tripla Proteção M 48un 4;Kimberly-Clark;Huggies;Farmácia;Infantil;789754405298;88.28;59.17;15;True;produto_529.jpg
+530;1;Coristina D 16 comprimidos 4;Hypera Pharma;Coristina;Farmácia;Gripe e Resfriado;789633705309;18.18;12.17;15;True;produto_530.jpg
+531;1;Aparelho Gillette Mach3 4;Procter & Gamble;Gillette;Farmácia;Higiene Pessoal;789893605317;41.25;27.2;15;True;produto_531.jpg
+532;1;Fralda Pampers Confort Sec G 46un 4;Procter & Gamble;Pampers;Farmácia;Infantil;789403805325;104.44;71.99;15;True;produto_532.jpg
+533;1;Desalex 5mg 10 comprimidos 4;Organon;Desalex;Farmácia;Antialérgicos;789869005336;54.21;36.41;15;True;produto_533.jpg
+534;1;Supradyn Energia 30 comprimidos 4;Bayer;Supradyn;Farmácia;Vitaminas e Suplementos;789252205343;80.83;53.13;15;True;produto_534.jpg
+535;1;Creme Dental Colgate Total 12 90g 4;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789177005350;13.71;8.97;15;True;produto_535.jpg
+536;1;Neosoro Gotas 30ml 4;Neo Química;Neosoro;Farmácia;Gripe e Resfriado;789619705367;11.34;7.3;15;True;produto_536.jpg
+537;1;Claritin 10mg 12 comprimidos 4;Bayer;Claritin;Farmácia;Antialérgicos;789661105371;58.25;39.37;15;True;produto_537.jpg
+538;1;Água Oxigenada 10 Volumes 100ml 4;Farmax;Farmax;Farmácia;Primeiros Socorros;789789505387;3.06;2.32;15;True;produto_538.jpg
+539;1;Ibuprofeno 600mg 20 comprimidos 4;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789300705391;17.63;11.61;15;True;produto_539.jpg
+540;1;Gelol Spray 150ml 4;Hypera Pharma;Gelol;Farmácia;Dermatológicos;789720305407;25.29;18.34;15;True;produto_540.jpg
+541;1;Esparadrapo Missner 10cm x 4,5m 4;Missner;Missner;Farmácia;Primeiros Socorros;789139205417;13.76;10.46;15;True;produto_541.jpg
+542;1;Aspirina 500mg 20 comprimidos 4;Bayer;Aspirina;Farmácia;Analgésicos e Antitérmicos;789371005422;15.33;10.97;15;True;produto_542.jpg
+543;1;Ômega 3 1000mg 120 cápsulas 4;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789300605435;65.38;47.84;15;True;produto_543.jpg
+544;1;Vick 44E Xarope 120ml 4;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789275105440;26.94;18.19;15;True;produto_544.jpg
+545;1;Centrum Homem 60 comprimidos 4;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789807905454;112.94;73.89;15;True;produto_545.jpg
+546;1;Benegrip 12 comprimidos 4;Hypera Pharma;Benegrip;Farmácia;Gripe e Resfriado;789962905469;22.14;15.95;15;True;produto_546.jpg
+547;1;Protetor Solar Episol Color FPS 70 4;Mantecorp Skincare;Episol;Farmácia;Dermocosméticos;789259705471;92.29;61.17;15;True;produto_547.jpg
+548;1;Shampoo Johnson's Baby 200ml 4;Kenvue;Johnson's Baby;Farmácia;Infantil;789674805480;20.36;14.01;15;True;produto_548.jpg
+549;1;Creme Dental Sensodyne Repara e Protege 100g 5;Haleon;Sensodyne;Farmácia;Higiene Bucal;789888805490;26.36;17.52;15;True;produto_549.jpg
+550;1;Mucilon Arroz e Aveia 230g 5;Nestlé;Mucilon;Farmácia;Infantil;789415305509;10.57;8.43;15;True;produto_550.jpg
+551;1;Omeprazol 20mg 28 cápsulas 5;Medley;Medley Genérico;Farmácia;Digestivos e Antiácidos;789773905513;15.78;11.65;15;True;produto_551.jpg
+552;1;Allegra 120mg 10 comprimidos 5;Sanofi;Allegra;Farmácia;Antialérgicos;789720905526;57.59;41.59;15;True;produto_552.jpg
+553;1;Protetor Solar Anthelios FPS 60 50g 5;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789118605533;93.48;62.38;15;True;produto_553.jpg
+554;1;Alivium 400mg 10 cápsulas 5;Cosmed;Alivium;Farmácia;Analgésicos e Antitérmicos;789835205542;24.37;15.35;15;True;produto_554.jpg
+555;1;Hastes Flexíveis Cotonetes 75un 5;Kenvue;Cotonetes;Farmácia;Higiene Pessoal;789946805558;5.7;4.06;15;True;produto_555.jpg
+556;1;Soro Fisiológico 0,9% 250ml 5;Arboreto;Arboreto;Farmácia;Primeiros Socorros;789431105565;9.75;6.21;15;True;produto_556.jpg
+557;1;Cicaplast Baume B5 40ml 5;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789674705579;85.3;47.79;15;True;produto_557.jpg
+558;1;Enxaguante Colgate Plax 500ml 5;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789708805589;16.4;10.99;15;True;produto_558.jpg
+559;1;Bioderma Sensibio H2O 250ml 5;NAOS;Bioderma;Farmácia;Dermocosméticos;789241905599;132.67;74.85;15;True;produto_559.jpg
+560;1;Epocler Flaconete 10ml x 6 5;Hypera Pharma;Epocler;Farmácia;Digestivos e Antiácidos;789794305602;27.31;19;15;True;produto_560.jpg
+561;1;Meia de Compressão Kendall 3/4 5;Cardinal Health;Kendall;Farmácia;Equipamentos de Saúde;789114805612;89.06;60.1;15;True;produto_561.jpg
+562;1;Creme Dental Oral-B Pro-Saúde 70g 5;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789970305628;9.09;6.17;15;True;produto_562.jpg
+563;1;Gel de Limpeza CeraVe 227g 5;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789571505634;97.27;54.04;15;True;produto_563.jpg
+564;1;Álcool 70% Tupi 1L 5;Tupi;Tupi;Farmácia;Primeiros Socorros;789580505645;10.9;7.2;15;True;produto_564.jpg
+565;1;Dipirona Novalgina 1g 10 comprimidos 5;Sanofi;Novalgina;Farmácia;Analgésicos e Antitérmicos;789873305659;24.11;17.38;15;True;produto_565.jpg
+566;1;Mucosolvan Xarope Adulto 120ml 5;Sanofi;Mucosolvan;Farmácia;Gripe e Resfriado;789728005664;28.97;20.8;15;True;produto_566.jpg
+567;1;Água Termal Avène 300ml 5;Pierre Fabre;Avène;Farmácia;Dermocosméticos;789583005678;88.45;52.36;15;True;produto_567.jpg
+568;1;Sonrisal Original 30 comprimidos 5;Haleon;Sonrisal;Farmácia;Digestivos e Antiácidos;789728305689;27.78;19.13;15;True;produto_568.jpg
+569;1;Lacto-Purga 6 comprimidos 5;Hypera Pharma;Lacto-Purga;Farmácia;Digestivos e Antiácidos;789892105698;13.61;10;15;True;produto_569.jpg
+570;1;Paracetamol 750mg 20 comprimidos 5;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789900605701;6.09;4.06;15;True;produto_570.jpg
+571;1;Lavitan Hair 60 cápsulas 5;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789983205717;66.13;43.2;15;True;produto_571.jpg
+572;1;Neutrogena Hydro Boost Gel 50g 5;Kenvue;Neutrogena;Farmácia;Dermocosméticos;789917705726;67.06;47.3;15;True;produto_572.jpg
+573;1;Cebion Vitamina C 1g 10 efervescentes 5;Merck;Cebion;Farmácia;Vitaminas e Suplementos;789887205736;24.85;17.9;15;True;produto_573.jpg
+574;1;Enxaguante Listerine Cool Mint 500ml 5;Kenvue;Listerine;Farmácia;Higiene Bucal;789321405742;25.17;18.4;15;True;produto_574.jpg
+575;1;Sorine Adulto Spray 30ml 5;Aché;Sorine;Farmácia;Gripe e Resfriado;789632205750;17.95;13.51;15;True;produto_575.jpg
+576;1;Lavitan Mais Vitaminas 60 comprimidos 5;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789243305766;32.46;23.82;15;True;produto_576.jpg
+577;1;Desodorante Rexona Clinical 48g 5;Unilever;Rexona;Farmácia;Higiene Pessoal;789434005770;28.65;19.68;15;True;produto_577.jpg
+578;1;Hidratante CeraVe Loção 200ml 5;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789870705788;76.47;50.52;15;True;produto_578.jpg
+579;1;Oxímetro de Pulso G-Tech 5;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789470705799;96.17;74.76;15;True;produto_579.jpg
+580;1;Vitamina C 10 Vichy Liftactiv 5;L'Oréal;Vichy;Farmácia;Dermocosméticos;789491205805;238.82;159.29;15;True;produto_580.jpg
+581;1;Shampoo Pantene Restauração 400ml 5;Procter & Gamble;Pantene;Farmácia;Higiene Pessoal;789836805817;20.71;15.26;15;True;produto_581.jpg
+582;1;Preservativo Jontex Lubrificado 6un 5;Kenvue;Jontex;Farmácia;Equipamentos de Saúde;789575005822;12.21;8.3;15;True;produto_582.jpg
+583;1;Imuno Max 30 comprimidos 5;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789246505835;37.29;26.56;15;True;produto_583.jpg
+584;1;Engov 6 comprimidos 5;Hypera Pharma;Engov;Farmácia;Digestivos e Antiácidos;789713205844;11.91;7.86;15;True;produto_584.jpg
+585;1;Minancora Pomada 30g 5;Minancora;Minancora;Farmácia;Dermatológicos;789847305854;13.91;9.09;15;True;produto_585.jpg
+586;1;Tamarine 20 cápsulas 5;Hypera Pharma;Tamarine;Farmácia;Digestivos e Antiácidos;789132905864;52.48;34.67;15;True;produto_586.jpg
+587;1;Afrin Spray Nasal 30ml 5;Bayer;Afrin;Farmácia;Gripe e Resfriado;789616905878;37.85;28.98;15;True;produto_587.jpg
+588;1;Curativo Band-Aid Transparente 40un 5;Kenvue;Band-Aid;Farmácia;Primeiros Socorros;789823305885;17.92;11.37;15;True;produto_588.jpg
+589;1;Corega Ultra Creme Fixador 40g 5;Haleon;Corega;Farmácia;Higiene Bucal;789445905892;43.55;28.87;15;True;produto_589.jpg
+590;1;Buscopan Composto 20 comprimidos 5;Hypera Pharma;Buscopan;Farmácia;Analgésicos e Antitérmicos;789442205904;23.58;17.62;15;True;produto_590.jpg
+591;1;Nivea Creme Lata 97g 5;Beiersdorf;Nivea;Farmácia;Dermocosméticos;789933105917;17.72;11.02;15;True;produto_591.jpg
+592;1;Vick Pastilhas Mentol 20un 5;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789318405928;6.83;4.35;15;True;produto_592.jpg
+593;1;Leite Nan Supreme 1 800g 5;Nestlé;Nan;Farmácia;Infantil;789205705937;135.13;91.49;15;True;produto_593.jpg
+594;1;Sabonete Dove Original 90g 5;Unilever;Dove;Farmácia;Higiene Pessoal;789421305944;3.97;2.89;15;True;produto_594.jpg
+595;1;Merthiolate Spray 45ml 5;Cosmed;Merthiolate;Farmácia;Primeiros Socorros;789670705951;24.94;16.18;15;True;produto_595.jpg
+596;1;Teste de Gravidez Clearblue Digital 5;SPD Swiss Precision;Clearblue;Farmácia;Equipamentos de Saúde;789972805964;44.08;32.18;15;True;produto_596.jpg
+597;1;Glicosímetro Accu-Chek Guide 5;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789235505972;109.48;84.04;15;True;produto_597.jpg
+598;1;Advil 400mg 8 cápsulas 5;Haleon;Advil;Farmácia;Analgésicos e Antitérmicos;789632305980;27.76;17.67;15;True;produto_598.jpg
+599;1;Sabonete Protex Antibacteriano 85g 5;Colgate-Palmolive;Protex;Farmácia;Higiene Pessoal;789398805999;2.91;2.04;15;True;produto_599.jpg
+600;1;Bepantol Derma Creme 40g 5;Bayer;Bepantol;Farmácia;Dermatológicos;789165806002;46.04;28.88;15;True;produto_600.jpg
+601;1;Doril 20 comprimidos 5;Hypera Pharma;Doril;Farmácia;Analgésicos e Antitérmicos;789372606015;14.38;10.45;15;True;produto_601.jpg
+602;1;Polaramine 2mg 20 comprimidos 5;Bayer;Polaramine;Farmácia;Antialérgicos;789787306029;28.95;18.81;15;True;produto_602.jpg
+603;1;Bromexina Xarope 120ml 5;Sanofi;Bisolvon;Farmácia;Gripe e Resfriado;789962606036;30.18;19.68;15;True;produto_603.jpg
+604;1;Absorvente Always Noturno 8un 5;Procter & Gamble;Always;Farmácia;Higiene Pessoal;789203006045;13.77;9.83;15;True;produto_604.jpg
+605;1;Tiras Accu-Chek Guide 50un 5;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789543606055;110.9;73.95;15;True;produto_605.jpg
+606;1;Floratil 200mg 6 cápsulas 5;Merck;Floratil;Farmácia;Digestivos e Antiácidos;789282006068;31.46;23.7;15;True;produto_606.jpg
+607;1;Redoxon Vitamina C 1g 10 efervescentes 5;Bayer;Redoxon;Farmácia;Vitaminas e Suplementos;789337206072;32.54;19.26;15;True;produto_607.jpg
+608;1;Chupeta MAM Air 6-16m 5;MAM Babyartikel;MAM;Farmácia;Infantil;789879806080;34.2;24.7;15;True;produto_608.jpg
+609;1;Mamadeira Avent Natural 260ml 5;Philips;Philips Avent;Farmácia;Infantil;789529806093;69.51;49.39;15;True;produto_609.jpg
+610;1;Naldecon Dia 12 comprimidos 5;Bristol-Myers Squibb;Naldecon;Farmácia;Gripe e Resfriado;789539606100;15.97;12.16;15;True;produto_610.jpg
+611;1;Lenço Umedecido Huggies 48un 5;Kimberly-Clark;Huggies;Farmácia;Infantil;789885106112;13.49;9.92;15;True;produto_611.jpg
+612;1;Fenergan Creme 30g 5;Sanofi;Fenergan;Farmácia;Dermatológicos;789290206122;17.57;12.91;15;True;produto_612.jpg
+613;1;Salonpas Emplastro 10un 5;Hisamitsu;Salonpas;Farmácia;Dermatológicos;789208806130;22.57;15.98;15;True;produto_613.jpg
+614;1;Centrum Mulher 60 comprimidos 5;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789479606145;95.86;57.03;15;True;produto_614.jpg
+615;1;Nebacetin Pomada 15g 5;Takeda;Nebacetin;Farmácia;Dermatológicos;789682806156;19.92;13.14;15;True;produto_615.jpg
+616;1;Tylenol Bebê Gotas 15ml 5;Kenvue;Tylenol;Farmácia;Infantil;789692606166;37.96;25.9;15;True;produto_616.jpg
+617;1;Andolba Spray 45ml 5;Hypera Pharma;Andolba;Farmácia;Dermatológicos;789591006177;32.62;23.98;15;True;produto_617.jpg
+618;1;Álcool em Gel 70% Asseptgel 500ml 5;Start Química;Asseptgel;Farmácia;Higiene Pessoal;789407306187;12.49;8.12;15;True;produto_618.jpg
+619;1;Biotônico Fontoura 400ml 5;Hypera Pharma;Biotônico Fontoura;Farmácia;Vitaminas e Suplementos;789438006193;37.56;22.6;15;True;produto_619.jpg
+620;1;Dipirona 500mg/ml gotas 20ml 5;Medley;Medley Genérico;Farmácia;Analgésicos e Antitérmicos;789535906206;7.95;5.48;15;True;produto_620.jpg
+621;1;Gaze Estéril Cremer 13 fios 10un 5;Cremer;Cremer;Farmácia;Primeiros Socorros;789832806216;5.23;3.81;15;True;produto_621.jpg
+622;1;Nebulizador Inalar Compact NS 5;NS Indústria;NS;Farmácia;Equipamentos de Saúde;789735206225;170.31;125.86;15;True;produto_622.jpg
+623;1;Protetor Solar Sundown FPS 50 200ml 5;Kenvue;Sundown;Farmácia;Dermocosméticos;789497906234;83.06;46.6;15;True;produto_623.jpg
+624;1;Plasil 10mg 20 comprimidos 5;Sanofi;Plasil;Farmácia;Digestivos e Antiácidos;789921706245;30.02;19.54;15;True;produto_624.jpg
+625;1;Papel Higiênico Neve Folha Dupla 12un 5;Kimberly-Clark;Neve;Farmácia;Higiene Pessoal;789111406252;28.43;20.82;15;True;produto_625.jpg
+626;1;Cicatricure Gel 30g 5;Genomma Lab;Cicatricure;Farmácia;Dermatológicos;789831406268;60.66;42.46;15;True;produto_626.jpg
+627;1;Cimegripe 20 cápsulas 5;Cimed;Cimegripe;Farmácia;Analgésicos e Antitérmicos;789673706270;19.46;12.77;15;True;produto_627.jpg
+628;1;Magnésio Dimalato 60 cápsulas 5;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789429306286;76.56;47.47;15;True;produto_628.jpg
+629;1;Loratadina 10mg 12 comprimidos 5;EMS;EMS Genérico;Farmácia;Antialérgicos;789476006292;12.74;8.8;15;True;produto_629.jpg
+630;1;Strepsils Mel e Limão 8 pastilhas 5;Reckitt;Strepsils;Farmácia;Gripe e Resfriado;789570506308;14.53;10.33;15;True;produto_630.jpg
+631;1;Shampoo Head & Shoulders 400ml 5;Procter & Gamble;Head & Shoulders;Farmácia;Higiene Pessoal;789902106310;35.32;23.62;15;True;produto_631.jpg
+632;1;Rinosoro 0,9% Spray 50ml 5;Farmasa;Rinosoro;Farmácia;Gripe e Resfriado;789343606325;18.46;12.68;15;True;produto_632.jpg
+633;1;Dramin B6 10 comprimidos 5;Takeda;Dramin;Farmácia;Digestivos e Antiácidos;789232706330;17.91;13.12;15;True;produto_633.jpg
+634;1;Dipirona Gotas Infantil Novalgina 20ml 5;Sanofi;Novalgina;Farmácia;Infantil;789216606340;21.7;16.02;15;True;produto_634.jpg
+635;1;Termômetro Digital G-Tech TH150 5;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789896006359;16.62;13.07;15;True;produto_635.jpg
+636;1;Cataflam Emulgel 60g 5;Haleon;Cataflam;Farmácia;Dermatológicos;789883706361;45.12;34.36;15;True;produto_636.jpg
+637;1;Estomazil Pó 5g x 6 5;Hypera Pharma;Estomazil;Farmácia;Digestivos e Antiácidos;789388106376;10.5;7.2;15;True;produto_637.jpg
+638;1;Medidor de Pressão Omron HEM-7122 5;Omron Healthcare;Omron;Farmácia;Equipamentos de Saúde;789990206389;283.14;198.39;15;True;produto_638.jpg
+639;1;Effaclar Gel Concentrado 150g 5;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789620606390;88.96;59.68;15;True;produto_639.jpg
+640;1;Escova Dental Curaprox CS 5460 5;Curaden;Curaprox;Farmácia;Higiene Bucal;789118106403;37.96;25.92;15;True;produto_640.jpg
+641;1;Escova Dental Oral-B Indicator Plus 5;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789504506419;13.94;9.65;15;True;produto_641.jpg
+642;1;Torsilax 30 comprimidos 5;Neo Química;Torsilax;Farmácia;Analgésicos e Antitérmicos;789157706424;17.77;12.89;15;True;produto_642.jpg
+643;1;Addera D3 7000UI 8 comprimidos 5;Hypera Pharma;Addera;Farmácia;Vitaminas e Suplementos;789531906439;34.18;23.28;15;True;produto_643.jpg
+644;1;Gaviscon Suspensão Sachê 10ml x 12 5;Reckitt;Gaviscon;Farmácia;Digestivos e Antiácidos;789904506444;39.47;27.64;15;True;produto_644.jpg
+645;1;Aptamil Profutura 1 800g 5;Danone;Aptamil;Farmácia;Infantil;789538306452;109.01;83.88;15;True;produto_645.jpg
+646;1;Neosaldina 30 drágeas 5;Hypera Pharma;Neosaldina;Farmácia;Analgésicos e Antitérmicos;789330606468;32.74;24.56;15;True;produto_646.jpg
+647;1;Vick VapoRub 30g 5;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789354606473;20.8;15.62;15;True;produto_647.jpg
+648;1;Atadura Crepom Cremer 10cm 5;Cremer;Cremer;Farmácia;Primeiros Socorros;789596506487;4.2;3.19;15;True;produto_648.jpg
+649;1;Preservativo Olla Lubrificado 6un 5;Hypera Pharma;Olla;Farmácia;Equipamentos de Saúde;789953706495;8.93;7.08;15;True;produto_649.jpg
+650;1;Eno Sal de Frutas Tradicional 5g x 2 5;Haleon;Eno;Farmácia;Digestivos e Antiácidos;789530706504;3.13;2.37;15;True;produto_650.jpg
+651;1;Eucerin Urea Repair 10% 250ml 5;Beiersdorf;Eucerin;Farmácia;Dermocosméticos;789148906518;95.14;55.91;15;True;produto_651.jpg
+652;1;Histamin Xarope 100ml 5;Neo Química;Histamin;Farmácia;Antialérgicos;789534006527;17;11.03;15;True;produto_652.jpg
+653;1;Resfenol 20 cápsulas 5;Kley Hertz;Resfenol;Farmácia;Gripe e Resfriado;789792806532;21.37;16.08;15;True;produto_653.jpg
+654;1;Calminex Pomada 30g 5;Hypera Pharma;Calminex;Farmácia;Dermatológicos;789953506549;18.74;13.58;15;True;produto_654.jpg
+655;1;Hipoglós Pomada 80g 5;Kenvue;Hipoglós;Farmácia;Dermatológicos;789566106554;44.21;29.74;15;True;produto_655.jpg
+656;1;Simeticona Gotas 15ml 5;Neo Química;Neo Química Genérico;Farmácia;Digestivos e Antiácidos;789304206560;7.21;4.62;15;True;produto_656.jpg
+657;1;Tylenol 750mg 20 comprimidos 5;Kenvue;Tylenol;Farmácia;Analgésicos e Antitérmicos;789455506575;24.13;17.88;15;True;produto_657.jpg
+658;1;Dorflex 36 comprimidos 5;Sanofi;Dorflex;Farmácia;Analgésicos e Antitérmicos;789225706581;22.22;15.89;15;True;produto_658.jpg
+659;1;Pharmaton 30 cápsulas 5;Sanofi;Pharmaton;Farmácia;Vitaminas e Suplementos;789442906599;111.32;74.85;15;True;produto_659.jpg
+660;1;Luftal 40mg 20 comprimidos 5;Reckitt;Luftal;Farmácia;Digestivos e Antiácidos;789939806601;26.32;17.8;15;True;produto_660.jpg
+661;1;Colágeno Verisol 30 sachês 5;Sanavita;Sanavita;Farmácia;Vitaminas e Suplementos;789338406615;88.41;60.98;15;True;produto_661.jpg
+662;1;Fio Dental Oral-B Essential 50m 5;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789143806620;8.51;6.43;15;True;produto_662.jpg
+663;1;Algodão Hidrófilo Apolo 50g 5;Apolo;Apolo;Farmácia;Primeiros Socorros;789739206630;5.06;3.2;15;True;produto_663.jpg
+664;1;Absorvente Intimus Gel 8un 5;Kimberly-Clark;Intimus;Farmácia;Higiene Pessoal;789726106640;7.52;5.35;15;True;produto_664.jpg
+665;1;Desodorante Dove Original Aerossol 150ml 5;Unilever;Dove;Farmácia;Higiene Pessoal;789787706654;17.61;11.68;15;True;produto_665.jpg
+666;1;Fralda Huggies Tripla Proteção M 48un 5;Kimberly-Clark;Huggies;Farmácia;Infantil;789681006661;76.73;52.37;15;True;produto_666.jpg
+667;1;Coristina D 16 comprimidos 5;Hypera Pharma;Coristina;Farmácia;Gripe e Resfriado;789579106679;14.72;11.09;15;True;produto_667.jpg
+668;1;Aparelho Gillette Mach3 5;Procter & Gamble;Gillette;Farmácia;Higiene Pessoal;789172206680;33.72;23.03;15;True;produto_668.jpg
+669;1;Fralda Pampers Confort Sec G 46un 5;Procter & Gamble;Pampers;Farmácia;Infantil;789146206690;87.9;67.53;15;True;produto_669.jpg
+670;1;Desalex 5mg 10 comprimidos 5;Organon;Desalex;Farmácia;Antialérgicos;789536406703;46.84;30.86;15;True;produto_670.jpg
+671;1;Supradyn Energia 30 comprimidos 5;Bayer;Supradyn;Farmácia;Vitaminas e Suplementos;789802806714;80.06;49.41;15;True;produto_671.jpg
+672;1;Creme Dental Colgate Total 12 90g 5;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789117406722;11.89;7.87;15;True;produto_672.jpg
+673;1;Neosoro Gotas 30ml 5;Neo Química;Neosoro;Farmácia;Gripe e Resfriado;789687006733;8.95;5.85;15;True;produto_673.jpg
+674;1;Claritin 10mg 12 comprimidos 5;Bayer;Claritin;Farmácia;Antialérgicos;789666706740;45.03;31.96;15;True;produto_674.jpg
+675;1;Água Oxigenada 10 Volumes 100ml 5;Farmax;Farmax;Farmácia;Primeiros Socorros;789364306758;4.39;3.25;15;True;produto_675.jpg
+676;1;Ibuprofeno 600mg 20 comprimidos 5;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789949606763;13.06;9.82;15;True;produto_676.jpg
+677;1;Gelol Spray 150ml 5;Hypera Pharma;Gelol;Farmácia;Dermatológicos;789679906775;24.77;18.76;15;True;produto_677.jpg
+678;1;Esparadrapo Missner 10cm x 4,5m 5;Missner;Missner;Farmácia;Primeiros Socorros;789428406783;15.46;10.49;15;True;produto_678.jpg
+679;1;Aspirina 500mg 20 comprimidos 5;Bayer;Aspirina;Farmácia;Analgésicos e Antitérmicos;789912806792;18.22;13.69;15;True;produto_679.jpg
+680;1;Ômega 3 1000mg 120 cápsulas 5;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789277506801;107.11;69.51;15;True;produto_680.jpg
+681;1;Vick 44E Xarope 120ml 5;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789581006813;25;18.45;15;True;produto_681.jpg
+682;1;Centrum Homem 60 comprimidos 5;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789795106822;113.47;71.21;15;True;produto_682.jpg
+683;1;Benegrip 12 comprimidos 5;Hypera Pharma;Benegrip;Farmácia;Gripe e Resfriado;789302106831;20.5;14.91;15;True;produto_683.jpg
+684;1;Protetor Solar Episol Color FPS 70 5;Mantecorp Skincare;Episol;Farmácia;Dermocosméticos;789103406840;90.29;61.6;15;True;produto_684.jpg
+685;1;Shampoo Johnson's Baby 200ml 5;Kenvue;Johnson's Baby;Farmácia;Infantil;789450206856;20.42;15.89;15;True;produto_685.jpg
+686;1;Creme Dental Sensodyne Repara e Protege 100g 6;Haleon;Sensodyne;Farmácia;Higiene Bucal;789826306867;23.51;15.86;15;True;produto_686.jpg
+687;1;Mucilon Arroz e Aveia 230g 6;Nestlé;Mucilon;Farmácia;Infantil;789213806879;10.71;8.53;15;True;produto_687.jpg
+688;1;Omeprazol 20mg 28 cápsulas 6;Medley;Medley Genérico;Farmácia;Digestivos e Antiácidos;789822506885;21.73;13.84;15;True;produto_688.jpg
+689;1;Allegra 120mg 10 comprimidos 6;Sanofi;Allegra;Farmácia;Antialérgicos;789908306897;46.26;30.05;15;True;produto_689.jpg
+690;1;Protetor Solar Anthelios FPS 60 50g 6;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789253806909;120.42;74.63;15;True;produto_690.jpg
+691;1;Alivium 400mg 10 cápsulas 6;Cosmed;Alivium;Farmácia;Analgésicos e Antitérmicos;789835706917;19.3;12.97;15;True;produto_691.jpg
+692;1;Hastes Flexíveis Cotonetes 75un 6;Kenvue;Cotonetes;Farmácia;Higiene Pessoal;789174606927;7.22;5.37;15;True;produto_692.jpg
+693;1;Soro Fisiológico 0,9% 250ml 6;Arboreto;Arboreto;Farmácia;Primeiros Socorros;789762106930;6.35;4.5;15;True;produto_693.jpg
+694;1;Cicaplast Baume B5 40ml 6;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789745506948;81.61;46.78;15;True;produto_694.jpg
+695;1;Enxaguante Colgate Plax 500ml 6;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789122406957;22.74;14.93;15;True;produto_695.jpg
+696;1;Bioderma Sensibio H2O 250ml 6;NAOS;Bioderma;Farmácia;Dermocosméticos;789686906968;80.69;54.39;15;True;produto_696.jpg
+697;1;Epocler Flaconete 10ml x 6 6;Hypera Pharma;Epocler;Farmácia;Digestivos e Antiácidos;789900806975;30.25;21.52;15;True;produto_697.jpg
+698;1;Meia de Compressão Kendall 3/4 6;Cardinal Health;Kendall;Farmácia;Equipamentos de Saúde;789346206986;83.13;58.04;15;True;produto_698.jpg
+699;1;Creme Dental Oral-B Pro-Saúde 70g 6;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789950006996;10.47;7.17;15;True;produto_699.jpg
+700;1;Gel de Limpeza CeraVe 227g 6;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789817507002;92.85;54.6;15;True;produto_700.jpg
+701;1;Álcool 70% Tupi 1L 6;Tupi;Tupi;Farmácia;Primeiros Socorros;789654407013;14.95;10.25;15;True;produto_701.jpg
+702;1;Dipirona Novalgina 1g 10 comprimidos 6;Sanofi;Novalgina;Farmácia;Analgésicos e Antitérmicos;789295007021;19.51;13.67;15;True;produto_702.jpg
+703;1;Mucosolvan Xarope Adulto 120ml 6;Sanofi;Mucosolvan;Farmácia;Gripe e Resfriado;789253107039;33.21;22.02;15;True;produto_703.jpg
+704;1;Água Termal Avène 300ml 6;Pierre Fabre;Avène;Farmácia;Dermocosméticos;789343807049;85.74;53.82;15;True;produto_704.jpg
+705;1;Sonrisal Original 30 comprimidos 6;Haleon;Sonrisal;Farmácia;Digestivos e Antiácidos;789949907051;30.61;23.3;15;True;produto_705.jpg
+706;1;Lacto-Purga 6 comprimidos 6;Hypera Pharma;Lacto-Purga;Farmácia;Digestivos e Antiácidos;789762407060;14.8;10.9;15;True;produto_706.jpg
+707;1;Paracetamol 750mg 20 comprimidos 6;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789513107070;6.83;5.21;15;True;produto_707.jpg
+708;1;Lavitan Hair 60 cápsulas 6;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789290007080;57.56;38.37;15;True;produto_708.jpg
+709;1;Neutrogena Hydro Boost Gel 50g 6;Kenvue;Neutrogena;Farmácia;Dermocosméticos;789563607098;73.47;43.49;15;True;produto_709.jpg
+710;1;Cebion Vitamina C 1g 10 efervescentes 6;Merck;Cebion;Farmácia;Vitaminas e Suplementos;789948207103;22.72;16.38;15;True;produto_710.jpg
+711;1;Enxaguante Listerine Cool Mint 500ml 6;Kenvue;Listerine;Farmácia;Higiene Bucal;789381807111;28.11;19.34;15;True;produto_711.jpg
+712;1;Sorine Adulto Spray 30ml 6;Aché;Sorine;Farmácia;Gripe e Resfriado;789728707124;15.62;11.35;15;True;produto_712.jpg
+713;1;Lavitan Mais Vitaminas 60 comprimidos 6;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789603207138;26.65;19.54;15;True;produto_713.jpg
+714;1;Desodorante Rexona Clinical 48g 6;Unilever;Rexona;Farmácia;Higiene Pessoal;789829107142;22.52;17.13;15;True;produto_714.jpg
+715;1;Hidratante CeraVe Loção 200ml 6;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789874007152;98.4;60.92;15;True;produto_715.jpg
+716;1;Oxímetro de Pulso G-Tech 6;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789663707164;103.3;72.99;15;True;produto_716.jpg
+717;1;Vitamina C 10 Vichy Liftactiv 6;L'Oréal;Vichy;Farmácia;Dermocosméticos;789761007173;201.12;141.13;15;True;produto_717.jpg
+718;1;Shampoo Pantene Restauração 400ml 6;Procter & Gamble;Pantene;Farmácia;Higiene Pessoal;789402207182;28.41;19.55;15;True;produto_718.jpg
+719;1;Preservativo Jontex Lubrificado 6un 6;Kenvue;Jontex;Farmácia;Equipamentos de Saúde;789802907192;13.44;10.41;15;True;produto_719.jpg
+720;1;Imuno Max 30 comprimidos 6;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789273707208;30.56;22.23;15;True;produto_720.jpg
+721;1;Engov 6 comprimidos 6;Hypera Pharma;Engov;Farmácia;Digestivos e Antiácidos;789210307216;7.14;5.21;15;True;produto_721.jpg
+722;1;Minancora Pomada 30g 6;Minancora;Minancora;Farmácia;Dermatológicos;789637707226;15.61;9.98;15;True;produto_722.jpg
+723;1;Tamarine 20 cápsulas 6;Hypera Pharma;Tamarine;Farmácia;Digestivos e Antiácidos;789759607235;38.84;29.71;15;True;produto_723.jpg
+724;1;Afrin Spray Nasal 30ml 6;Bayer;Afrin;Farmácia;Gripe e Resfriado;789515707245;45.35;30.55;15;True;produto_724.jpg
+725;1;Curativo Band-Aid Transparente 40un 6;Kenvue;Band-Aid;Farmácia;Primeiros Socorros;789753007257;13.04;9.4;15;True;produto_725.jpg
+726;1;Corega Ultra Creme Fixador 40g 6;Haleon;Corega;Farmácia;Higiene Bucal;789919507261;40.54;28.41;15;True;produto_726.jpg
+727;1;Buscopan Composto 20 comprimidos 6;Hypera Pharma;Buscopan;Farmácia;Analgésicos e Antitérmicos;789288307279;21.86;16.29;15;True;produto_727.jpg
+728;1;Nivea Creme Lata 97g 6;Beiersdorf;Nivea;Farmácia;Dermocosméticos;789123107284;23.06;13.35;15;True;produto_728.jpg
+729;1;Vick Pastilhas Mentol 20un 6;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789642807292;5.82;3.78;15;True;produto_729.jpg
+730;1;Leite Nan Supreme 1 800g 6;Nestlé;Nan;Farmácia;Infantil;789860807306;103.18;75.71;15;True;produto_730.jpg
+731;1;Sabonete Dove Original 90g 6;Unilever;Dove;Farmácia;Higiene Pessoal;789608707314;3.98;2.77;15;True;produto_731.jpg
+732;1;Merthiolate Spray 45ml 6;Cosmed;Merthiolate;Farmácia;Primeiros Socorros;789702607329;19.45;14.77;15;True;produto_732.jpg
+733;1;Teste de Gravidez Clearblue Digital 6;SPD Swiss Precision;Clearblue;Farmácia;Equipamentos de Saúde;789938907338;50.21;33.84;15;True;produto_733.jpg
+734;1;Glicosímetro Accu-Chek Guide 6;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789890907348;109.39;77.46;15;True;produto_734.jpg
+735;1;Advil 400mg 8 cápsulas 6;Haleon;Advil;Farmácia;Analgésicos e Antitérmicos;789423907357;17.97;13.29;15;True;produto_735.jpg
+736;1;Sabonete Protex Antibacteriano 85g 6;Colgate-Palmolive;Protex;Farmácia;Higiene Pessoal;789840307367;4.73;3.07;15;True;produto_736.jpg
+737;1;Bepantol Derma Creme 40g 6;Bayer;Bepantol;Farmácia;Dermatológicos;789358607373;31.39;24.09;15;True;produto_737.jpg
+738;1;Doril 20 comprimidos 6;Hypera Pharma;Doril;Farmácia;Analgésicos e Antitérmicos;789691707389;18.26;12.74;15;True;produto_738.jpg
+739;1;Polaramine 2mg 20 comprimidos 6;Bayer;Polaramine;Farmácia;Antialérgicos;789893907394;30.76;19.91;15;True;produto_739.jpg
+740;1;Bromexina Xarope 120ml 6;Sanofi;Bisolvon;Farmácia;Gripe e Resfriado;789115807404;22.73;16.84;15;True;produto_740.jpg
+741;1;Absorvente Always Noturno 8un 6;Procter & Gamble;Always;Farmácia;Higiene Pessoal;789990407410;14.6;9.56;15;True;produto_741.jpg
+742;1;Tiras Accu-Chek Guide 50un 6;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789269307427;128.46;91.1;15;True;produto_742.jpg
+743;1;Floratil 200mg 6 cápsulas 6;Merck;Floratil;Farmácia;Digestivos e Antiácidos;789773907432;34.78;25.86;15;True;produto_743.jpg
+744;1;Redoxon Vitamina C 1g 10 efervescentes 6;Bayer;Redoxon;Farmácia;Vitaminas e Suplementos;789174807447;28.46;17.77;15;True;produto_744.jpg
+745;1;Chupeta MAM Air 6-16m 6;MAM Babyartikel;MAM;Farmácia;Infantil;789853707451;42.69;31.18;15;True;produto_745.jpg
+746;1;Mamadeira Avent Natural 260ml 6;Philips;Philips Avent;Farmácia;Infantil;789835407469;90.16;63.37;15;True;produto_746.jpg
+747;1;Naldecon Dia 12 comprimidos 6;Bristol-Myers Squibb;Naldecon;Farmácia;Gripe e Resfriado;789149907471;21.54;15.6;15;True;produto_747.jpg
+748;1;Lenço Umedecido Huggies 48un 6;Kimberly-Clark;Huggies;Farmácia;Infantil;789363107488;10.31;7.68;15;True;produto_748.jpg
+749;1;Fenergan Creme 30g 6;Sanofi;Fenergan;Farmácia;Dermatológicos;789736707493;19.87;13.71;15;True;produto_749.jpg
+750;1;Salonpas Emplastro 10un 6;Hisamitsu;Salonpas;Farmácia;Dermatológicos;789698307504;22.36;15.07;15;True;produto_750.jpg
+751;1;Centrum Mulher 60 comprimidos 6;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789392307510;90.9;57.52;15;True;produto_751.jpg
+752;1;Nebacetin Pomada 15g 6;Takeda;Nebacetin;Farmácia;Dermatológicos;789770907529;22.19;16.55;15;True;produto_752.jpg
+753;1;Tylenol Bebê Gotas 15ml 6;Kenvue;Tylenol;Farmácia;Infantil;789191307537;27.82;20.6;15;True;produto_753.jpg
+754;1;Andolba Spray 45ml 6;Hypera Pharma;Andolba;Farmácia;Dermatológicos;789808007546;30.53;21.49;15;True;produto_754.jpg
+755;1;Álcool em Gel 70% Asseptgel 500ml 6;Start Química;Asseptgel;Farmácia;Higiene Pessoal;789633907554;14.49;10.36;15;True;produto_755.jpg
+756;1;Biotônico Fontoura 400ml 6;Hypera Pharma;Biotônico Fontoura;Farmácia;Vitaminas e Suplementos;789152907569;30.26;22.11;15;True;produto_756.jpg
+757;1;Dipirona 500mg/ml gotas 20ml 6;Medley;Medley Genérico;Farmácia;Analgésicos e Antitérmicos;789769807579;5.06;3.25;15;True;produto_757.jpg
+758;1;Gaze Estéril Cremer 13 fios 10un 6;Cremer;Cremer;Farmácia;Primeiros Socorros;789979607583;6.68;4.84;15;True;produto_758.jpg
+759;1;Nebulizador Inalar Compact NS 6;NS Indústria;NS;Farmácia;Equipamentos de Saúde;789723907598;198.56;138.9;15;True;produto_759.jpg
+760;1;Protetor Solar Sundown FPS 50 200ml 6;Kenvue;Sundown;Farmácia;Dermocosméticos;789100207600;76.82;45.39;15;True;produto_760.jpg
+761;1;Plasil 10mg 20 comprimidos 6;Sanofi;Plasil;Farmácia;Digestivos e Antiácidos;789573807615;28.65;18.22;15;True;produto_761.jpg
+762;1;Papel Higiênico Neve Folha Dupla 12un 6;Kimberly-Clark;Neve;Farmácia;Higiene Pessoal;789667007628;36.09;23.69;15;True;produto_762.jpg
+763;1;Cicatricure Gel 30g 6;Genomma Lab;Cicatricure;Farmácia;Dermatológicos;789178707631;54.91;36.59;15;True;produto_763.jpg
+764;1;Cimegripe 20 cápsulas 6;Cimed;Cimegripe;Farmácia;Analgésicos e Antitérmicos;789835107648;12.67;9.19;15;True;produto_764.jpg
+765;1;Magnésio Dimalato 60 cápsulas 6;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789991307658;59.5;38.62;15;True;produto_765.jpg
+766;1;Loratadina 10mg 12 comprimidos 6;EMS;EMS Genérico;Farmácia;Antialérgicos;789687907663;11.5;8.21;15;True;produto_766.jpg
+767;1;Strepsils Mel e Limão 8 pastilhas 6;Reckitt;Strepsils;Farmácia;Gripe e Resfriado;789833007672;12.43;9.53;15;True;produto_767.jpg
+768;1;Shampoo Head & Shoulders 400ml 6;Procter & Gamble;Head & Shoulders;Farmácia;Higiene Pessoal;789162007682;34.06;22.42;15;True;produto_768.jpg
+769;1;Rinosoro 0,9% Spray 50ml 6;Farmasa;Rinosoro;Farmácia;Gripe e Resfriado;789984707692;15.42;10.91;15;True;produto_769.jpg
+770;1;Dramin B6 10 comprimidos 6;Takeda;Dramin;Farmácia;Digestivos e Antiácidos;789609107706;18.47;13.56;15;True;produto_770.jpg
+771;1;Dipirona Gotas Infantil Novalgina 20ml 6;Sanofi;Novalgina;Farmácia;Infantil;789852707719;18.77;12.73;15;True;produto_771.jpg
+772;1;Termômetro Digital G-Tech TH150 6;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789490907720;22.49;16.38;15;True;produto_772.jpg
+773;1;Cataflam Emulgel 60g 6;Haleon;Cataflam;Farmácia;Dermatológicos;789402507736;42.64;31.68;15;True;produto_773.jpg
+774;1;Estomazil Pó 5g x 6 6;Hypera Pharma;Estomazil;Farmácia;Digestivos e Antiácidos;789515107746;9.92;7.37;15;True;produto_774.jpg
+775;1;Medidor de Pressão Omron HEM-7122 6;Omron Healthcare;Omron;Farmácia;Equipamentos de Saúde;789137707753;222.72;152.13;15;True;produto_775.jpg
+776;1;Effaclar Gel Concentrado 150g 6;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789373107760;81.02;53.23;15;True;produto_776.jpg
+777;1;Escova Dental Curaprox CS 5460 6;Curaden;Curaprox;Farmácia;Higiene Bucal;789608107772;42.22;30.37;15;True;produto_777.jpg
+778;1;Escova Dental Oral-B Indicator Plus 6;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789181107789;13.3;8.99;15;True;produto_778.jpg
+779;1;Torsilax 30 comprimidos 6;Neo Química;Torsilax;Farmácia;Analgésicos e Antitérmicos;789356507796;12.88;9.78;15;True;produto_779.jpg
+780;1;Addera D3 7000UI 8 comprimidos 6;Hypera Pharma;Addera;Farmácia;Vitaminas e Suplementos;789317207806;39.14;25.94;15;True;produto_780.jpg
+781;1;Gaviscon Suspensão Sachê 10ml x 12 6;Reckitt;Gaviscon;Farmácia;Digestivos e Antiácidos;789381507813;36.98;28.32;15;True;produto_781.jpg
+782;1;Aptamil Profutura 1 800g 6;Danone;Aptamil;Farmácia;Infantil;789638107821;141.59;95.95;15;True;produto_782.jpg
+783;1;Neosaldina 30 drágeas 6;Hypera Pharma;Neosaldina;Farmácia;Analgésicos e Antitérmicos;789433807834;37.24;23.74;15;True;produto_783.jpg
+784;1;Vick VapoRub 30g 6;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789939607842;20.57;13.54;15;True;produto_784.jpg
+785;1;Atadura Crepom Cremer 10cm 6;Cremer;Cremer;Farmácia;Primeiros Socorros;789486407852;3.09;2;15;True;produto_785.jpg
+786;1;Preservativo Olla Lubrificado 6un 6;Hypera Pharma;Olla;Farmácia;Equipamentos de Saúde;789202807863;6.37;5.05;15;True;produto_786.jpg
+787;1;Eno Sal de Frutas Tradicional 5g x 2 6;Haleon;Eno;Farmácia;Digestivos e Antiácidos;789542007877;5.51;3.82;15;True;produto_787.jpg
+788;1;Eucerin Urea Repair 10% 250ml 6;Beiersdorf;Eucerin;Farmácia;Dermocosméticos;789611807881;93.15;63.63;15;True;produto_788.jpg
+789;1;Histamin Xarope 100ml 6;Neo Química;Histamin;Farmácia;Antialérgicos;789603507898;15.44;10.61;15;True;produto_789.jpg
+790;1;Resfenol 20 cápsulas 6;Kley Hertz;Resfenol;Farmácia;Gripe e Resfriado;789258307908;22.24;15.13;15;True;produto_790.jpg
+791;1;Calminex Pomada 30g 6;Hypera Pharma;Calminex;Farmácia;Dermatológicos;789501907918;22.39;16.76;15;True;produto_791.jpg
+792;1;Hipoglós Pomada 80g 6;Kenvue;Hipoglós;Farmácia;Dermatológicos;789621507926;38.34;25.35;15;True;produto_792.jpg
+793;1;Simeticona Gotas 15ml 6;Neo Química;Neo Química Genérico;Farmácia;Digestivos e Antiácidos;789170207931;6.62;4.9;15;True;produto_793.jpg
+794;1;Tylenol 750mg 20 comprimidos 6;Kenvue;Tylenol;Farmácia;Analgésicos e Antitérmicos;789964507942;24.9;18.11;15;True;produto_794.jpg
+795;1;Dorflex 36 comprimidos 6;Sanofi;Dorflex;Farmácia;Analgésicos e Antitérmicos;789374107952;23.41;17.38;15;True;produto_795.jpg
+796;1;Pharmaton 30 cápsulas 6;Sanofi;Pharmaton;Farmácia;Vitaminas e Suplementos;789533307960;73.43;51.64;15;True;produto_796.jpg
+797;1;Luftal 40mg 20 comprimidos 6;Reckitt;Luftal;Farmácia;Digestivos e Antiácidos;789376607979;24.3;17.56;15;True;produto_797.jpg
+798;1;Colágeno Verisol 30 sachês 6;Sanavita;Sanavita;Farmácia;Vitaminas e Suplementos;789660407980;129.97;79.14;15;True;produto_798.jpg
+799;1;Fio Dental Oral-B Essential 50m 6;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789407207992;12.35;8.24;15;True;produto_799.jpg
+800;1;Algodão Hidrófilo Apolo 50g 6;Apolo;Apolo;Farmácia;Primeiros Socorros;789962208001;6.03;3.94;15;True;produto_800.jpg
+801;1;Absorvente Intimus Gel 8un 6;Kimberly-Clark;Intimus;Farmácia;Higiene Pessoal;789283508013;8.18;5.75;15;True;produto_801.jpg
+802;1;Desodorante Dove Original Aerossol 150ml 6;Unilever;Dove;Farmácia;Higiene Pessoal;789857008020;19.19;13.65;15;True;produto_802.jpg
+803;1;Fralda Huggies Tripla Proteção M 48un 6;Kimberly-Clark;Huggies;Farmácia;Infantil;789401208032;73.83;53.67;15;True;produto_803.jpg
+804;1;Coristina D 16 comprimidos 6;Hypera Pharma;Coristina;Farmácia;Gripe e Resfriado;789924608041;15.58;9.79;15;True;produto_804.jpg
+805;1;Aparelho Gillette Mach3 6;Procter & Gamble;Gillette;Farmácia;Higiene Pessoal;789802908058;33.19;23.09;15;True;produto_805.jpg
+806;1;Fralda Pampers Confort Sec G 46un 6;Procter & Gamble;Pampers;Farmácia;Infantil;789994608062;82.06;61.78;15;True;produto_806.jpg
+807;1;Desalex 5mg 10 comprimidos 6;Organon;Desalex;Farmácia;Antialérgicos;789172108078;44.34;33.95;15;True;produto_807.jpg
+808;1;Supradyn Energia 30 comprimidos 6;Bayer;Supradyn;Farmácia;Vitaminas e Suplementos;789946808087;70.01;48.49;15;True;produto_808.jpg
+809;1;Creme Dental Colgate Total 12 90g 6;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789142808092;12.21;8.15;15;True;produto_809.jpg
+810;1;Neosoro Gotas 30ml 6;Neo Química;Neosoro;Farmácia;Gripe e Resfriado;789130308100;12.88;8.93;15;True;produto_810.jpg
+811;1;Claritin 10mg 12 comprimidos 6;Bayer;Claritin;Farmácia;Antialérgicos;789829508110;42.69;30.7;15;True;produto_811.jpg
+812;1;Água Oxigenada 10 Volumes 100ml 6;Farmax;Farmax;Farmácia;Primeiros Socorros;789311708127;4.09;2.56;15;True;produto_812.jpg
+813;1;Ibuprofeno 600mg 20 comprimidos 6;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789120608135;11.13;7.08;15;True;produto_813.jpg
+814;1;Gelol Spray 150ml 6;Hypera Pharma;Gelol;Farmácia;Dermatológicos;789109208143;28.85;18.61;15;True;produto_814.jpg
+815;1;Esparadrapo Missner 10cm x 4,5m 6;Missner;Missner;Farmácia;Primeiros Socorros;789455308159;13.99;9.88;15;True;produto_815.jpg
+816;1;Aspirina 500mg 20 comprimidos 6;Bayer;Aspirina;Farmácia;Analgésicos e Antitérmicos;789940108161;19.42;14.53;15;True;produto_816.jpg
+817;1;Ômega 3 1000mg 120 cápsulas 6;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789958108175;95.87;58.47;15;True;produto_817.jpg
+818;1;Vick 44E Xarope 120ml 6;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789609408182;24.85;17.2;15;True;produto_818.jpg
+819;1;Centrum Homem 60 comprimidos 6;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789287908196;95.83;66.3;15;True;produto_819.jpg
+820;1;Benegrip 12 comprimidos 6;Hypera Pharma;Benegrip;Farmácia;Gripe e Resfriado;789398408200;14.19;10.33;15;True;produto_820.jpg
+821;1;Protetor Solar Episol Color FPS 70 6;Mantecorp Skincare;Episol;Farmácia;Dermocosméticos;789649208214;80.2;54.46;15;True;produto_821.jpg
+822;1;Shampoo Johnson's Baby 200ml 6;Kenvue;Johnson's Baby;Farmácia;Infantil;789450208225;19.81;14.01;15;True;produto_822.jpg
+823;1;Creme Dental Sensodyne Repara e Protege 100g 7;Haleon;Sensodyne;Farmácia;Higiene Bucal;789505108232;21.12;14.24;15;True;produto_823.jpg
+824;1;Mucilon Arroz e Aveia 230g 7;Nestlé;Mucilon;Farmácia;Infantil;789866408240;8.84;6.75;15;True;produto_824.jpg
+825;1;Omeprazol 20mg 28 cápsulas 7;Medley;Medley Genérico;Farmácia;Digestivos e Antiácidos;789147808255;18.43;11.9;15;True;produto_825.jpg
+826;1;Allegra 120mg 10 comprimidos 7;Sanofi;Allegra;Farmácia;Antialérgicos;789777808263;46.9;30.59;15;True;produto_826.jpg
+827;1;Protetor Solar Anthelios FPS 60 50g 7;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789953908279;111.72;79.34;15;True;produto_827.jpg
+828;1;Alivium 400mg 10 cápsulas 7;Cosmed;Alivium;Farmácia;Analgésicos e Antitérmicos;789397108288;20.08;12.81;15;True;produto_828.jpg
+829;1;Hastes Flexíveis Cotonetes 75un 7;Kenvue;Cotonetes;Farmácia;Higiene Pessoal;789895108298;7.8;5.62;15;True;produto_829.jpg
+830;1;Soro Fisiológico 0,9% 250ml 7;Arboreto;Arboreto;Farmácia;Primeiros Socorros;789725508300;8.83;5.58;15;True;produto_830.jpg
+831;1;Cicaplast Baume B5 40ml 7;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789305708311;79.9;50.54;15;True;produto_831.jpg
+832;1;Enxaguante Colgate Plax 500ml 7;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789243208320;18.53;14.08;15;True;produto_832.jpg
+833;1;Bioderma Sensibio H2O 250ml 7;NAOS;Bioderma;Farmácia;Dermocosméticos;789497508333;102.91;65.34;15;True;produto_833.jpg
+834;1;Epocler Flaconete 10ml x 6 7;Hypera Pharma;Epocler;Farmácia;Digestivos e Antiácidos;789781108346;19.23;14.01;15;True;produto_834.jpg
+835;1;Meia de Compressão Kendall 3/4 7;Cardinal Health;Kendall;Farmácia;Equipamentos de Saúde;789656508352;79.46;54.46;15;True;produto_835.jpg
+836;1;Creme Dental Oral-B Pro-Saúde 70g 7;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789247108365;9.38;6.66;15;True;produto_836.jpg
+837;1;Gel de Limpeza CeraVe 227g 7;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789400208372;107.34;62.5;15;True;produto_837.jpg
+838;1;Álcool 70% Tupi 1L 7;Tupi;Tupi;Farmácia;Primeiros Socorros;789384608380;10.83;7.81;15;True;produto_838.jpg
+839;1;Dipirona Novalgina 1g 10 comprimidos 7;Sanofi;Novalgina;Farmácia;Analgésicos e Antitérmicos;789316508391;23.98;16.75;15;True;produto_839.jpg
+840;1;Mucosolvan Xarope Adulto 120ml 7;Sanofi;Mucosolvan;Farmácia;Gripe e Resfriado;789488908407;36.25;26.94;15;True;produto_840.jpg
+841;1;Água Termal Avène 300ml 7;Pierre Fabre;Avène;Farmácia;Dermocosméticos;789922908415;68.35;45.68;15;True;produto_841.jpg
+842;1;Sonrisal Original 30 comprimidos 7;Haleon;Sonrisal;Farmácia;Digestivos e Antiácidos;789622808424;27.94;21.28;15;True;produto_842.jpg
+843;1;Lacto-Purga 6 comprimidos 7;Hypera Pharma;Lacto-Purga;Farmácia;Digestivos e Antiácidos;789467908439;11.25;7.92;15;True;produto_843.jpg
+844;1;Paracetamol 750mg 20 comprimidos 7;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789530508443;6.83;4.35;15;True;produto_844.jpg
+845;1;Lavitan Hair 60 cápsulas 7;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789617408451;52.68;31.53;15;True;produto_845.jpg
+846;1;Neutrogena Hydro Boost Gel 50g 7;Kenvue;Neutrogena;Farmácia;Dermocosméticos;789890408467;80.32;53.41;15;True;produto_846.jpg
+847;1;Cebion Vitamina C 1g 10 efervescentes 7;Merck;Cebion;Farmácia;Vitaminas e Suplementos;789879608479;20.03;13.41;15;True;produto_847.jpg
+848;1;Enxaguante Listerine Cool Mint 500ml 7;Kenvue;Listerine;Farmácia;Higiene Bucal;789207708488;30.28;19.62;15;True;produto_848.jpg
+849;1;Sorine Adulto Spray 30ml 7;Aché;Sorine;Farmácia;Gripe e Resfriado;789687608498;13.55;10.24;15;True;produto_849.jpg
+850;1;Lavitan Mais Vitaminas 60 comprimidos 7;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789827808502;31.18;21.36;15;True;produto_850.jpg
+851;1;Desodorante Rexona Clinical 48g 7;Unilever;Rexona;Farmácia;Higiene Pessoal;789273208512;25.1;18.53;15;True;produto_851.jpg
+852;1;Hidratante CeraVe Loção 200ml 7;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789610308523;102.17;57.4;15;True;produto_852.jpg
+853;1;Oxímetro de Pulso G-Tech 7;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789324708534;145.93;100.12;15;True;produto_853.jpg
+854;1;Vitamina C 10 Vichy Liftactiv 7;L'Oréal;Vichy;Farmácia;Dermocosméticos;789541008541;188.87;130.36;15;True;produto_854.jpg
+855;1;Shampoo Pantene Restauração 400ml 7;Procter & Gamble;Pantene;Farmácia;Higiene Pessoal;789145308557;28.99;19.37;15;True;produto_855.jpg
+856;1;Preservativo Jontex Lubrificado 6un 7;Kenvue;Jontex;Farmácia;Equipamentos de Saúde;789625108565;13.59;10.47;15;True;produto_856.jpg
+857;1;Imuno Max 30 comprimidos 7;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789151508574;33.34;23.95;15;True;produto_857.jpg
+858;1;Engov 6 comprimidos 7;Hypera Pharma;Engov;Farmácia;Digestivos e Antiácidos;789599508583;7.85;5.2;15;True;produto_858.jpg
+859;1;Minancora Pomada 30g 7;Minancora;Minancora;Farmácia;Dermatológicos;789496208597;12.42;7.92;15;True;produto_859.jpg
+860;1;Tamarine 20 cápsulas 7;Hypera Pharma;Tamarine;Farmácia;Digestivos e Antiácidos;789676408607;53.1;33.79;15;True;produto_860.jpg
+861;1;Afrin Spray Nasal 30ml 7;Bayer;Afrin;Farmácia;Gripe e Resfriado;789279008613;35.52;22.34;15;True;produto_861.jpg
+862;1;Curativo Band-Aid Transparente 40un 7;Kenvue;Band-Aid;Farmácia;Primeiros Socorros;789964008627;11.82;8.3;15;True;produto_862.jpg
+863;1;Corega Ultra Creme Fixador 40g 7;Haleon;Corega;Farmácia;Higiene Bucal;789958608639;29.74;20.54;15;True;produto_863.jpg
+864;1;Buscopan Composto 20 comprimidos 7;Hypera Pharma;Buscopan;Farmácia;Analgésicos e Antitérmicos;789480808642;26.93;20.15;15;True;produto_864.jpg
+865;1;Nivea Creme Lata 97g 7;Beiersdorf;Nivea;Farmácia;Dermocosméticos;789375708651;20.73;14.8;15;True;produto_865.jpg
+866;1;Vick Pastilhas Mentol 20un 7;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789645508666;5.6;3.66;15;True;produto_866.jpg
+867;1;Leite Nan Supreme 1 800g 7;Nestlé;Nan;Farmácia;Infantil;789478608678;100.34;75.16;15;True;produto_867.jpg
+868;1;Sabonete Dove Original 90g 7;Unilever;Dove;Farmácia;Higiene Pessoal;789710708687;5.07;3.5;15;True;produto_868.jpg
+869;1;Merthiolate Spray 45ml 7;Cosmed;Merthiolate;Farmácia;Primeiros Socorros;789338508694;18.68;12.05;15;True;produto_869.jpg
+870;1;Teste de Gravidez Clearblue Digital 7;SPD Swiss Precision;Clearblue;Farmácia;Equipamentos de Saúde;789441508707;44.6;32.47;15;True;produto_870.jpg
+871;1;Glicosímetro Accu-Chek Guide 7;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789405308710;103.09;74.38;15;True;produto_871.jpg
+872;1;Advil 400mg 8 cápsulas 7;Haleon;Advil;Farmácia;Analgésicos e Antitérmicos;789672608722;25.06;15.74;15;True;produto_872.jpg
+873;1;Sabonete Protex Antibacteriano 85g 7;Colgate-Palmolive;Protex;Farmácia;Higiene Pessoal;789454208737;2.95;2.01;15;True;produto_873.jpg
+874;1;Bepantol Derma Creme 40g 7;Bayer;Bepantol;Farmácia;Dermatológicos;789395708747;42.28;31.99;15;True;produto_874.jpg
+875;1;Doril 20 comprimidos 7;Hypera Pharma;Doril;Farmácia;Analgésicos e Antitérmicos;789337408759;11.39;8.37;15;True;produto_875.jpg
+876;1;Polaramine 2mg 20 comprimidos 7;Bayer;Polaramine;Farmácia;Antialérgicos;789810408766;18.79;14.23;15;True;produto_876.jpg
+877;1;Bromexina Xarope 120ml 7;Sanofi;Bisolvon;Farmácia;Gripe e Resfriado;789878708772;26.3;17.74;15;True;produto_877.jpg
+878;1;Absorvente Always Noturno 8un 7;Procter & Gamble;Always;Farmácia;Higiene Pessoal;789875708780;15.41;11.47;15;True;produto_878.jpg
+879;1;Tiras Accu-Chek Guide 50un 7;Roche;Accu-Chek;Farmácia;Equipamentos de Saúde;789679608794;102.99;75.4;15;True;produto_879.jpg
+880;1;Floratil 200mg 6 cápsulas 7;Merck;Floratil;Farmácia;Digestivos e Antiácidos;789100508800;45.38;30.6;15;True;produto_880.jpg
+881;1;Redoxon Vitamina C 1g 10 efervescentes 7;Bayer;Redoxon;Farmácia;Vitaminas e Suplementos;789971708813;27.03;16.14;15;True;produto_881.jpg
+882;1;Chupeta MAM Air 6-16m 7;MAM Babyartikel;MAM;Farmácia;Infantil;789783708821;35.68;27.58;15;True;produto_882.jpg
+883;1;Mamadeira Avent Natural 260ml 7;Philips;Philips Avent;Farmácia;Infantil;789519508837;74.99;59.13;15;True;produto_883.jpg
+884;1;Naldecon Dia 12 comprimidos 7;Bristol-Myers Squibb;Naldecon;Farmácia;Gripe e Resfriado;789671208844;21.05;14.79;15;True;produto_884.jpg
+885;1;Lenço Umedecido Huggies 48un 7;Kimberly-Clark;Huggies;Farmácia;Infantil;789274008858;14.56;10.07;15;True;produto_885.jpg
+886;1;Fenergan Creme 30g 7;Sanofi;Fenergan;Farmácia;Dermatológicos;789711508862;17.93;12.76;15;True;produto_886.jpg
+887;1;Salonpas Emplastro 10un 7;Hisamitsu;Salonpas;Farmácia;Dermatológicos;789907808875;20.06;15.34;15;True;produto_887.jpg
+888;1;Centrum Mulher 60 comprimidos 7;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789401308882;94.19;59.11;15;True;produto_888.jpg
+889;1;Nebacetin Pomada 15g 7;Takeda;Nebacetin;Farmácia;Dermatológicos;789715108891;25.39;17.97;15;True;produto_889.jpg
+890;1;Tylenol Bebê Gotas 15ml 7;Kenvue;Tylenol;Farmácia;Infantil;789463708901;24.26;19;15;True;produto_890.jpg
+891;1;Andolba Spray 45ml 7;Hypera Pharma;Andolba;Farmácia;Dermatológicos;789470408911;24.42;18.05;15;True;produto_891.jpg
+892;1;Álcool em Gel 70% Asseptgel 500ml 7;Start Química;Asseptgel;Farmácia;Higiene Pessoal;789696708921;14.58;10.17;15;True;produto_892.jpg
+893;1;Biotônico Fontoura 400ml 7;Hypera Pharma;Biotônico Fontoura;Farmácia;Vitaminas e Suplementos;789686008938;38.02;24.06;15;True;produto_893.jpg
+894;1;Dipirona 500mg/ml gotas 20ml 7;Medley;Medley Genérico;Farmácia;Analgésicos e Antitérmicos;789838508945;8.41;5.85;15;True;produto_894.jpg
+895;1;Gaze Estéril Cremer 13 fios 10un 7;Cremer;Cremer;Farmácia;Primeiros Socorros;789621908958;6.99;4.48;15;True;produto_895.jpg
+896;1;Nebulizador Inalar Compact NS 7;NS Indústria;NS;Farmácia;Equipamentos de Saúde;789442508962;137.26;100.46;15;True;produto_896.jpg
+897;1;Protetor Solar Sundown FPS 50 200ml 7;Kenvue;Sundown;Farmácia;Dermocosméticos;789903308979;83.47;47.65;15;True;produto_897.jpg
+898;1;Plasil 10mg 20 comprimidos 7;Sanofi;Plasil;Farmácia;Digestivos e Antiácidos;789342308985;24.13;16.69;15;True;produto_898.jpg
+899;1;Papel Higiênico Neve Folha Dupla 12un 7;Kimberly-Clark;Neve;Farmácia;Higiene Pessoal;789521208994;30.61;19.75;15;True;produto_899.jpg
+900;1;Cicatricure Gel 30g 7;Genomma Lab;Cicatricure;Farmácia;Dermatológicos;789661709007;51.66;37.84;15;True;produto_900.jpg
+901;1;Cimegripe 20 cápsulas 7;Cimed;Cimegripe;Farmácia;Analgésicos e Antitérmicos;789366009017;13.55;9.87;15;True;produto_901.jpg
+902;1;Magnésio Dimalato 60 cápsulas 7;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789715409028;68.84;47.55;15;True;produto_902.jpg
+903;1;Loratadina 10mg 12 comprimidos 7;EMS;EMS Genérico;Farmácia;Antialérgicos;789427109032;13.42;9.47;15;True;produto_903.jpg
+904;1;Strepsils Mel e Limão 8 pastilhas 7;Reckitt;Strepsils;Farmácia;Gripe e Resfriado;789853409045;19.4;12.33;15;True;produto_904.jpg
+905;1;Shampoo Head & Shoulders 400ml 7;Procter & Gamble;Head & Shoulders;Farmácia;Higiene Pessoal;789688509051;30.14;21.99;15;True;produto_905.jpg
+906;1;Rinosoro 0,9% Spray 50ml 7;Farmasa;Rinosoro;Farmácia;Gripe e Resfriado;789291509062;21.36;14.89;15;True;produto_906.jpg
+907;1;Dramin B6 10 comprimidos 7;Takeda;Dramin;Farmácia;Digestivos e Antiácidos;789721709071;23.44;15.33;15;True;produto_907.jpg
+908;1;Dipirona Gotas Infantil Novalgina 20ml 7;Sanofi;Novalgina;Farmácia;Infantil;789769109088;18.93;14.18;15;True;produto_908.jpg
+909;1;Termômetro Digital G-Tech TH150 7;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789802009092;21.08;15.71;15;True;produto_909.jpg
+910;1;Cataflam Emulgel 60g 7;Haleon;Cataflam;Farmácia;Dermatológicos;789842009104;41.85;29.15;15;True;produto_910.jpg
+911;1;Estomazil Pó 5g x 6 7;Hypera Pharma;Estomazil;Farmácia;Digestivos e Antiácidos;789725909110;11.73;8.27;15;True;produto_911.jpg
+912;1;Medidor de Pressão Omron HEM-7122 7;Omron Healthcare;Omron;Farmácia;Equipamentos de Saúde;789533509124;188.02;140.68;15;True;produto_912.jpg
+913;1;Effaclar Gel Concentrado 150g 7;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789200909130;112.31;63.62;15;True;produto_913.jpg
+914;1;Escova Dental Curaprox CS 5460 7;Curaden;Curaprox;Farmácia;Higiene Bucal;789434209145;40.74;27.06;15;True;produto_914.jpg
+915;1;Escova Dental Oral-B Indicator Plus 7;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789951609152;10.11;6.78;15;True;produto_915.jpg
+916;1;Torsilax 30 comprimidos 7;Neo Química;Torsilax;Farmácia;Analgésicos e Antitérmicos;789160109162;18.7;13.85;15;True;produto_916.jpg
+917;1;Addera D3 7000UI 8 comprimidos 7;Hypera Pharma;Addera;Farmácia;Vitaminas e Suplementos;789983409173;42.45;27.75;15;True;produto_917.jpg
+918;1;Gaviscon Suspensão Sachê 10ml x 12 7;Reckitt;Gaviscon;Farmácia;Digestivos e Antiácidos;789972909181;47.41;30.7;15;True;produto_918.jpg
+919;1;Aptamil Profutura 1 800g 7;Danone;Aptamil;Farmácia;Infantil;789268109192;146.74;107.04;15;True;produto_919.jpg
+920;1;Neosaldina 30 drágeas 7;Hypera Pharma;Neosaldina;Farmácia;Analgésicos e Antitérmicos;789635709202;32.08;24.65;15;True;produto_920.jpg
+921;1;Vick VapoRub 30g 7;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789635909219;20.66;14.22;15;True;produto_921.jpg
+922;1;Atadura Crepom Cremer 10cm 7;Cremer;Cremer;Farmácia;Primeiros Socorros;789161709224;3.66;2.58;15;True;produto_922.jpg
+923;1;Preservativo Olla Lubrificado 6un 7;Hypera Pharma;Olla;Farmácia;Equipamentos de Saúde;789810209235;11.23;7.96;15;True;produto_923.jpg
+924;1;Eno Sal de Frutas Tradicional 5g x 2 7;Haleon;Eno;Farmácia;Digestivos e Antiácidos;789766809248;3.81;2.79;15;True;produto_924.jpg
+925;1;Eucerin Urea Repair 10% 250ml 7;Beiersdorf;Eucerin;Farmácia;Dermocosméticos;789798909257;120.29;70.97;15;True;produto_925.jpg
+926;1;Histamin Xarope 100ml 7;Neo Química;Histamin;Farmácia;Antialérgicos;789534809261;14.65;11.25;15;True;produto_926.jpg
+927;1;Resfenol 20 cápsulas 7;Kley Hertz;Resfenol;Farmácia;Gripe e Resfriado;789942509276;21.78;13.81;15;True;produto_927.jpg
+928;1;Calminex Pomada 30g 7;Hypera Pharma;Calminex;Farmácia;Dermatológicos;789969909288;19.66;14.41;15;True;produto_928.jpg
+929;1;Hipoglós Pomada 80g 7;Kenvue;Hipoglós;Farmácia;Dermatológicos;789872909290;35.77;25.68;15;True;produto_929.jpg
+930;1;Simeticona Gotas 15ml 7;Neo Química;Neo Química Genérico;Farmácia;Digestivos e Antiácidos;789322209303;8.04;5.3;15;True;produto_930.jpg
+931;1;Tylenol 750mg 20 comprimidos 7;Kenvue;Tylenol;Farmácia;Analgésicos e Antitérmicos;789448409317;24.96;15.67;15;True;produto_931.jpg
+932;1;Dorflex 36 comprimidos 7;Sanofi;Dorflex;Farmácia;Analgésicos e Antitérmicos;789576609324;21.4;14.62;15;True;produto_932.jpg
+933;1;Pharmaton 30 cápsulas 7;Sanofi;Pharmaton;Farmácia;Vitaminas e Suplementos;789447209330;123.2;74.97;15;True;produto_933.jpg
+934;1;Luftal 40mg 20 comprimidos 7;Reckitt;Luftal;Farmácia;Digestivos e Antiácidos;789247109346;26.46;17.29;15;True;produto_934.jpg
+935;1;Colágeno Verisol 30 sachês 7;Sanavita;Sanavita;Farmácia;Vitaminas e Suplementos;789917709351;88.33;65.15;15;True;produto_935.jpg
+936;1;Fio Dental Oral-B Essential 50m 7;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789102409363;11.4;8.7;15;True;produto_936.jpg
+937;1;Algodão Hidrófilo Apolo 50g 7;Apolo;Apolo;Farmácia;Primeiros Socorros;789296709375;6.85;4.32;15;True;produto_937.jpg
+938;1;Absorvente Intimus Gel 8un 7;Kimberly-Clark;Intimus;Farmácia;Higiene Pessoal;789429309380;9.07;6.79;15;True;produto_938.jpg
+939;1;Desodorante Dove Original Aerossol 150ml 7;Unilever;Dove;Farmácia;Higiene Pessoal;789984009396;14.43;9.79;15;True;produto_939.jpg
+940;1;Fralda Huggies Tripla Proteção M 48un 7;Kimberly-Clark;Huggies;Farmácia;Infantil;789346609402;66.82;49.52;15;True;produto_940.jpg
+941;1;Coristina D 16 comprimidos 7;Hypera Pharma;Coristina;Farmácia;Gripe e Resfriado;789822409412;18.68;13.58;15;True;produto_941.jpg
+942;1;Aparelho Gillette Mach3 7;Procter & Gamble;Gillette;Farmácia;Higiene Pessoal;789488609427;26.75;19.46;15;True;produto_942.jpg
+943;1;Fralda Pampers Confort Sec G 46un 7;Procter & Gamble;Pampers;Farmácia;Infantil;789410909434;95.12;71.42;15;True;produto_943.jpg
+944;1;Desalex 5mg 10 comprimidos 7;Organon;Desalex;Farmácia;Antialérgicos;789507509444;52.1;35.53;15;True;produto_944.jpg
+945;1;Supradyn Energia 30 comprimidos 7;Bayer;Supradyn;Farmácia;Vitaminas e Suplementos;789471609456;79.72;54.18;15;True;produto_945.jpg
+946;1;Creme Dental Colgate Total 12 90g 7;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789881809460;8.49;6.46;15;True;produto_946.jpg
+947;1;Neosoro Gotas 30ml 7;Neo Química;Neosoro;Farmácia;Gripe e Resfriado;789171409475;11.72;8.52;15;True;produto_947.jpg
+948;1;Claritin 10mg 12 comprimidos 7;Bayer;Claritin;Farmácia;Antialérgicos;789222409483;57.02;40.61;15;True;produto_948.jpg
+949;1;Água Oxigenada 10 Volumes 100ml 7;Farmax;Farmax;Farmácia;Primeiros Socorros;789340709490;5.25;3.75;15;True;produto_949.jpg
+950;1;Ibuprofeno 600mg 20 comprimidos 7;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789933309504;15.32;11.16;15;True;produto_950.jpg
+951;1;Gelol Spray 150ml 7;Hypera Pharma;Gelol;Farmácia;Dermatológicos;789159009510;34.98;24.34;15;True;produto_951.jpg
+952;1;Esparadrapo Missner 10cm x 4,5m 7;Missner;Missner;Farmácia;Primeiros Socorros;789889209523;11.74;8.99;15;True;produto_952.jpg
+953;1;Aspirina 500mg 20 comprimidos 7;Bayer;Aspirina;Farmácia;Analgésicos e Antitérmicos;789677209535;19.78;13.02;15;True;produto_953.jpg
+954;1;Ômega 3 1000mg 120 cápsulas 7;Vitafor;Vitafor;Farmácia;Vitaminas e Suplementos;789197809541;104.07;65.34;15;True;produto_954.jpg
+955;1;Vick 44E Xarope 120ml 7;Procter & Gamble;Vick;Farmácia;Gripe e Resfriado;789487909551;30.59;20.25;15;True;produto_955.jpg
+956;1;Centrum Homem 60 comprimidos 7;Haleon;Centrum;Farmácia;Vitaminas e Suplementos;789669509564;106.81;63.47;15;True;produto_956.jpg
+957;1;Benegrip 12 comprimidos 7;Hypera Pharma;Benegrip;Farmácia;Gripe e Resfriado;789810609578;17.84;12.1;15;True;produto_957.jpg
+958;1;Protetor Solar Episol Color FPS 70 7;Mantecorp Skincare;Episol;Farmácia;Dermocosméticos;789423909586;75.5;47.32;15;True;produto_958.jpg
+959;1;Shampoo Johnson's Baby 200ml 7;Kenvue;Johnson's Baby;Farmácia;Infantil;789926409596;17.66;12.53;15;True;produto_959.jpg
+960;1;Creme Dental Sensodyne Repara e Protege 100g 8;Haleon;Sensodyne;Farmácia;Higiene Bucal;789559309603;27.23;19.8;15;True;produto_960.jpg
+961;1;Mucilon Arroz e Aveia 230g 8;Nestlé;Mucilon;Farmácia;Infantil;789831109611;9.56;6.86;15;True;produto_961.jpg
+962;1;Omeprazol 20mg 28 cápsulas 8;Medley;Medley Genérico;Farmácia;Digestivos e Antiácidos;789216509621;17.35;11.36;15;True;produto_962.jpg
+963;1;Allegra 120mg 10 comprimidos 8;Sanofi;Allegra;Farmácia;Antialérgicos;789201709634;46.07;35.13;15;True;produto_963.jpg
+964;1;Protetor Solar Anthelios FPS 60 50g 8;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789579709643;101.92;65.31;15;True;produto_964.jpg
+965;1;Alivium 400mg 10 cápsulas 8;Cosmed;Alivium;Farmácia;Analgésicos e Antitérmicos;789900209659;18.22;11.68;15;True;produto_965.jpg
+966;1;Hastes Flexíveis Cotonetes 75un 8;Kenvue;Cotonetes;Farmácia;Higiene Pessoal;789885809662;8.12;5.49;15;True;produto_966.jpg
+967;1;Soro Fisiológico 0,9% 250ml 8;Arboreto;Arboreto;Farmácia;Primeiros Socorros;789105109677;7.26;4.64;15;True;produto_967.jpg
+968;1;Cicaplast Baume B5 40ml 8;L'Oréal;La Roche-Posay;Farmácia;Dermocosméticos;789619109688;85.2;60.59;15;True;produto_968.jpg
+969;1;Enxaguante Colgate Plax 500ml 8;Colgate-Palmolive;Colgate;Farmácia;Higiene Bucal;789585609690;17.29;12.7;15;True;produto_969.jpg
+970;1;Bioderma Sensibio H2O 250ml 8;NAOS;Bioderma;Farmácia;Dermocosméticos;789143309701;111.76;68.06;15;True;produto_970.jpg
+971;1;Epocler Flaconete 10ml x 6 8;Hypera Pharma;Epocler;Farmácia;Digestivos e Antiácidos;789890209714;19.94;14.41;15;True;produto_971.jpg
+972;1;Meia de Compressão Kendall 3/4 8;Cardinal Health;Kendall;Farmácia;Equipamentos de Saúde;789415909721;86.22;65.41;15;True;produto_972.jpg
+973;1;Creme Dental Oral-B Pro-Saúde 70g 8;Procter & Gamble;Oral-B;Farmácia;Higiene Bucal;789123209731;10.86;7.03;15;True;produto_973.jpg
+974;1;Gel de Limpeza CeraVe 227g 8;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789974709743;84.91;48.57;15;True;produto_974.jpg
+975;1;Álcool 70% Tupi 1L 8;Tupi;Tupi;Farmácia;Primeiros Socorros;789845909753;14.26;9.46;15;True;produto_975.jpg
+976;1;Dipirona Novalgina 1g 10 comprimidos 8;Sanofi;Novalgina;Farmácia;Analgésicos e Antitérmicos;789737309766;20.51;13.56;15;True;produto_976.jpg
+977;1;Mucosolvan Xarope Adulto 120ml 8;Sanofi;Mucosolvan;Farmácia;Gripe e Resfriado;789741209773;41.5;26.07;15;True;produto_977.jpg
+978;1;Água Termal Avène 300ml 8;Pierre Fabre;Avène;Farmácia;Dermocosméticos;789490909782;88.08;62.44;15;True;produto_978.jpg
+979;1;Sonrisal Original 30 comprimidos 8;Haleon;Sonrisal;Farmácia;Digestivos e Antiácidos;789857709794;27.13;19.57;15;True;produto_979.jpg
+980;1;Lacto-Purga 6 comprimidos 8;Hypera Pharma;Lacto-Purga;Farmácia;Digestivos e Antiácidos;789385309802;12.49;8.69;15;True;produto_980.jpg
+981;1;Paracetamol 750mg 20 comprimidos 8;EMS;EMS Genérico;Farmácia;Analgésicos e Antitérmicos;789189209816;6.66;4.96;15;True;produto_981.jpg
+982;1;Lavitan Hair 60 cápsulas 8;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789251709824;64.49;40.93;15;True;produto_982.jpg
+983;1;Neutrogena Hydro Boost Gel 50g 8;Kenvue;Neutrogena;Farmácia;Dermocosméticos;789554109831;74.77;45.5;15;True;produto_983.jpg
+984;1;Cebion Vitamina C 1g 10 efervescentes 8;Merck;Cebion;Farmácia;Vitaminas e Suplementos;789882609849;33.41;19.87;15;True;produto_984.jpg
+985;1;Enxaguante Listerine Cool Mint 500ml 8;Kenvue;Listerine;Farmácia;Higiene Bucal;789607509858;23;15.96;15;True;produto_985.jpg
+986;1;Sorine Adulto Spray 30ml 8;Aché;Sorine;Farmácia;Gripe e Resfriado;789745409867;18.43;13.72;15;True;produto_986.jpg
+987;1;Lavitan Mais Vitaminas 60 comprimidos 8;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789159609879;35.16;22.93;15;True;produto_987.jpg
+988;1;Desodorante Rexona Clinical 48g 8;Unilever;Rexona;Farmácia;Higiene Pessoal;789754609885;26.89;17.43;15;True;produto_988.jpg
+989;1;Hidratante CeraVe Loção 200ml 8;L'Oréal;CeraVe;Farmácia;Dermocosméticos;789635209890;81.43;45.71;15;True;produto_989.jpg
+990;1;Oxímetro de Pulso G-Tech 8;Accumed;G-Tech;Farmácia;Equipamentos de Saúde;789944209909;159.17;107.14;15;True;produto_990.jpg
+991;1;Vitamina C 10 Vichy Liftactiv 8;L'Oréal;Vichy;Farmácia;Dermocosméticos;789913709919;221.93;139.81;15;True;produto_991.jpg
+992;1;Shampoo Pantene Restauração 400ml 8;Procter & Gamble;Pantene;Farmácia;Higiene Pessoal;789382409925;22.16;16.88;15;True;produto_992.jpg
+993;1;Preservativo Jontex Lubrificado 6un 8;Kenvue;Jontex;Farmácia;Equipamentos de Saúde;789457909934;12.4;9.68;15;True;produto_993.jpg
+994;1;Imuno Max 30 comprimidos 8;Cimed;Lavitan;Farmácia;Vitaminas e Suplementos;789468909949;33.93;23.87;15;True;produto_994.jpg
+995;1;Engov 6 comprimidos 8;Hypera Pharma;Engov;Farmácia;Digestivos e Antiácidos;789981109950;11.36;7.45;15;True;produto_995.jpg
+996;1;Minancora Pomada 30g 8;Minancora;Minancora;Farmácia;Dermatológicos;789325409968;13.49;10.16;15;True;produto_996.jpg
+997;1;Tamarine 20 cápsulas 8;Hypera Pharma;Tamarine;Farmácia;Digestivos e Antiácidos;789439009975;46.27;33.3;15;True;produto_997.jpg
+998;1;Afrin Spray Nasal 30ml 8;Bayer;Afrin;Farmácia;Gripe e Resfriado;789498809983;32.86;23.65;15;True;produto_998.jpg
+999;1;Curativo Band-Aid Transparente 40un 8;Kenvue;Band-Aid;Farmácia;Primeiros Socorros;789339809998;15.76;10.3;15;True;produto_999.jpg
+1000;1;Corega Ultra Creme Fixador 40g 8;Haleon;Corega;Farmácia;Higiene Bucal;789908410002;31.46;20.61;15;True;produto_1000.jpg

@@ -1,0 +1,8 @@
+id_canal;nome_canal;tipo;comissao_perc
+1;Presencial;Físico;5
+2;E-commerce;Digital;3
+3;Televendas;Remoto;4
+4;Representante;Indireto;8
+5;App Mobile;Digital;2.5
+6;Marketplace;Digital;12
+7;WhatsApp;Remoto;3.5

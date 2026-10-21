@@ -1,0 +1,260 @@
+// Tabelas de dados vindas do ERP/DW (mesmos nomes dos CSVs exportados).
+// Tipos: INTEGER, REAL, TEXT, BOOL (gravado como 0/1).
+export const TABELAS_DADOS = {
+  dm_canal: {
+    pk: 'id_canal',
+    colunas: { id_canal: 'INTEGER', nome_canal: 'TEXT', tipo: 'TEXT', comissao_perc: 'REAL' },
+  },
+  dm_cliente: {
+    pk: 'id_cliente',
+    colunas: {
+      id_cliente: 'INTEGER', id_empresa: 'INTEGER', id_vendedor: 'INTEGER', nome_cliente: 'TEXT',
+      razao_social: 'TEXT', nome_fantasia: 'TEXT', cpf: 'TEXT', cnpj: 'TEXT', data_cadastro: 'TEXT',
+      estado: 'TEXT', cidade: 'TEXT', bairro: 'TEXT', rua: 'TEXT', numero: 'TEXT', cep: 'TEXT',
+      segmento: 'TEXT', porte: 'TEXT', ativo: 'BOOL', imagem: 'TEXT',
+    },
+    indices: ['id_vendedor', 'estado'],
+  },
+  dm_produto: {
+    pk: 'id_produto',
+    colunas: {
+      id_produto: 'INTEGER', id_empresa: 'INTEGER', nome_produto: 'TEXT', fabricante: 'TEXT', marca: 'TEXT',
+      categoria: 'TEXT', subcategoria: 'TEXT', ean: 'TEXT', preco_lista: 'REAL', custo_compra: 'REAL',
+      margem_minima: 'REAL', status: 'BOOL', imagem: 'TEXT',
+    },
+    indices: ['fabricante', 'marca'],
+  },
+  dm_vendedor: {
+    pk: 'id_vendedor',
+    colunas: {
+      id_vendedor: 'INTEGER', id_empresa: 'INTEGER', nome_vendedor: 'TEXT', nivel: 'TEXT', id_superior: 'INTEGER',
+      data_nascimento: 'TEXT', telefone: 'TEXT', email: 'TEXT', estado: 'TEXT', cidade: 'TEXT', bairro: 'TEXT',
+      rua: 'TEXT', numero: 'TEXT', cep: 'TEXT', imagem: 'TEXT',
+    },
+    indices: ['id_superior'],
+  },
+  fato_vendas: {
+    pk: 'id_fato',
+    colunas: {
+      id_fato: 'INTEGER', id_empresa: 'INTEGER', id_pedido: 'TEXT', data_pedido: 'TEXT', data_faturamento: 'TEXT',
+      id_produto: 'INTEGER', id_cliente: 'INTEGER', id_vendedor: 'INTEGER', quantidade: 'REAL', preco_lista: 'REAL',
+      desconto_perc: 'REAL', valor_unitario: 'REAL', valor_total: 'REAL', custo_unitario: 'REAL', custo_total: 'REAL',
+      margem_bruta: 'REAL', valor_icms: 'REAL', valor_pis: 'REAL', valor_cofins: 'REAL', valor_impostos_total: 'REAL',
+      id_canal: 'INTEGER', cfop: 'TEXT', numero_nf: 'TEXT', status: 'TEXT',
+    },
+    indices: ['data_pedido', 'data_faturamento', 'id_produto', 'id_vendedor', 'id_cliente', 'id_pedido'],
+  },
+  fato_estoque: {
+    pk: 'id_estoque',
+    colunas: {
+      id_estoque: 'INTEGER', id_empresa: 'INTEGER', id_produto: 'INTEGER', data: 'TEXT', estoque_inicial: 'REAL',
+      quantidade_vendida: 'REAL', quantidade_entrada: 'REAL', estoque_final: 'REAL', estoque_minimo: 'REAL',
+      custo_estoque: 'REAL',
+    },
+    indices: ['id_produto, data'],
+  },
+  fato_metas: {
+    pk: 'id_meta',
+    colunas: {
+      id_meta: 'INTEGER', id_empresa: 'INTEGER', id_vendedor: 'INTEGER', ano: 'INTEGER', mes: 'INTEGER',
+      meta_valor: 'REAL', meta_quantidade: 'REAL', realizado_valor: 'REAL', realizado_quantidade: 'REAL',
+      atingimento_perc: 'REAL',
+    },
+    indices: ['id_vendedor, ano, mes'],
+  },
+};
+
+export const ESQUEMA_APP = `
+CREATE TABLE IF NOT EXISTS campanha (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT NOT NULL,
+  fornecedor TEXT,
+  status TEXT NOT NULL DEFAULT 'rascunho',
+  inicio TEXT NOT NULL,
+  fim TEXT NOT NULL,
+  definicao TEXT NOT NULL,
+  criado_em TEXT NOT NULL,
+  atualizado_em TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS fotografia (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id_campanha INTEGER NOT NULL REFERENCES campanha(id) ON DELETE CASCADE,
+  tipo TEXT NOT NULL DEFAULT 'manual',
+  observacao TEXT,
+  data_referencia TEXT,
+  resultado TEXT NOT NULL,
+  criado_em TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_fotografia_campanha ON fotografia(id_campanha);
+CREATE TABLE IF NOT EXISTS modelo_mensagem (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT NOT NULL,
+  destino TEXT NOT NULL DEFAULT 'participantes',
+  assunto TEXT,
+  corpo TEXT NOT NULL,
+  criado_em TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS agendamento (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT NOT NULL,
+  id_campanha INTEGER,
+  id_modelo INTEGER NOT NULL,
+  canal TEXT NOT NULL DEFAULT 'registro',
+  filtro TEXT NOT NULL DEFAULT 'todos',
+  lista TEXT,
+  dias_semana TEXT NOT NULL DEFAULT '1,2,3,4,5',
+  hora TEXT NOT NULL DEFAULT '08:00',
+  ativo INTEGER NOT NULL DEFAULT 1,
+  ultima_execucao TEXT,
+  criado_em TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS disparo (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id_campanha INTEGER,
+  id_agendamento INTEGER,
+  canal TEXT NOT NULL,
+  destinatario TEXT,
+  contato TEXT,
+  assunto TEXT,
+  mensagem TEXT,
+  status TEXT NOT NULL,
+  erro TEXT,
+  criado_em TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_disparo_campanha ON disparo(id_campanha, criado_em);
+CREATE TABLE IF NOT EXISTS importacao (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  tabela TEXT NOT NULL,
+  arquivo TEXT,
+  modo TEXT,
+  linhas INTEGER,
+  criado_em TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS config (
+  chave TEXT PRIMARY KEY,
+  valor TEXT NOT NULL
+);
+
+-- Grupos/linhas de produtos reutilizáveis (ex.: "Linha Dor" = Dorflex + Novalgina + Neosaldina)
+CREATE TABLE IF NOT EXISTS grupo_produto (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT NOT NULL UNIQUE,
+  descricao TEXT,
+  seletor TEXT NOT NULL,
+  criado_em TEXT NOT NULL
+);
+
+-- Perfil calculado de cada cliente (RFV, curva ABC, potencial). Recalculado a cada importação.
+CREATE TABLE IF NOT EXISTS cliente_perfil (
+  id_cliente INTEGER PRIMARY KEY,
+  id_vendedor INTEGER,
+  valor_90d REAL, pedidos_90d INTEGER, skus_90d INTEGER, marcas_90d INTEGER,
+  valor_30d REAL, valor_30d_ant REAL,
+  primeira_compra TEXT, ultima_compra TEXT, dias_sem_compra INTEGER,
+  intervalo_medio REAL,
+  curva TEXT, r INTEGER, f INTEGER, v INTEGER, segmento_rfv TEXT,
+  potencial_90d REAL, gap_90d REAL,
+  atualizado_em TEXT
+);
+CREATE INDEX IF NOT EXISTS ix_perfil_vendedor ON cliente_perfil(id_vendedor);
+
+-- Regras de associação entre marcas (quem compra A também compra B)
+CREATE TABLE IF NOT EXISTS associacao_marca (
+  marca_a TEXT NOT NULL, marca_b TEXT NOT NULL,
+  clientes_a INTEGER, clientes_ab INTEGER, suporte REAL, confianca REAL, lift REAL,
+  PRIMARY KEY (marca_a, marca_b)
+);
+
+-- Base de conhecimento (fatos pré-calculados e validados que alimentam a IA)
+CREATE TABLE IF NOT EXISTS fato_ia (
+  id TEXT PRIMARY KEY,
+  escopo TEXT NOT NULL,
+  chave TEXT,
+  tipo TEXT NOT NULL,
+  titulo TEXT NOT NULL,
+  texto TEXT NOT NULL,
+  dados TEXT,
+  termos TEXT,
+  relevancia REAL DEFAULT 0,
+  validado INTEGER NOT NULL DEFAULT 1,
+  validacao TEXT,
+  gerado_em TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_fato_escopo ON fato_ia(escopo, chave);
+
+CREATE TABLE IF NOT EXISTS verificacao_dados (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  regra TEXT NOT NULL,
+  descricao TEXT,
+  valor_a REAL, valor_b REAL, divergencias INTEGER,
+  ok INTEGER NOT NULL,
+  detalhe TEXT,
+  criado_em TEXT NOT NULL
+);
+
+-- Uso e custo da IA (controle de orçamento diário)
+CREATE TABLE IF NOT EXISTS uso_ia (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  tipo TEXT NOT NULL,
+  referencia TEXT,
+  modelo TEXT,
+  tokens_entrada INTEGER, tokens_saida INTEGER, tokens_cache_leitura INTEGER, tokens_cache_escrita INTEGER,
+  custo_usd REAL NOT NULL DEFAULT 0,
+  status TEXT NOT NULL,
+  erro TEXT,
+  criado_em TEXT NOT NULL
+);
+
+-- Análises da IA guardadas (reaproveitadas enquanto os dados não mudam)
+CREATE TABLE IF NOT EXISTS analise_ia (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  tipo TEXT NOT NULL,
+  referencia TEXT,
+  assinatura TEXT NOT NULL,
+  resultado TEXT NOT NULL,
+  fatos TEXT,
+  custo_usd REAL,
+  criado_em TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_analise_ref ON analise_ia(tipo, referencia, criado_em);
+
+-- Recomendações (planos de ataque) e retroalimentação: convertida quando o cliente compra depois da sugestão
+CREATE TABLE IF NOT EXISTS recomendacao (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  origem TEXT NOT NULL,
+  tipo TEXT NOT NULL,
+  id_vendedor INTEGER,
+  id_cliente INTEGER,
+  id_campanha INTEGER,
+  produtos TEXT,
+  marcas TEXT,
+  motivo TEXT,
+  valor_potencial REAL,
+  score REAL,
+  status TEXT NOT NULL DEFAULT 'aberta',
+  convertida_em TEXT,
+  valor_convertido REAL,
+  criado_em TEXT NOT NULL,
+  expira_em TEXT
+);
+CREATE INDEX IF NOT EXISTS ix_recomendacao_status ON recomendacao(status, id_vendedor);
+
+-- Farmácias ativas (Receita Federal) para prospecção e mapa
+CREATE TABLE IF NOT EXISTS rf_farmacia (
+  cnpj TEXT PRIMARY KEY,
+  cnpj_basico TEXT,
+  razao_social TEXT,
+  nome_fantasia TEXT,
+  matriz INTEGER,
+  cnae TEXT,
+  data_inicio TEXT,
+  porte TEXT,
+  capital_social REAL,
+  logradouro TEXT, numero TEXT, complemento TEXT, bairro TEXT, cep TEXT,
+  uf TEXT, municipio_codigo TEXT, municipio TEXT,
+  telefone TEXT, email TEXT,
+  id_cliente INTEGER
+);
+CREATE INDEX IF NOT EXISTS ix_rf_cidade ON rf_farmacia(uf, municipio);
+CREATE INDEX IF NOT EXISTS ix_rf_basico ON rf_farmacia(cnpj_basico);
+`;
