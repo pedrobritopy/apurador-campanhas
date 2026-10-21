@@ -1,0 +1,141 @@
+/* =====================================================================
+   Telas de campanha: lista, apuração (detalhe), gaveta do participante e boletim.
+   Usa apenas tokens do design system (estilo.css).
+   ===================================================================== */
+
+/* ---------------------------------------------------------------- lista */
+.cmp-filtros { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+.cmp-filtros .entrada-grupo { width: 260px; }
+.cmp-grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 16px; }
+.cmp-cartao { overflow: hidden; height: 100%; }
+.cmp-grade > div { min-width: 0; }
+.cmp-cartao .cartao-corpo { padding-top: 0; }
+.cmp-cartao-faixa { position: absolute; left: 0; top: 0; right: 0; height: 3px; }
+.cmp-cartao-topo { display: flex; align-items: flex-start; gap: 10px; padding: 18px 18px 12px; }
+.cmp-cartao-nome { font-size: 15px; font-weight: 650; letter-spacing: -0.01em; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.cmp-cartao-meio { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px; align-items: center; }
+.cmp-cartao-rodape { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 18px; border-top: 1px solid var(--borda); font-size: 12px; color: var(--tinta-2); }
+.cmp-mini-tempo { display: flex; flex-direction: column; gap: 5px; }
+.cmp-mini-tempo .rotulo { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--tinta-3); }
+.cmp-estat { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.cmp-estat-rotulo { font-size: 11.5px; color: var(--tinta-3); white-space: nowrap; }
+.cmp-estat-valor { font-size: 17px; font-weight: 650; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.cmp-estat-valor.g { font-size: 24px; letter-spacing: -0.03em; }
+.cmp-estat-sub { font-size: 11.5px; color: var(--tinta-2); }
+.progresso-barra.tempo { background: var(--tinta-3); }
+.progresso-barra.orcamento-ok { background: var(--acento); }
+.cmp-ponto-cor { width: 9px; height: 9px; border-radius: 3px; flex: none; }
+
+/* ---------------------------------------------------------------- detalhe */
+.cmp-faixa-tempo { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: -6px 0 18px; }
+.cmp-faixa-tempo .progresso { width: 220px; }
+.cmp-referencia { display: inline-flex; align-items: center; gap: 6px; }
+.cmp-referencia input[type='date'] { height: 28px; width: 150px; font-size: 12.5px; }
+.cmp-heroi { display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(270px, 360px); gap: 28px; align-items: center; padding: 22px 24px; }
+.cmp-heroi-principal { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.cmp-heroi-numeros { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.cmp-heroi-valor { font-size: 46px; font-weight: 650; letter-spacing: -0.035em; line-height: 1; }
+.cmp-heroi-proj { display: inline-flex; align-items: baseline; gap: 6px; font-size: 15px; color: var(--tinta-2); }
+.cmp-heroi-proj strong { font-size: 22px; color: var(--tinta); font-weight: 650; letter-spacing: -0.02em; }
+.cmp-narrativa { font-size: 14.5px; line-height: 1.62; color: var(--tinta-2); max-width: 720px; }
+.cmp-narrativa strong { color: var(--tinta); font-weight: 650; }
+.cmp-heroi-dist { display: flex; flex-direction: column; gap: 12px; padding-left: 24px; border-left: 1px solid var(--borda); }
+@media (max-width: 1180px) {
+  .cmp-heroi { grid-template-columns: auto minmax(0, 1fr); }
+  .cmp-heroi-dist { grid-column: 1 / -1; border-left: 0; padding-left: 0; border-top: 1px solid var(--borda); padding-top: 16px; }
+}
+@media (max-width: 720px) { .cmp-heroi { grid-template-columns: minmax(0, 1fr); justify-items: start; } }
+
+.cmp-criterios { display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 16px; }
+@media (max-width: 720px) { .cmp-criterios { grid-template-columns: minmax(0, 1fr); } }
+.cmp-crit-estats { display: grid; grid-template-columns: repeat(auto-fit, minmax(112px, 1fr)); gap: 12px 16px; margin-bottom: 14px; }
+.cmp-crit-estats .cmp-estat-valor { white-space: normal; line-height: 1.2; overflow-wrap: anywhere; }
+.cmp-crit-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+
+/* ranking */
+.cmp-controles { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+.cmp-controles .entrada-grupo { width: 240px; }
+.cmp-podio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 14px; }
+@media (max-width: 900px) { .cmp-podio { grid-template-columns: minmax(0, 1fr); } }
+.cmp-podio-item { padding: 16px; display: flex; flex-direction: column; gap: 10px; cursor: pointer; }
+.cmp-podio-item.primeiro { box-shadow: 0 0 0 1px rgba(185, 134, 43, 0.45), 0 14px 34px -18px rgba(185, 134, 43, 0.55); }
+.cmp-rank-linha {
+  display: grid; grid-template-columns: 46px minmax(0, 1fr) minmax(150px, 200px) 120px; align-items: center; gap: 14px;
+  padding: 10px 14px; border-radius: 12px; background: var(--superficie); box-shadow: var(--sombra-1); cursor: pointer;
+  transition: box-shadow var(--dur) var(--curva), background var(--dur) var(--curva);
+}
+.cmp-rank-linha:hover { box-shadow: var(--sombra-2); }
+.cmp-rank-linha.selecionada { box-shadow: 0 0 0 1.5px var(--acento), var(--sombra-2); }
+.cmp-rank-pos { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.cmp-rank-num { font-size: 14px; font-weight: 700; color: var(--tinta-2); font-variant-numeric: tabular-nums; }
+.cmp-rank-nome { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.cmp-rank-crit { font-size: 11.5px; color: var(--tinta-3); display: flex; gap: 10px; flex-wrap: wrap; margin-top: 2px; }
+.cmp-rank-crit b { color: var(--tinta-2); font-weight: 600; font-variant-numeric: tabular-nums; }
+.cmp-rank-score { display: flex; flex-direction: column; gap: 6px; }
+.cmp-rank-score .topo-score { display: flex; justify-content: space-between; align-items: baseline; font-size: 12px; color: var(--tinta-3); }
+.cmp-rank-score .topo-score strong { font-size: 16px; color: var(--tinta); font-weight: 650; font-variant-numeric: tabular-nums; white-space: nowrap; flex: none; }
+.cmp-rank-score .topo-score span { min-width: 0; margin-right: 8px; }
+.cmp-rank-premio { text-align: right; display: flex; flex-direction: column; gap: 1px; }
+.cmp-rank-premio strong { font-size: 14px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.cmp-rank-dica { font-size: 11.5px; color: var(--acento-texto); display: inline-flex; align-items: center; gap: 4px; margin-top: 3px; }
+@media (max-width: 900px) {
+  .cmp-rank-linha { grid-template-columns: 40px minmax(0, 1fr) 96px; }
+  .cmp-rank-score { display: none; }
+}
+
+/* equipes */
+.cmp-equipe { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 110px 110px; gap: 16px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--borda); }
+.cmp-equipe:last-child { border-bottom: 0; }
+@media (max-width: 900px) { .cmp-equipe { grid-template-columns: minmax(0, 1fr) 100px; } .cmp-equipe .ocultavel { display: none; } }
+
+/* gaveta do participante */
+.cmp-gaveta-topo { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.cmp-gaveta-numeros { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-bottom: 16px; }
+.cmp-gaveta-numeros > div { padding: 12px 14px; border-radius: 10px; background: var(--superficie-2); }
+@media (max-width: 640px) { .cmp-gaveta-numeros { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.cmp-bloco { margin-bottom: 22px; }
+.cmp-bloco-titulo { font-size: 12px; font-weight: 600; color: var(--tinta-3); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.cmp-crit-linha { padding: 12px 0; border-bottom: 1px solid var(--borda); }
+.cmp-crit-linha:last-child { border-bottom: 0; }
+.cmp-destaques { display: flex; flex-direction: column; gap: 8px; }
+.cmp-destaque { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border-radius: 10px; background: var(--superficie-2); font-size: 13px; line-height: 1.5; }
+.cmp-destaque svg { flex: none; margin-top: 2px; }
+.cmp-destaque.positivo svg { color: var(--bom); }
+.cmp-destaque.alerta svg { color: var(--aviso-texto); }
+.cmp-destaque.acao svg { color: var(--acento); }
+.cmp-destaque.info svg { color: var(--tinta-3); }
+.cmp-oportunidade { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; padding: 10px 0; border-bottom: 1px solid var(--borda); }
+.cmp-oportunidade:last-child { border-bottom: 0; }
+
+/* ---------------------------------------------------------------- boletim */
+.boletim-pagina { min-height: 100vh; padding: 28px 20px 60px; background: var(--plano); }
+.boletim-acoes { max-width: 880px; margin: 0 auto 16px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.boletim-folha { max-width: 880px; margin: 0 auto; background: var(--superficie); border-radius: 18px; box-shadow: var(--sombra-2); overflow: hidden; }
+.boletim-cabeca { position: relative; padding: 26px 32px 22px; border-bottom: 1px solid var(--borda); }
+.boletim-cabeca-faixa { position: absolute; left: 0; right: 0; top: 0; height: 4px; }
+.boletim-sobre { font-size: 12px; color: var(--tinta-3); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+.boletim-nome { font-size: 28px; font-weight: 650; letter-spacing: -0.03em; margin-top: 6px; }
+.boletim-corpo { padding: 24px 32px 28px; display: flex; flex-direction: column; gap: 26px; }
+.boletim-resumo { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 26px; align-items: center; }
+.boletim-status { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 99px; font-weight: 650; font-size: 14px; }
+.boletim-status.bom { background: var(--bom-lavagem); color: var(--bom-texto); }
+.boletim-status.acento { background: var(--acento-lavagem); color: var(--acento-texto); }
+.boletim-status.aviso { background: var(--aviso-lavagem); color: var(--aviso-texto); }
+.boletim-status.critico { background: var(--critico-lavagem); color: var(--critico-texto); }
+.boletim-status.neutro { background: var(--superficie-2); color: var(--tinta-2); }
+.boletim-numeros { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
+@media (max-width: 720px) { .boletim-numeros { grid-template-columns: repeat(2, minmax(0, 1fr)); } .boletim-resumo { grid-template-columns: minmax(0, 1fr); } }
+.boletim-secao-titulo { font-size: 12px; font-weight: 650; color: var(--tinta-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; }
+.boletim-crit { padding: 14px 0; border-bottom: 1px solid var(--borda); }
+.boletim-crit:last-child { border-bottom: 0; }
+.boletim-faixa { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; background: var(--acento-lavagem); }
+.boletim-faixa-icone { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--acento); color: #fff; flex: none; }
+.boletim-rodape { padding: 14px 32px; border-top: 1px solid var(--borda); font-size: 11.5px; color: var(--tinta-3); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+@media print {
+  .boletim-pagina { padding: 0; background: #fff; min-height: 0; }
+  .boletim-acoes { display: none !important; }
+  .boletim-folha { box-shadow: none; border-radius: 0; max-width: none; }
+  .boletim-cabeca-faixa { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .progresso-barra, .progresso, .boletim-status, .boletim-faixa, .boletim-faixa-icone, .cmp-destaque { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}

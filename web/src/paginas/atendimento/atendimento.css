@@ -1,0 +1,122 @@
+/* Central de Atendimento — layout de tela cheia (lista · conversa · contato) e kanban */
+.atd { display: flex; flex-direction: column; height: calc(100vh - 56px); min-height: 540px; }
+.atd-topo { padding: 16px 24px 0; display: flex; flex-direction: column; gap: 10px; background: var(--plano); }
+.atd-topo .abas { margin-bottom: 0; }
+.atd-titulo { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.atd-canais-pilulas { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.atd-pilula { display: inline-flex; align-items: center; gap: 6px; height: 26px; padding: 0 10px; border-radius: 99px; background: var(--superficie); box-shadow: var(--sombra-1); font-size: 12px; color: var(--tinta-2); cursor: pointer; border: 0; }
+.atd-pilula .ponto.erro { background: var(--critico); }
+.atd-pilula .ponto.desligado { background: var(--tinta-3); opacity: 0.5; }
+.atd-corpo { flex: 1; min-height: 0; display: flex; border-top: 1px solid var(--borda); }
+.atd-rolagem { flex: 1; overflow-y: auto; padding: 18px 24px 32px; }
+
+/* ---------------------------------------------------------------- conversas */
+.atd-conversas { display: grid; grid-template-columns: 340px minmax(0, 1fr) 320px; flex: 1; min-height: 0; }
+.atd-conversas.sem-painel { grid-template-columns: 340px minmax(0, 1fr); }
+.atd-lista { border-right: 1px solid var(--borda); display: flex; flex-direction: column; min-height: 0; background: var(--superficie); }
+.atd-lista-topo { padding: 12px; display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid var(--borda); }
+.atd-itens { overflow-y: auto; flex: 1; }
+.atd-item { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 11px; padding: 11px 14px; cursor: pointer; border-bottom: 1px solid var(--borda); position: relative; transition: background 120ms; align-items: center; }
+.atd-item:hover { background: var(--superficie-2); }
+.atd-item.ativo { background: var(--acento-lavagem); }
+.atd-item.ativo::before { content: ''; position: absolute; left: 0; top: 10px; bottom: 10px; width: 3px; border-radius: 0 3px 3px 0; background: var(--acento); }
+.atd-item .nome { font-weight: 600; font-size: 13.5px; }
+.atd-item .previa { color: var(--tinta-3); font-size: 12.5px; }
+.atd-item .previa .quem { color: var(--tinta-2); }
+.atd-item .lado { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; font-size: 11px; color: var(--tinta-3); }
+.atd-item.nao-lida .nome, .atd-item.nao-lida .previa { color: var(--tinta); }
+.atd-item.nao-lida .lado .hora { color: var(--acento-texto); font-weight: 600; }
+
+.atd-av { position: relative; width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; font-weight: 650; font-size: 14px; flex: none; color: #fff; }
+.atd-av.g { width: 64px; height: 64px; font-size: 21px; }
+.atd-av.p { width: 34px; height: 34px; font-size: 12px; }
+.atd-av .canal { position: absolute; right: -2px; bottom: -2px; width: 18px; height: 18px; border-radius: 50%; display: grid; place-items: center; color: #fff; box-shadow: 0 0 0 2px var(--superficie); }
+.atd-av.g .canal { width: 22px; height: 22px; }
+
+.atd-badge { min-width: 20px; height: 20px; padding: 0 6px; border-radius: 99px; background: var(--acento); color: #fff; font-size: 11px; font-weight: 700; display: inline-grid; place-items: center; }
+.atd-badge.pulsa { animation: atd-pulso 900ms var(--curva-mola); }
+@keyframes atd-pulso { 0% { transform: scale(1.45); } 100% { transform: scale(1); } }
+.atd-espera { font-size: 10.5px; font-weight: 650; padding: 1px 6px; border-radius: 99px; }
+.atd-espera.aviso { background: var(--aviso-lavagem); color: var(--aviso-texto); }
+.atd-espera.critico { background: var(--critico-lavagem); color: var(--critico-texto); }
+.atd-espera.ok { background: var(--superficie-2); color: var(--tinta-3); }
+
+/* ---------------------------------------------------------------- chat */
+.atd-chat { display: flex; flex-direction: column; min-width: 0; min-height: 0; background: var(--plano); }
+.atd-chat-topo { display: flex; align-items: center; gap: 12px; padding: 10px 16px; border-bottom: 1px solid var(--borda); background: var(--superficie); min-height: 62px; }
+.atd-chat-topo .quem { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.atd-msgs {
+  flex: 1; overflow-y: auto; padding: 18px max(16px, 5%); display: flex; flex-direction: column; gap: 3px;
+  background-image: radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--tinta) 5%, transparent) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+.atd-dia { align-self: center; font-size: 11.5px; color: var(--tinta-2); background: var(--superficie); padding: 3px 11px; border-radius: 99px; box-shadow: var(--sombra-1); margin: 12px 0 8px; text-transform: capitalize; }
+.atd-bolha { max-width: min(580px, 78%); padding: 7px 10px 5px; border-radius: 12px; font-size: 13.5px; line-height: 1.45; position: relative; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--borda); margin-top: 3px; }
+.atd-bolha .texto { white-space: pre-wrap; overflow-wrap: anywhere; }
+.atd-bolha.msg-in { align-self: flex-start; background: var(--superficie); border-top-left-radius: 4px; }
+.atd-bolha.msg-out { align-self: flex-end; background: color-mix(in srgb, var(--acento) 13%, var(--superficie)); border-top-right-radius: 4px; }
+.atd-bolha.msg-bot { align-self: flex-end; background: var(--superficie-2); box-shadow: 0 0 0 1px var(--borda); border-top-right-radius: 4px; }
+.atd-bolha.erro { box-shadow: 0 0 0 1px var(--critico); }
+.atd-bolha.seguida { margin-top: 1px; }
+.atd-bolha .autor { font-size: 11px; font-weight: 650; color: var(--acento-texto); margin-bottom: 2px; display: flex; align-items: center; gap: 4px; }
+.atd-bolha.msg-bot .autor { color: var(--tinta-2); }
+.atd-bolha .rodape { display: flex; justify-content: flex-end; align-items: center; gap: 4px; font-size: 10.5px; color: var(--tinta-3); margin-top: 2px; }
+.atd-bolha .rodape .lido { color: var(--acento); }
+.atd-bolha .anexos { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0; }
+.atd-anexo { display: inline-flex; align-items: center; gap: 6px; padding: 5px 9px; border-radius: 8px; background: var(--superficie-2); font-size: 12px; color: var(--tinta-2); }
+.atd-sistema { align-self: center; font-size: 12px; color: var(--tinta-3); margin: 6px 0; }
+.atd-email-quadro { width: 100%; min-height: 220px; border: 0; border-radius: 8px; background: #fff; margin-top: 6px; }
+.atd-compositor { border-top: 1px solid var(--borda); background: var(--superficie); padding: 10px 12px; display: flex; gap: 8px; align-items: flex-end; }
+.atd-compositor textarea {
+  flex: 1; resize: none; min-height: 40px; max-height: 180px; padding: 10px 12px; border-radius: 12px; border: 0; outline: 0;
+  background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--borda); color: var(--tinta); line-height: 1.4; font: inherit;
+}
+.atd-compositor textarea:focus { box-shadow: inset 0 0 0 1px var(--acento), 0 0 0 3px var(--acento-lavagem); }
+.atd-compositor .enviar { width: 40px; height: 40px; border-radius: 50%; padding: 0; }
+.atd-vazio-chat { flex: 1; display: grid; place-items: center; color: var(--tinta-3); }
+
+/* ---------------------------------------------------------------- painel do contato */
+.atd-painel { border-left: 1px solid var(--borda); overflow-y: auto; background: var(--superficie); padding: 18px 16px 28px; display: flex; flex-direction: column; gap: 16px; }
+.atd-painel h4 { font-size: 11px; font-weight: 650; text-transform: uppercase; letter-spacing: 0.05em; color: var(--tinta-3); margin: 0 0 8px; }
+.atd-painel .dado { display: flex; justify-content: space-between; gap: 8px; font-size: 12.5px; padding: 4px 0; }
+.atd-painel .dado span:first-child { color: var(--tinta-3); }
+.atd-campanha-mini { display: flex; flex-direction: column; gap: 5px; padding: 9px 10px; border-radius: 10px; background: var(--superficie-2); }
+.atd-etiquetas { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* ---------------------------------------------------------------- kanban */
+.atd-kanban-topo { display: flex; gap: 10px; align-items: center; padding: 12px 24px 0; flex-wrap: wrap; }
+.atd-kanban { display: grid; grid-template-columns: repeat(4, minmax(250px, 1fr)); gap: 14px; padding: 12px 24px 20px; overflow-x: auto; flex: 1; min-height: 0; }
+.atd-coluna { display: flex; flex-direction: column; min-height: 0; background: var(--superficie-2); border-radius: var(--raio-g); box-shadow: inset 0 0 0 1px var(--borda); transition: box-shadow 140ms, background 140ms; }
+.atd-coluna.sobre { box-shadow: inset 0 0 0 2px var(--acento); background: var(--acento-lavagem); }
+.atd-coluna-topo { padding: 12px 14px 8px; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 13px; }
+.atd-coluna-topo .cor { width: 9px; height: 9px; border-radius: 3px; }
+.atd-coluna-lista { overflow-y: auto; padding: 4px 10px 12px; display: flex; flex-direction: column; gap: 8px; flex: 1; min-height: 120px; }
+.atd-cartao { background: var(--superficie); border-radius: 11px; padding: 10px 12px; box-shadow: var(--sombra-1); cursor: grab; display: flex; flex-direction: column; gap: 7px; border-left: 3px solid transparent; transition: box-shadow 150ms, transform 150ms, opacity 150ms; user-select: none; }
+.atd-cartao:hover { box-shadow: var(--sombra-2); transform: translateY(-1px); }
+.atd-cartao:active { cursor: grabbing; }
+.atd-cartao.arrastando { opacity: 0.4; }
+.atd-cartao.aviso { border-left-color: var(--aviso); }
+.atd-cartao.critico { border-left-color: var(--critico); }
+.atd-cartao .previa { font-size: 12.5px; color: var(--tinta-2); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.atd-prio { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.atd-prio.alta { color: var(--serio-texto); }
+.atd-prio.urgente { color: var(--critico-texto); }
+
+/* ---------------------------------------------------------------- canais */
+.atd-passos { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--tinta-2); }
+.atd-passos code, .atd-codigo { font-family: var(--mono); font-size: 12px; padding: 1px 5px; border-radius: 4px; background: var(--superficie-2); color: var(--tinta); }
+.atd-status-linha { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+
+@media (max-width: 1250px) {
+  .atd-conversas { grid-template-columns: 300px minmax(0, 1fr); }
+  .atd-conversas .atd-painel { display: none; }
+  .atd-conversas.painel-aberto { grid-template-columns: 300px minmax(0, 1fr) 300px; }
+  .atd-conversas.painel-aberto .atd-painel { display: flex; }
+}
+@media (max-width: 860px) {
+  .atd-conversas, .atd-conversas.painel-aberto { grid-template-columns: minmax(0, 1fr); }
+  .atd-conversas.com-chat .atd-lista { display: none; }
+  .atd-conversas:not(.com-chat) .atd-chat { display: none; }
+  .atd-topo { padding: 12px 16px 0; }
+  .atd-kanban { padding: 12px 16px; }
+}

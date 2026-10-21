@@ -12,6 +12,83 @@ const FUNCOES = {
   raiz: (x) => Math.sqrt(x),
 };
 
+export const DIMENSOES_VARIAVEL = ['fabricante', 'marca', 'subcategoria', 'grupo', 'produto', 'canal', 'segmento', 'porte', 'estado', 'cidade', 'curva', 'cfop', 'status', 'periodo'];
+
+function fecharChaves(src, ini) {
+  let aspas = null;
+  for (let i = ini + 1; i < src.length; i++) {
+    const c = src[i];
+    if (aspas) {
+      if (c === aspas) aspas = null;
+    } else if (c === '"' || c === "'") aspas = c;
+    else if (c === '}') return i;
+  }
+  throw new Error('Faltou fechar "}" na variável');
+}
+
+/** 'marca: "Dorflex", canal: ["App Mobile", "E-commerce"]' -> { marca: ['Dorflex'], canal: ['App Mobile', 'E-commerce'] } */
+function lerFiltros(txt) {
+  const out = {};
+  let i = 0;
+  const pular = () => {
+    while (i < txt.length && /[\s,;]/.test(txt[i])) i++;
+  };
+  const valor = () => {
+    pular();
+    const c = txt[i];
+    if (c === '"' || c === "'") {
+      const f = txt.indexOf(c, i + 1);
+      if (f < 0) throw new Error('Texto sem aspas de fechamento na variável');
+      const v = txt.slice(i + 1, f);
+      i = f + 1;
+      return v;
+    }
+    let j = i;
+    while (j < txt.length && !/[,;\]\s]/.test(txt[j])) j++;
+    const v = txt.slice(i, j);
+    i = j;
+    if (!v) throw new Error('Valor vazio na variável');
+    return v;
+  };
+  for (;;) {
+    pular();
+    if (i >= txt.length) break;
+    let j = i;
+    while (j < txt.length && /[a-z_]/i.test(txt[j])) j++;
+    const dim = txt.slice(i, j).toLowerCase();
+    if (!DIMENSOES_VARIAVEL.includes(dim)) throw new Error(`Dimensão desconhecida "${dim}". Use: ${DIMENSOES_VARIAVEL.join(', ')}`);
+    i = j;
+    pular();
+    if (txt[i] !== ':' && txt[i] !== '=') throw new Error(`Esperava ":" depois de "${dim}"`);
+    i++;
+    pular();
+    let vals;
+    if (txt[i] === '[') {
+      i++;
+      vals = [];
+      for (;;) {
+        pular();
+        if (txt[i] === ']') {
+          i++;
+          break;
+        }
+        if (i >= txt.length) throw new Error('Faltou fechar "]" na variável');
+        vals.push(valor());
+      }
+    } else vals = [valor()];
+    out[dim] = [...new Set([...(out[dim] || []), ...vals])];
+  }
+  if (!Object.keys(out).length) throw new Error('Variável parametrizada sem filtros');
+  return out;
+}
+
+export function chaveParametrizada(medida, filtros) {
+  const partes = Object.keys(filtros)
+    .sort()
+    .map((k) => `${k}=${[...filtros[k]].sort().join('|')}`);
+  return `${medida}{${partes.join(';')}}`;
+}
+
 function tokenizar(src) {
   const toks = [];
   let i = 0;
@@ -31,7 +108,18 @@ function tokenizar(src) {
     if (/[a-z_]/i.test(c)) {
       let j = i;
       while (j < src.length && /[a-z0-9_]/i.test(src[j])) j++;
-      toks.push({ t: 'id', v: src.slice(i, j).toLowerCase() });
+      const nome = src.slice(i, j).toLowerCase();
+      let k = j;
+      while (k < src.length && src[k] === ' ') k++;
+      if (src[k] === '{') {
+        // variável parametrizada: medida{dimensao: "valor", outra: ["a", "b"]}
+        const fim = fecharChaves(src, k);
+        const filtros = lerFiltros(src.slice(k + 1, fim));
+        toks.push({ t: 'id', v: chaveParametrizada(nome, filtros), param: { medida: nome, filtros } });
+        i = fim + 1;
+        continue;
+      }
+      toks.push({ t: 'id', v: nome });
       i = j;
       continue;
     }
@@ -151,14 +239,21 @@ export function compilar(fonte, variaveisPermitidas) {
   const chave = `${fonte}|${variaveisPermitidas?.join(',')}`;
   if (cache.has(chave)) return cache.get(chave);
   if (!fonte || !String(fonte).trim()) throw new Error('Fórmula vazia');
-  const arvore = analisar(tokenizar(String(fonte)));
+  const toks = tokenizar(String(fonte));
+  const parametrizadas = new Map();
+  for (const t of toks) if (t.param) parametrizadas.set(t.v, t.param);
+  const arvore = analisar(toks);
   const variaveis = [...coletarIds(arvore)];
   if (variaveisPermitidas) {
-    const desconhecida = variaveis.find((v) => !variaveisPermitidas.includes(v));
+    const desconhecida = variaveis.find((v) => !parametrizadas.has(v) && !variaveisPermitidas.includes(v));
     if (desconhecida) throw new Error(`Variável desconhecida "${desconhecida}". Disponíveis: ${variaveisPermitidas.join(', ')}`);
+    for (const p of parametrizadas.values()) {
+      if (!variaveisPermitidas.includes(p.medida)) throw new Error(`Medida desconhecida "${p.medida}" na variável parametrizada`);
+    }
   }
   const compilado = {
     variaveis,
+    parametrizadas: [...parametrizadas.entries()].map(([chave, p]) => ({ chave, ...p })),
     temDivisao: /\//.test(fonte),
     avaliar: (vars) => {
       const r = avaliar(arvore, vars);

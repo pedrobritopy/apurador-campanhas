@@ -1,0 +1,75 @@
+/* ===================== Painel ===================== */
+.painel-kpis { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin-bottom: 22px; }
+@media (max-width: 1380px) { .painel-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 720px) { .painel-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.painel-kpi { position: relative; padding: 15px 16px 14px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.painel-kpi:has(.painel-kpi-info) .rotulo { padding-right: 10px; }
+.painel-kpi-info { position: absolute; top: 13px; right: 7px; }
+.painel-kpi .rotulo { font-size: 12.5px; color: var(--tinta-2); font-weight: 500; display: flex; align-items: center; gap: 7px; }
+.painel-kpi .rotulo svg { color: var(--tinta-3); flex: none; }
+.painel-kpi .valor { font-size: clamp(21px, 1.7vw, 28px); font-weight: 650; letter-spacing: -0.025em; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.painel-kpi .rodape { font-size: 12px; color: var(--tinta-3); display: flex; align-items: center; gap: 8px; min-height: 18px; }
+.painel-kpi.alerta .valor { color: var(--critico-texto); }
+
+.painel-grade { display: grid; grid-template-columns: minmax(0, 1fr) 372px; gap: 20px; align-items: start; }
+@media (max-width: 1240px) { .painel-grade { grid-template-columns: minmax(0, 1fr); } }
+.painel-lateral { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 76px; }
+@media (max-width: 1240px) { .painel-lateral { position: static; } }
+
+.painel-campanhas { display: grid; grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); gap: 14px; }
+@media (max-width: 620px) { .painel-campanhas { grid-template-columns: minmax(0, 1fr); } }
+.painel-secao-topo { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+
+/* cartão de campanha */
+.cc { overflow: hidden; cursor: pointer; transition: box-shadow var(--dur) var(--curva), transform var(--dur) var(--curva); }
+.cc:hover { box-shadow: var(--sombra-2); transform: translateY(-2px); }
+.cc:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+.cc-topo { display: flex; gap: 12px; padding: 14px 16px 6px; align-items: flex-start; }
+.cc-cor { width: 4px; border-radius: 4px; align-self: stretch; flex: none; }
+.cc-nome { font-weight: 620; font-size: 14.5px; letter-spacing: -0.01em; }
+.cc-sub { font-size: 12px; color: var(--tinta-3); }
+.cc-corpo { display: grid; grid-template-columns: 158px minmax(0, 1fr); gap: 12px; padding: 4px 16px 6px; align-items: center; }
+.cc-numero { font-size: 34px; font-weight: 660; letter-spacing: -0.035em; line-height: 1; }
+.cc-legenda-num { font-size: 11.5px; color: var(--tinta-3); margin-top: 4px; }
+.cc-proj { display: inline-flex; align-items: center; gap: 4px; font-size: 12.5px; margin-top: 8px; font-weight: 600; }
+.cc-proj.bom { color: var(--bom-texto); }
+.cc-proj.ruim { color: var(--critico-texto); }
+.cc-proj.neutro { color: var(--tinta-2); }
+.cc-ritmo { padding: 8px 16px 4px; }
+.cc-ritmo-rotulos { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--tinta-3); margin-bottom: 7px; gap: 8px; }
+.cc-crit { padding: 6px 16px 2px; display: flex; flex-direction: column; gap: 3px; }
+.cc-crit-linha { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--tinta-2); min-width: 0; }
+.cc-crit-linha .nome { flex: 1 1 auto; min-width: 0; }
+.cc-status { padding: 10px 16px 12px; }
+.cc-rodape { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 16px; border-top: 1px solid var(--borda); background: color-mix(in srgb, var(--superficie-2) 55%, var(--superficie)); }
+.cc-lideres { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.cc-lideres .avatar { box-shadow: 0 0 0 2px var(--superficie); }
+.cc-lideres .avatar + .avatar { margin-left: -10px; }
+
+/* régua de ritmo: atingimento x tempo decorrido */
+.ritmo { position: relative; height: 8px; border-radius: 99px; background: var(--superficie-3); }
+.ritmo-barra { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 99px; transition: width 1000ms var(--curva); }
+.ritmo-hoje { position: absolute; top: -5px; bottom: -5px; width: 2px; margin-left: -1px; border-radius: 2px; background: var(--tinta); transition: left 1000ms var(--curva); }
+.ritmo-proj { position: absolute; top: -3px; bottom: -3px; width: 0; border-left: 2px dashed var(--tinta-2); transition: left 1000ms var(--curva); }
+
+/* listas laterais */
+.painel-lista { display: flex; flex-direction: column; }
+.painel-item { display: flex; gap: 10px; padding: 11px 0; border-bottom: 1px solid var(--borda); align-items: flex-start; }
+.painel-item:last-child { border-bottom: 0; padding-bottom: 2px; }
+.painel-item:first-child { padding-top: 2px; }
+.painel-item .ic { width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; flex: none; background: var(--superficie-2); color: var(--tinta-2); }
+.clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.contagem-regressiva { min-width: 46px; height: 40px; border-radius: 9px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--superficie-2); flex: none; }
+.contagem-regressiva .n { font-size: 16px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.contagem-regressiva .u { font-size: 9.5px; color: var(--tinta-3); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 2px; }
+.contagem-regressiva.urgente { background: var(--critico-lavagem); }
+.contagem-regressiva.urgente .n { color: var(--critico-texto); }
+
+/* ranking geral */
+.rg-linha { display: grid; grid-template-columns: 34px minmax(0, 1fr) 118px 96px; align-items: center; gap: 12px; padding: 9px 12px; border-radius: 10px; transition: background var(--dur) var(--curva); }
+.rg-linha:hover { background: var(--superficie-2); }
+.rg-linha .pos { text-align: center; font-weight: 700; color: var(--tinta-3); font-variant-numeric: tabular-nums; font-size: 13px; }
+.rg-score { display: flex; flex-direction: column; gap: 5px; }
+@media (max-width: 720px) { .rg-linha { grid-template-columns: 30px minmax(0, 1fr) 84px; } .rg-linha .rg-premio { display: none; } }
+
+.painel-atualizado { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--tinta-3); }

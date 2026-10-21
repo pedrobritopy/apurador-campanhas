@@ -1,0 +1,90 @@
+/* ===================== Acompanhamentos ===================== */
+.disparo-grade { display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 1180px) { .disparo-grade { grid-template-columns: minmax(0, 1fr); } }
+.disparo-config { position: sticky; top: 76px; display: flex; flex-direction: column; gap: 0; }
+@media (max-width: 1180px) { .disparo-config { position: static; } }
+
+.passo { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--borda); }
+.passo:last-of-type { border-bottom: 0; }
+.passo-num { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 700; background: var(--acento-lavagem); color: var(--acento-texto); }
+.passo-titulo { font-weight: 600; font-size: 13px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.passo-corpo { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+
+.canais { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.canal-opcao { display: flex; flex-direction: column; gap: 4px; padding: 10px 11px; border-radius: 10px; border: 0; text-align: left; cursor: pointer; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--borda-forte); transition: box-shadow var(--dur) var(--curva), background var(--dur) var(--curva); color: var(--tinta); }
+.canal-opcao:hover { background: var(--superficie-2); }
+.canal-opcao.ativo { box-shadow: inset 0 0 0 1.5px var(--acento), 0 0 0 3px var(--acento-lavagem); background: var(--acento-lavagem); }
+.canal-opcao .t { display: flex; align-items: center; gap: 7px; font-weight: 600; font-size: 13px; }
+.canal-opcao .d { font-size: 11px; color: var(--tinta-3); line-height: 1.35; }
+
+.var-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.var-chip { height: 24px; padding: 0 8px; border-radius: 6px; border: 0; cursor: pointer; font-family: var(--mono); font-size: 11.5px; background: var(--superficie-2); color: var(--tinta-2); box-shadow: inset 0 0 0 1px var(--borda); transition: all var(--dur) var(--curva); }
+.var-chip:hover { background: var(--acento-lavagem); color: var(--acento-texto); box-shadow: inset 0 0 0 1px var(--acento-anel); }
+.var-chip.info { background: var(--acento-lavagem); color: var(--acento-texto); }
+
+/* prévia */
+.previa-cabeca { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; padding: 14px 16px; border-bottom: 1px solid var(--borda); }
+.previa-corpo { display: grid; grid-template-columns: minmax(250px, 320px) minmax(0, 1fr); min-height: 520px; }
+@media (max-width: 900px) { .previa-corpo { grid-template-columns: minmax(0, 1fr); } }
+.previa-lista { border-right: 1px solid var(--borda); max-height: calc(100vh - 230px); overflow: auto; padding: 6px; }
+.previa-detalhe { padding: 16px 18px; min-width: 0; max-height: calc(100vh - 230px); overflow: auto; }
+.previa-carregando { opacity: 0.55; transition: opacity var(--dur); pointer-events: none; }
+
+.dest-linha { display: flex; align-items: center; gap: 9px; padding: 8px 9px; border-radius: 9px; cursor: pointer; transition: background 120ms; min-width: 0; }
+.dest-linha:hover { background: var(--superficie-2); }
+.dest-linha.ativa { background: var(--acento-lavagem); }
+.dest-linha.inelegivel { opacity: 0.55; }
+.dest-linha input[type='checkbox'] { width: 15px; height: 15px; accent-color: var(--acento); flex: none; cursor: pointer; }
+.dest-linha .ok { color: var(--bom); flex: none; }
+.dest-linha .falta { color: var(--critico); flex: none; }
+
+/* mensagem estilo WhatsApp / e-mail */
+.whats-fundo { border-radius: 14px; padding: 18px; background:
+  radial-gradient(circle at 20% 20%, color-mix(in srgb, var(--acento) 6%, transparent) 0 2px, transparent 3px) 0 0 / 22px 22px,
+  color-mix(in srgb, var(--superficie-2) 70%, var(--plano)); }
+.whats-bolha { position: relative; max-width: 560px; padding: 10px 12px 18px; border-radius: 4px 12px 12px 12px; background: var(--superficie-elevada); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 0 1px var(--borda); font-size: 13.5px; line-height: 1.5; }
+.whats-bolha .hora { position: absolute; right: 10px; bottom: 4px; font-size: 10.5px; color: var(--tinta-3); }
+.email-moldura { border-radius: 12px; overflow: hidden; box-shadow: var(--sombra-1); background: var(--superficie); }
+.email-cabeca { padding: 12px 14px; border-bottom: 1px solid var(--borda); display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 4px 10px; font-size: 12.5px; }
+.email-cabeca .r { color: var(--tinta-3); }
+.email-frame { width: 100%; min-height: 420px; border: 0; background: #fff; display: block; }
+
+.msg-texto { white-space: normal; word-break: break-word; }
+.msg-linha { min-height: 1.4em; }
+mark.msg-info { background: var(--acento-lavagem); color: inherit; border-radius: 4px; padding: 0 3px; box-shadow: inset 0 -1px 0 var(--acento-anel); }
+mark.msg-moeda { background: var(--bom-lavagem); box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--bom) 45%, transparent); }
+mark.msg-posicao { background: var(--aviso-lavagem); box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--aviso) 55%, transparent); }
+mark.msg-var { background: var(--superficie-3); font-family: var(--mono); font-size: 0.92em; }
+mark.msg-var.desconhecida { background: var(--critico-lavagem); color: var(--critico-texto); }
+
+.infos-msg { display: flex; flex-wrap: wrap; gap: 6px; }
+.info-tag { display: inline-flex; align-items: center; gap: 5px; height: 24px; padding: 0 8px; border-radius: 7px; font-size: 11.5px; font-weight: 550; background: var(--superficie-2); color: var(--tinta-2); box-shadow: inset 0 0 0 1px var(--borda); }
+.info-tag svg { color: var(--acento); }
+
+/* fila de envio WhatsApp */
+.fila-linha { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 10px; }
+.fila-linha:nth-child(odd) { background: var(--superficie-2); }
+.fila-linha.feito { opacity: 0.6; }
+
+/* modelos */
+.modelos-grade { display: grid; grid-template-columns: 280px minmax(0, 1fr) minmax(320px, 0.9fr); gap: 16px; align-items: start; }
+@media (max-width: 1320px) { .modelos-grade { grid-template-columns: 260px minmax(0, 1fr); } .modelos-previa { grid-column: 1 / -1; } }
+@media (max-width: 860px) { .modelos-grade { grid-template-columns: minmax(0, 1fr); } }
+.modelo-item { display: flex; align-items: center; gap: 9px; padding: 8px 10px; border-radius: 9px; cursor: pointer; border: 0; background: transparent; width: 100%; text-align: left; color: var(--tinta); }
+.modelo-item:hover { background: var(--superficie-2); }
+.modelo-item.ativo { background: var(--acento-lavagem); }
+.editor-corpo { min-height: 300px; font-size: 13.5px; line-height: 1.55; }
+
+/* agendamentos */
+.agenda-cartao { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 14px 16px; }
+.agenda-relogio { width: 52px; height: 52px; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--acento-lavagem); color: var(--acento-texto); flex: none; }
+.agenda-relogio .h { font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1; }
+.agenda-relogio .d { font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 3px; }
+.agenda-cartao.inativo .agenda-relogio { background: var(--superficie-2); color: var(--tinta-3); }
+.dias-chips { display: flex; gap: 4px; flex-wrap: wrap; }
+.dia-chip { width: 40px; height: 30px; border-radius: 8px; border: 0; cursor: pointer; font-size: 12px; font-weight: 600; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--borda-forte); color: var(--tinta-2); }
+.dia-chip.ativo { background: var(--acento); color: #fff; box-shadow: none; }
+
+/* histórico */
+.hist-resumo { display: flex; gap: 8px; flex-wrap: wrap; }
+.hist-msg { white-space: pre-wrap; font-size: 13px; line-height: 1.5; padding: 14px; border-radius: 10px; background: var(--superficie-2); }

@@ -11,6 +11,7 @@ fs.mkdirSync(PASTA_VAR, { recursive: true });
 
 export const db = new DatabaseSync(process.env.BANCO || path.join(PASTA_VAR, 'apurador.db'));
 db.exec(`
+  PRAGMA busy_timeout = 60000;
   PRAGMA journal_mode = WAL;
   PRAGMA synchronous = NORMAL;
   PRAGMA foreign_keys = ON;
@@ -57,7 +58,13 @@ export const CONFIG_PADRAO = {
   smtp: { host: '', porta: 587, seguro: false, usuario: '', senha: '', remetente: '' },
   webhook: { url: '', token: '' },
   destinatarios_gerais: '',
+  url_publica: '', // endereço usado nos links dos boletins (ex.: http://servidor:3000). Vazio = localhost.
   janela_recente: 7,
+  // Atendimento: bot do Telegram (token do BotFather) e caixa de entrada de e-mail (IMAP).
+  telegram: { token: '', ativo: false, nome_bot: '' },
+  imap: { host: '', porta: 993, seguro: true, usuario: '', senha: '', pasta: 'INBOX', ativo: false },
+  // IA (Anthropic). A chave fica só no .env (ANTHROPIC_API_KEY); aqui ficam limites e preferências.
+  ia: { habilitada: true, modelo: 'claude-haiku-5-5', limite_diario_usd: 5, esforco: 'low' },
 };
 
 export function lerConfig() {

@@ -1,4 +1,22 @@
-import { db } from './db.js';
+import fs from 'node:fs';
+import path from 'node:path';
+import { db, RAIZ } from './db.js';
+
+const PASTA_FOTOS = path.join(RAIZ, 'dados', 'imagens', 'vendedores');
+let fotosCache = { em: 0, ids: new Set() };
+/** URL da foto do vendedor/gerente (dados/imagens/vendedores/vendedor_{id}.jpg) ou null. */
+export function fotoVendedor(id) {
+  if (Date.now() - fotosCache.em > 60000) {
+    let ids = new Set();
+    try {
+      ids = new Set(fs.readdirSync(PASTA_FOTOS).map((f) => f.match(/^vendedor_(\d+)\.jpg$/i)?.[1]).filter(Boolean));
+    } catch {
+      /* sem pasta de fotos: avatares com iniciais */
+    }
+    fotosCache = { em: Date.now(), ids };
+  }
+  return id != null && fotosCache.ids.has(String(id)) ? `/imagens/vendedores/vendedor_${id}.jpg` : null;
+}
 
 // chaveSql: expressão que identifica o participante numa linha de venda
 // (aliases: v = fato_vendas, c = dm_cliente, vd = dm_vendedor)
@@ -21,7 +39,7 @@ function vendedores() {
               g.nome_vendedor AS gerente, g.telefone AS g_tel, g.email AS g_email
          FROM dm_vendedor v
          LEFT JOIN dm_vendedor g ON g.id_vendedor = v.id_superior
-        WHERE lower(COALESCE(v.nivel, '')) <> 'gerente'
+        WHERE lower(COALESCE(v.nivel, '')) NOT IN ('gerente', 'coordenador')
            OR v.id_vendedor IN (SELECT DISTINCT id_vendedor FROM fato_vendas)
         ORDER BY v.nome_vendedor`,
     )
@@ -35,7 +53,7 @@ function gerentes() {
               (SELECT COUNT(*) FROM dm_vendedor x WHERE x.id_superior = g.id_vendedor) AS membros
          FROM dm_vendedor g
         WHERE lower(COALESCE(g.nivel, '')) = 'gerente'
-           OR g.id_vendedor IN (SELECT DISTINCT id_superior FROM dm_vendedor WHERE id_superior IS NOT NULL)
+           OR (g.id_vendedor IN (SELECT DISTINCT id_superior FROM dm_vendedor WHERE id_superior IS NOT NULL AND lower(COALESCE(nivel, '')) = 'vendedor') AND lower(COALESCE(g.nivel, '')) <> 'coordenador')
         ORDER BY g.nome_vendedor`,
     )
     .all();
@@ -61,7 +79,8 @@ export function listarParticipantes(participantes = {}, filtros = {}) {
           grupo: v.gerente ? `Equipe ${v.gerente}` : null,
           id_grupo: v.id_superior != null ? String(v.id_superior) : null,
           contato: contato(v.telefone, v.email),
-          responsavel: v.gerente ? { chave: String(v.id_superior), nome: v.gerente, ...contato(v.g_tel, v.g_email) } : null,
+          foto: fotoVendedor(v.id_vendedor),
+          responsavel: v.gerente ? { chave: String(v.id_superior), nome: v.gerente, foto: fotoVendedor(v.id_superior), ...contato(v.g_tel, v.g_email) } : null,
         }));
       break;
     case 'equipe':
@@ -71,7 +90,8 @@ export function listarParticipantes(participantes = {}, filtros = {}) {
         grupo: `${g.membros} vendedores`,
         id_grupo: null,
         contato: contato(g.telefone, g.email),
-        responsavel: { chave: String(g.id_vendedor), nome: g.nome_vendedor, ...contato(g.telefone, g.email) },
+        foto: fotoVendedor(g.id_vendedor),
+        responsavel: { chave: String(g.id_vendedor), nome: g.nome_vendedor, foto: fotoVendedor(g.id_vendedor), ...contato(g.telefone, g.email) },
       }));
       break;
     case 'cliente': {
@@ -86,6 +106,14 @@ export function listarParticipantes(participantes = {}, filtros = {}) {
       em('c.segmento', filtros.segmentos);
       em('c.porte', filtros.portes);
       em('c.estado', filtros.estados);
+      if (filtros.cidades?.length) {
+        where.push(`((c.cidade || '/' || c.estado) IN (${filtros.cidades.map(() => '?').join(',')}) OR c.cidade IN (${filtros.cidades.map(() => '?').join(',')}))`);
+        params.push(...filtros.cidades, ...filtros.cidades);
+      }
+      if (filtros.curvas?.length && db.prepare("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'cliente_perfil'").get()) {
+        where.push(`c.id_cliente IN (SELECT id_cliente FROM cliente_perfil WHERE curva IN (${filtros.curvas.map(() => '?').join(',')}))`);
+        params.push(...filtros.curvas);
+      }
       if (filtros.clientes?.length) where.push(`c.id_cliente IN (${filtros.clientes.map(Number).join(',')})`);
       lista = db
         .prepare(
@@ -102,7 +130,7 @@ export function listarParticipantes(participantes = {}, filtros = {}) {
           grupo: [c.cidade, c.estado].filter(Boolean).join('/'),
           id_grupo: c.id_vendedor != null ? String(c.id_vendedor) : null,
           contato: contato(null, null),
-          responsavel: c.nome_vendedor ? { chave: String(c.id_vendedor), nome: c.nome_vendedor, ...contato(c.telefone, c.email) } : null,
+          responsavel: c.nome_vendedor ? { chave: String(c.id_vendedor), nome: c.nome_vendedor, foto: fotoVendedor(c.id_vendedor), ...contato(c.telefone, c.email) } : null,
         }));
       break;
     }
@@ -146,9 +174,9 @@ export function vendedoresDoParticipante(nivel, chave) {
 }
 
 export function listarEquipes() {
-  return gerentes().map((g) => ({ id: String(g.id_vendedor), nome: `Equipe ${g.nome_vendedor}`, gerente: g.nome_vendedor, membros: g.membros }));
+  return gerentes().map((g) => ({ id: String(g.id_vendedor), nome: `Equipe ${g.nome_vendedor}`, gerente: g.nome_vendedor, membros: g.membros, foto: fotoVendedor(g.id_vendedor) }));
 }
 
 export function listarVendedores() {
-  return vendedores().map((v) => ({ id: String(v.id_vendedor), nome: v.nome_vendedor, id_equipe: v.id_superior != null ? String(v.id_superior) : null, equipe: v.gerente || null }));
+  return vendedores().map((v) => ({ id: String(v.id_vendedor), nome: v.nome_vendedor, id_equipe: v.id_superior != null ? String(v.id_superior) : null, equipe: v.gerente || null, foto: fotoVendedor(v.id_vendedor) }));
 }

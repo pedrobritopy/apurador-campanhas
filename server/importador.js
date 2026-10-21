@@ -116,21 +116,40 @@ export async function importarArquivo(entrada, opcoes = {}) {
     }),
   );
 
-  // Converte tudo antes de abrir a transação: assim o banco nunca fica num estado intermediário.
-  const linhas = [];
-  for await (const reg of leitor) linhas.push(colunas.map((c) => converter(reg[c], spec.colunas[c], c)));
-
-  const sql = `INSERT OR REPLACE INTO ${tabela} (${colunas.join(', ')}) VALUES (${colunas.map(() => '?').join(', ')})`;
-  transacao(() => {
-    if (modo === 'substituir') db.exec(`DELETE FROM ${tabela}`);
-    const st = db.prepare(sql);
-    for (const l of linhas) st.run(...l);
-    db.prepare('INSERT INTO importacao (tabela, arquivo, modo, linhas, criado_em) VALUES (?, ?, ?, ?, ?)').run(
-      tabela, nomeArquivo, modo, linhas.length, agoraISO(),
-    );
-  });
+  // Carrega em lotes numa tabela de preparação e só no fim troca o conteúdo de uma vez (transação curta):
+  // memória estável para arquivos grandes e a tabela real nunca fica num estado intermediário.
+  const preparo = `_imp_${tabela}`;
+  db.exec(`DROP TABLE IF EXISTS ${preparo}`);
+  db.exec(`CREATE TABLE ${preparo} AS SELECT * FROM ${tabela} WHERE 0`);
+  const st = db.prepare(`INSERT INTO ${preparo} (${colunas.join(', ')}) VALUES (${colunas.map(() => '?').join(', ')})`);
+  let lote = [];
+  let total = 0;
+  const gravarLote = () => {
+    if (!lote.length) return;
+    transacao(() => {
+      for (const l of lote) st.run(...l);
+    });
+    total += lote.length;
+    lote = [];
+  };
+  try {
+    for await (const reg of leitor) {
+      lote.push(colunas.map((c) => converter(reg[c], spec.colunas[c], c)));
+      if (lote.length >= 5000) gravarLote();
+    }
+    gravarLote();
+    const lista = colunas.join(', ');
+    transacao(() => {
+      if (modo === 'substituir') db.exec(`DELETE FROM ${tabela}`);
+      db.exec(`INSERT OR REPLACE INTO ${tabela} (${lista}) SELECT ${lista} FROM ${preparo}`);
+      db.prepare('INSERT INTO importacao (tabela, arquivo, modo, linhas, criado_em) VALUES (?, ?, ?, ?, ?)').run(tabela, nomeArquivo, modo, total, agoraISO());
+    });
+  } finally {
+    db.exec(`DROP TABLE IF EXISTS ${preparo}`);
+  }
+  db.exec(`ANALYZE ${tabela}`); // estatísticas para o planejador de consultas
   invalidarCache();
-  return { tabela, arquivo: nomeArquivo, linhas: linhas.length, modo, colunas_ignoradas: cabecalho.filter((c) => !(c in spec.colunas)) };
+  return { tabela, arquivo: nomeArquivo, linhas: total, modo, colunas_ignoradas: cabecalho.filter((c) => !(c in spec.colunas)) };
 }
 
 /** Importa (substituindo) todos os CSVs reconhecidos da pasta de dados. */

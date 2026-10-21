@@ -1,0 +1,1311 @@
+{
+ "descricao": "Curadoria manual de rostos sintéticos SFHQ (parte 3, licença MIT) por gênero aparente; crianças, óculos escuros e casos ambíguos descartados. candidata = arquivo 256px gerado a partir de arquivo (original SFHQ).",
+ "M": [
+  {
+   "candidata": "0001.jpg",
+   "arquivo": "SFHQ_pt3_00000025.jpg"
+  },
+  {
+   "candidata": "0002.jpg",
+   "arquivo": "SFHQ_pt3_00000032.jpg"
+  },
+  {
+   "candidata": "0003.jpg",
+   "arquivo": "SFHQ_pt3_00000050.jpg"
+  },
+  {
+   "candidata": "0005.jpg",
+   "arquivo": "SFHQ_pt3_00000056.jpg"
+  },
+  {
+   "candidata": "0007.jpg",
+   "arquivo": "SFHQ_pt3_00000058.jpg"
+  },
+  {
+   "candidata": "0008.jpg",
+   "arquivo": "SFHQ_pt3_00000060.jpg"
+  },
+  {
+   "candidata": "0009.jpg",
+   "arquivo": "SFHQ_pt3_00000062.jpg"
+  },
+  {
+   "candidata": "0012.jpg",
+   "arquivo": "SFHQ_pt3_00000075.jpg"
+  },
+  {
+   "candidata": "0014.jpg",
+   "arquivo": "SFHQ_pt3_00000088.jpg"
+  },
+  {
+   "candidata": "0019.jpg",
+   "arquivo": "SFHQ_pt3_00000109.jpg"
+  },
+  {
+   "candidata": "0021.jpg",
+   "arquivo": "SFHQ_pt3_00000124.jpg"
+  },
+  {
+   "candidata": "0022.jpg",
+   "arquivo": "SFHQ_pt3_00000132.jpg"
+  },
+  {
+   "candidata": "0025.jpg",
+   "arquivo": "SFHQ_pt3_00000151.jpg"
+  },
+  {
+   "candidata": "0030.jpg",
+   "arquivo": "SFHQ_pt3_00000183.jpg"
+  },
+  {
+   "candidata": "0031.jpg",
+   "arquivo": "SFHQ_pt3_00000187.jpg"
+  },
+  {
+   "candidata": "0037.jpg",
+   "arquivo": "SFHQ_pt3_00000236.jpg"
+  },
+  {
+   "candidata": "0039.jpg",
+   "arquivo": "SFHQ_pt3_00000251.jpg"
+  },
+  {
+   "candidata": "0041.jpg",
+   "arquivo": "SFHQ_pt3_00000261.jpg"
+  },
+  {
+   "candidata": "0042.jpg",
+   "arquivo": "SFHQ_pt3_00000263.jpg"
+  },
+  {
+   "candidata": "0045.jpg",
+   "arquivo": "SFHQ_pt3_00000284.jpg"
+  },
+  {
+   "candidata": "0050.jpg",
+   "arquivo": "SFHQ_pt3_00000331.jpg"
+  },
+  {
+   "candidata": "0051.jpg",
+   "arquivo": "SFHQ_pt3_00000335.jpg"
+  },
+  {
+   "candidata": "0053.jpg",
+   "arquivo": "SFHQ_pt3_00000347.jpg"
+  },
+  {
+   "candidata": "0055.jpg",
+   "arquivo": "SFHQ_pt3_00000364.jpg"
+  },
+  {
+   "candidata": "0063.jpg",
+   "arquivo": "SFHQ_pt3_00000393.jpg"
+  },
+  {
+   "candidata": "0064.jpg",
+   "arquivo": "SFHQ_pt3_00000399.jpg"
+  },
+  {
+   "candidata": "0069.jpg",
+   "arquivo": "SFHQ_pt3_00000418.jpg"
+  },
+  {
+   "candidata": "0071.jpg",
+   "arquivo": "SFHQ_pt3_00000455.jpg"
+  },
+  {
+   "candidata": "0072.jpg",
+   "arquivo": "SFHQ_pt3_00000461.jpg"
+  },
+  {
+   "candidata": "0073.jpg",
+   "arquivo": "SFHQ_pt3_00000465.jpg"
+  },
+  {
+   "candidata": "0074.jpg",
+   "arquivo": "SFHQ_pt3_00000472.jpg"
+  },
+  {
+   "candidata": "0076.jpg",
+   "arquivo": "SFHQ_pt3_00000501.jpg"
+  },
+  {
+   "candidata": "0080.jpg",
+   "arquivo": "SFHQ_pt3_00000538.jpg"
+  },
+  {
+   "candidata": "0083.jpg",
+   "arquivo": "SFHQ_pt3_00000555.jpg"
+  },
+  {
+   "candidata": "0084.jpg",
+   "arquivo": "SFHQ_pt3_00000561.jpg"
+  },
+  {
+   "candidata": "0089.jpg",
+   "arquivo": "SFHQ_pt3_00000588.jpg"
+  },
+  {
+   "candidata": "0090.jpg",
+   "arquivo": "SFHQ_pt3_00000590.jpg"
+  },
+  {
+   "candidata": "0091.jpg",
+   "arquivo": "SFHQ_pt3_00000591.jpg"
+  },
+  {
+   "candidata": "0093.jpg",
+   "arquivo": "SFHQ_pt3_00000597.jpg"
+  },
+  {
+   "candidata": "0095.jpg",
+   "arquivo": "SFHQ_pt3_00000601.jpg"
+  },
+  {
+   "candidata": "0097.jpg",
+   "arquivo": "SFHQ_pt3_00000610.jpg"
+  },
+  {
+   "candidata": "0098.jpg",
+   "arquivo": "SFHQ_pt3_00000612.jpg"
+  },
+  {
+   "candidata": "0101.jpg",
+   "arquivo": "SFHQ_pt3_00000635.jpg"
+  },
+  {
+   "candidata": "0102.jpg",
+   "arquivo": "SFHQ_pt3_00000641.jpg"
+  },
+  {
+   "candidata": "0103.jpg",
+   "arquivo": "SFHQ_pt3_00000643.jpg"
+  },
+  {
+   "candidata": "0105.jpg",
+   "arquivo": "SFHQ_pt3_00000651.jpg"
+  },
+  {
+   "candidata": "0107.jpg",
+   "arquivo": "SFHQ_pt3_00000668.jpg"
+  },
+  {
+   "candidata": "0109.jpg",
+   "arquivo": "SFHQ_pt3_00000675.jpg"
+  },
+  {
+   "candidata": "0110.jpg",
+   "arquivo": "SFHQ_pt3_00000676.jpg"
+  },
+  {
+   "candidata": "0113.jpg",
+   "arquivo": "SFHQ_pt3_00000681.jpg"
+  },
+  {
+   "candidata": "0114.jpg",
+   "arquivo": "SFHQ_pt3_00000683.jpg"
+  },
+  {
+   "candidata": "0118.jpg",
+   "arquivo": "SFHQ_pt3_00000708.jpg"
+  },
+  {
+   "candidata": "0119.jpg",
+   "arquivo": "SFHQ_pt3_00000715.jpg"
+  },
+  {
+   "candidata": "0120.jpg",
+   "arquivo": "SFHQ_pt3_00000718.jpg"
+  },
+  {
+   "candidata": "0121.jpg",
+   "arquivo": "SFHQ_pt3_00000723.jpg"
+  },
+  {
+   "candidata": "0122.jpg",
+   "arquivo": "SFHQ_pt3_00000725.jpg"
+  },
+  {
+   "candidata": "0124.jpg",
+   "arquivo": "SFHQ_pt3_00000737.jpg"
+  },
+  {
+   "candidata": "0125.jpg",
+   "arquivo": "SFHQ_pt3_00000741.jpg"
+  },
+  {
+   "candidata": "0128.jpg",
+   "arquivo": "SFHQ_pt3_00000752.jpg"
+  },
+  {
+   "candidata": "0131.jpg",
+   "arquivo": "SFHQ_pt3_00000758.jpg"
+  },
+  {
+   "candidata": "0133.jpg",
+   "arquivo": "SFHQ_pt3_00000765.jpg"
+  },
+  {
+   "candidata": "0134.jpg",
+   "arquivo": "SFHQ_pt3_00000766.jpg"
+  },
+  {
+   "candidata": "0135.jpg",
+   "arquivo": "SFHQ_pt3_00000770.jpg"
+  },
+  {
+   "candidata": "0141.jpg",
+   "arquivo": "SFHQ_pt3_00000782.jpg"
+  },
+  {
+   "candidata": "0143.jpg",
+   "arquivo": "SFHQ_pt3_00000791.jpg"
+  },
+  {
+   "candidata": "0144.jpg",
+   "arquivo": "SFHQ_pt3_00000793.jpg"
+  },
+  {
+   "candidata": "0148.jpg",
+   "arquivo": "SFHQ_pt3_00000805.jpg"
+  },
+  {
+   "candidata": "0149.jpg",
+   "arquivo": "SFHQ_pt3_00000806.jpg"
+  },
+  {
+   "candidata": "0150.jpg",
+   "arquivo": "SFHQ_pt3_00000812.jpg"
+  },
+  {
+   "candidata": "0154.jpg",
+   "arquivo": "SFHQ_pt3_00000826.jpg"
+  },
+  {
+   "candidata": "0155.jpg",
+   "arquivo": "SFHQ_pt3_00000827.jpg"
+  },
+  {
+   "candidata": "0162.jpg",
+   "arquivo": "SFHQ_pt3_00000852.jpg"
+  },
+  {
+   "candidata": "0163.jpg",
+   "arquivo": "SFHQ_pt3_00000854.jpg"
+  },
+  {
+   "candidata": "0164.jpg",
+   "arquivo": "SFHQ_pt3_00000855.jpg"
+  },
+  {
+   "candidata": "0165.jpg",
+   "arquivo": "SFHQ_pt3_00000865.jpg"
+  },
+  {
+   "candidata": "0168.jpg",
+   "arquivo": "SFHQ_pt3_00000876.jpg"
+  },
+  {
+   "candidata": "0173.jpg",
+   "arquivo": "SFHQ_pt3_00000898.jpg"
+  },
+  {
+   "candidata": "0178.jpg",
+   "arquivo": "SFHQ_pt3_00000933.jpg"
+  },
+  {
+   "candidata": "0179.jpg",
+   "arquivo": "SFHQ_pt3_00000934.jpg"
+  },
+  {
+   "candidata": "0181.jpg",
+   "arquivo": "SFHQ_pt3_00000949.jpg"
+  },
+  {
+   "candidata": "0182.jpg",
+   "arquivo": "SFHQ_pt3_00000951.jpg"
+  },
+  {
+   "candidata": "0187.jpg",
+   "arquivo": "SFHQ_pt3_00000975.jpg"
+  },
+  {
+   "candidata": "0193.jpg",
+   "arquivo": "SFHQ_pt3_00001000.jpg"
+  },
+  {
+   "candidata": "0197.jpg",
+   "arquivo": "SFHQ_pt3_00001008.jpg"
+  },
+  {
+   "candidata": "0198.jpg",
+   "arquivo": "SFHQ_pt3_00001009.jpg"
+  },
+  {
+   "candidata": "0199.jpg",
+   "arquivo": "SFHQ_pt3_00001011.jpg"
+  },
+  {
+   "candidata": "0202.jpg",
+   "arquivo": "SFHQ_pt3_00001021.jpg"
+  },
+  {
+   "candidata": "0203.jpg",
+   "arquivo": "SFHQ_pt3_00001022.jpg"
+  },
+  {
+   "candidata": "0206.jpg",
+   "arquivo": "SFHQ_pt3_00001033.jpg"
+  },
+  {
+   "candidata": "0207.jpg",
+   "arquivo": "SFHQ_pt3_00001035.jpg"
+  },
+  {
+   "candidata": "0212.jpg",
+   "arquivo": "SFHQ_pt3_00001056.jpg"
+  },
+  {
+   "candidata": "0213.jpg",
+   "arquivo": "SFHQ_pt3_00001060.jpg"
+  },
+  {
+   "candidata": "0216.jpg",
+   "arquivo": "SFHQ_pt3_00001096.jpg"
+  },
+  {
+   "candidata": "0218.jpg",
+   "arquivo": "SFHQ_pt3_00001108.jpg"
+  },
+  {
+   "candidata": "0225.jpg",
+   "arquivo": "SFHQ_pt3_00001129.jpg"
+  },
+  {
+   "candidata": "0227.jpg",
+   "arquivo": "SFHQ_pt3_00001136.jpg"
+  },
+  {
+   "candidata": "0231.jpg",
+   "arquivo": "SFHQ_pt3_00001156.jpg"
+  },
+  {
+   "candidata": "0234.jpg",
+   "arquivo": "SFHQ_pt3_00001159.jpg"
+  },
+  {
+   "candidata": "0236.jpg",
+   "arquivo": "SFHQ_pt3_00001178.jpg"
+  },
+  {
+   "candidata": "0238.jpg",
+   "arquivo": "SFHQ_pt3_00001187.jpg"
+  },
+  {
+   "candidata": "0239.jpg",
+   "arquivo": "SFHQ_pt3_00001194.jpg"
+  },
+  {
+   "candidata": "0240.jpg",
+   "arquivo": "SFHQ_pt3_00001197.jpg"
+  },
+  {
+   "candidata": "0242.jpg",
+   "arquivo": "SFHQ_pt3_00001199.jpg"
+  },
+  {
+   "candidata": "0244.jpg",
+   "arquivo": "SFHQ_pt3_00001203.jpg"
+  },
+  {
+   "candidata": "0246.jpg",
+   "arquivo": "SFHQ_pt3_00001206.jpg"
+  },
+  {
+   "candidata": "0249.jpg",
+   "arquivo": "SFHQ_pt3_00001225.jpg"
+  },
+  {
+   "candidata": "0250.jpg",
+   "arquivo": "SFHQ_pt3_00001232.jpg"
+  },
+  {
+   "candidata": "0253.jpg",
+   "arquivo": "SFHQ_pt3_00001244.jpg"
+  },
+  {
+   "candidata": "0259.jpg",
+   "arquivo": "SFHQ_pt3_00001271.jpg"
+  },
+  {
+   "candidata": "0264.jpg",
+   "arquivo": "SFHQ_pt3_00001287.jpg"
+  },
+  {
+   "candidata": "0265.jpg",
+   "arquivo": "SFHQ_pt3_00001288.jpg"
+  },
+  {
+   "candidata": "0267.jpg",
+   "arquivo": "SFHQ_pt3_00001298.jpg"
+  },
+  {
+   "candidata": "0271.jpg",
+   "arquivo": "SFHQ_pt3_00001305.jpg"
+  },
+  {
+   "candidata": "0288.jpg",
+   "arquivo": "SFHQ_pt3_00001354.jpg"
+  },
+  {
+   "candidata": "0291.jpg",
+   "arquivo": "SFHQ_pt3_00001361.jpg"
+  },
+  {
+   "candidata": "0296.jpg",
+   "arquivo": "SFHQ_pt3_00001372.jpg"
+  },
+  {
+   "candidata": "0297.jpg",
+   "arquivo": "SFHQ_pt3_00001374.jpg"
+  },
+  {
+   "candidata": "0298.jpg",
+   "arquivo": "SFHQ_pt3_00001375.jpg"
+  },
+  {
+   "candidata": "0299.jpg",
+   "arquivo": "SFHQ_pt3_00001376.jpg"
+  },
+  {
+   "candidata": "0303.jpg",
+   "arquivo": "SFHQ_pt3_00001385.jpg"
+  },
+  {
+   "candidata": "0304.jpg",
+   "arquivo": "SFHQ_pt3_00001386.jpg"
+  },
+  {
+   "candidata": "0307.jpg",
+   "arquivo": "SFHQ_pt3_00001398.jpg"
+  },
+  {
+   "candidata": "0310.jpg",
+   "arquivo": "SFHQ_pt3_00001406.jpg"
+  },
+  {
+   "candidata": "0312.jpg",
+   "arquivo": "SFHQ_pt3_00001412.jpg"
+  },
+  {
+   "candidata": "0314.jpg",
+   "arquivo": "SFHQ_pt3_00001416.jpg"
+  },
+  {
+   "candidata": "0316.jpg",
+   "arquivo": "SFHQ_pt3_00001419.jpg"
+  },
+  {
+   "candidata": "0321.jpg",
+   "arquivo": "SFHQ_pt3_00001434.jpg"
+  },
+  {
+   "candidata": "0325.jpg",
+   "arquivo": "SFHQ_pt3_00001443.jpg"
+  },
+  {
+   "candidata": "0331.jpg",
+   "arquivo": "SFHQ_pt3_00001473.jpg"
+  },
+  {
+   "candidata": "0332.jpg",
+   "arquivo": "SFHQ_pt3_00001476.jpg"
+  },
+  {
+   "candidata": "0335.jpg",
+   "arquivo": "SFHQ_pt3_00001482.jpg"
+  },
+  {
+   "candidata": "0338.jpg",
+   "arquivo": "SFHQ_pt3_00001492.jpg"
+  },
+  {
+   "candidata": "0342.jpg",
+   "arquivo": "SFHQ_pt3_00001522.jpg"
+  },
+  {
+   "candidata": "0343.jpg",
+   "arquivo": "SFHQ_pt3_00001525.jpg"
+  },
+  {
+   "candidata": "0349.jpg",
+   "arquivo": "SFHQ_pt3_00001546.jpg"
+  },
+  {
+   "candidata": "0351.jpg",
+   "arquivo": "SFHQ_pt3_00001553.jpg"
+  },
+  {
+   "candidata": "0358.jpg",
+   "arquivo": "SFHQ_pt3_00001578.jpg"
+  },
+  {
+   "candidata": "0362.jpg",
+   "arquivo": "SFHQ_pt3_00001584.jpg"
+  },
+  {
+   "candidata": "0365.jpg",
+   "arquivo": "SFHQ_pt3_00001593.jpg"
+  },
+  {
+   "candidata": "0370.jpg",
+   "arquivo": "SFHQ_pt3_00001608.jpg"
+  },
+  {
+   "candidata": "0371.jpg",
+   "arquivo": "SFHQ_pt3_00001612.jpg"
+  },
+  {
+   "candidata": "0373.jpg",
+   "arquivo": "SFHQ_pt3_00001617.jpg"
+  },
+  {
+   "candidata": "0374.jpg",
+   "arquivo": "SFHQ_pt3_00001618.jpg"
+  },
+  {
+   "candidata": "0375.jpg",
+   "arquivo": "SFHQ_pt3_00001619.jpg"
+  },
+  {
+   "candidata": "0377.jpg",
+   "arquivo": "SFHQ_pt3_00001622.jpg"
+  },
+  {
+   "candidata": "0383.jpg",
+   "arquivo": "SFHQ_pt3_00001633.jpg"
+  }
+ ],
+ "F": [
+  {
+   "candidata": "0000.jpg",
+   "arquivo": "SFHQ_pt3_00000010.jpg"
+  },
+  {
+   "candidata": "0004.jpg",
+   "arquivo": "SFHQ_pt3_00000052.jpg"
+  },
+  {
+   "candidata": "0006.jpg",
+   "arquivo": "SFHQ_pt3_00000057.jpg"
+  },
+  {
+   "candidata": "0010.jpg",
+   "arquivo": "SFHQ_pt3_00000067.jpg"
+  },
+  {
+   "candidata": "0011.jpg",
+   "arquivo": "SFHQ_pt3_00000069.jpg"
+  },
+  {
+   "candidata": "0013.jpg",
+   "arquivo": "SFHQ_pt3_00000077.jpg"
+  },
+  {
+   "candidata": "0015.jpg",
+   "arquivo": "SFHQ_pt3_00000091.jpg"
+  },
+  {
+   "candidata": "0016.jpg",
+   "arquivo": "SFHQ_pt3_00000095.jpg"
+  },
+  {
+   "candidata": "0017.jpg",
+   "arquivo": "SFHQ_pt3_00000100.jpg"
+  },
+  {
+   "candidata": "0018.jpg",
+   "arquivo": "SFHQ_pt3_00000108.jpg"
+  },
+  {
+   "candidata": "0024.jpg",
+   "arquivo": "SFHQ_pt3_00000147.jpg"
+  },
+  {
+   "candidata": "0026.jpg",
+   "arquivo": "SFHQ_pt3_00000157.jpg"
+  },
+  {
+   "candidata": "0028.jpg",
+   "arquivo": "SFHQ_pt3_00000168.jpg"
+  },
+  {
+   "candidata": "0029.jpg",
+   "arquivo": "SFHQ_pt3_00000170.jpg"
+  },
+  {
+   "candidata": "0032.jpg",
+   "arquivo": "SFHQ_pt3_00000189.jpg"
+  },
+  {
+   "candidata": "0033.jpg",
+   "arquivo": "SFHQ_pt3_00000191.jpg"
+  },
+  {
+   "candidata": "0034.jpg",
+   "arquivo": "SFHQ_pt3_00000193.jpg"
+  },
+  {
+   "candidata": "0035.jpg",
+   "arquivo": "SFHQ_pt3_00000209.jpg"
+  },
+  {
+   "candidata": "0038.jpg",
+   "arquivo": "SFHQ_pt3_00000249.jpg"
+  },
+  {
+   "candidata": "0040.jpg",
+   "arquivo": "SFHQ_pt3_00000255.jpg"
+  },
+  {
+   "candidata": "0043.jpg",
+   "arquivo": "SFHQ_pt3_00000272.jpg"
+  },
+  {
+   "candidata": "0046.jpg",
+   "arquivo": "SFHQ_pt3_00000286.jpg"
+  },
+  {
+   "candidata": "0047.jpg",
+   "arquivo": "SFHQ_pt3_00000303.jpg"
+  },
+  {
+   "candidata": "0048.jpg",
+   "arquivo": "SFHQ_pt3_00000308.jpg"
+  },
+  {
+   "candidata": "0049.jpg",
+   "arquivo": "SFHQ_pt3_00000320.jpg"
+  },
+  {
+   "candidata": "0052.jpg",
+   "arquivo": "SFHQ_pt3_00000345.jpg"
+  },
+  {
+   "candidata": "0054.jpg",
+   "arquivo": "SFHQ_pt3_00000363.jpg"
+  },
+  {
+   "candidata": "0056.jpg",
+   "arquivo": "SFHQ_pt3_00000369.jpg"
+  },
+  {
+   "candidata": "0057.jpg",
+   "arquivo": "SFHQ_pt3_00000373.jpg"
+  },
+  {
+   "candidata": "0058.jpg",
+   "arquivo": "SFHQ_pt3_00000374.jpg"
+  },
+  {
+   "candidata": "0059.jpg",
+   "arquivo": "SFHQ_pt3_00000384.jpg"
+  },
+  {
+   "candidata": "0060.jpg",
+   "arquivo": "SFHQ_pt3_00000386.jpg"
+  },
+  {
+   "candidata": "0061.jpg",
+   "arquivo": "SFHQ_pt3_00000388.jpg"
+  },
+  {
+   "candidata": "0062.jpg",
+   "arquivo": "SFHQ_pt3_00000390.jpg"
+  },
+  {
+   "candidata": "0065.jpg",
+   "arquivo": "SFHQ_pt3_00000400.jpg"
+  },
+  {
+   "candidata": "0067.jpg",
+   "arquivo": "SFHQ_pt3_00000411.jpg"
+  },
+  {
+   "candidata": "0070.jpg",
+   "arquivo": "SFHQ_pt3_00000424.jpg"
+  },
+  {
+   "candidata": "0075.jpg",
+   "arquivo": "SFHQ_pt3_00000476.jpg"
+  },
+  {
+   "candidata": "0077.jpg",
+   "arquivo": "SFHQ_pt3_00000507.jpg"
+  },
+  {
+   "candidata": "0078.jpg",
+   "arquivo": "SFHQ_pt3_00000529.jpg"
+  },
+  {
+   "candidata": "0079.jpg",
+   "arquivo": "SFHQ_pt3_00000537.jpg"
+  },
+  {
+   "candidata": "0081.jpg",
+   "arquivo": "SFHQ_pt3_00000544.jpg"
+  },
+  {
+   "candidata": "0082.jpg",
+   "arquivo": "SFHQ_pt3_00000553.jpg"
+  },
+  {
+   "candidata": "0086.jpg",
+   "arquivo": "SFHQ_pt3_00000568.jpg"
+  },
+  {
+   "candidata": "0088.jpg",
+   "arquivo": "SFHQ_pt3_00000584.jpg"
+  },
+  {
+   "candidata": "0092.jpg",
+   "arquivo": "SFHQ_pt3_00000593.jpg"
+  },
+  {
+   "candidata": "0094.jpg",
+   "arquivo": "SFHQ_pt3_00000598.jpg"
+  },
+  {
+   "candidata": "0096.jpg",
+   "arquivo": "SFHQ_pt3_00000609.jpg"
+  },
+  {
+   "candidata": "0100.jpg",
+   "arquivo": "SFHQ_pt3_00000632.jpg"
+  },
+  {
+   "candidata": "0104.jpg",
+   "arquivo": "SFHQ_pt3_00000644.jpg"
+  },
+  {
+   "candidata": "0106.jpg",
+   "arquivo": "SFHQ_pt3_00000657.jpg"
+  },
+  {
+   "candidata": "0108.jpg",
+   "arquivo": "SFHQ_pt3_00000672.jpg"
+  },
+  {
+   "candidata": "0111.jpg",
+   "arquivo": "SFHQ_pt3_00000678.jpg"
+  },
+  {
+   "candidata": "0112.jpg",
+   "arquivo": "SFHQ_pt3_00000679.jpg"
+  },
+  {
+   "candidata": "0117.jpg",
+   "arquivo": "SFHQ_pt3_00000706.jpg"
+  },
+  {
+   "candidata": "0123.jpg",
+   "arquivo": "SFHQ_pt3_00000736.jpg"
+  },
+  {
+   "candidata": "0126.jpg",
+   "arquivo": "SFHQ_pt3_00000746.jpg"
+  },
+  {
+   "candidata": "0127.jpg",
+   "arquivo": "SFHQ_pt3_00000748.jpg"
+  },
+  {
+   "candidata": "0129.jpg",
+   "arquivo": "SFHQ_pt3_00000753.jpg"
+  },
+  {
+   "candidata": "0132.jpg",
+   "arquivo": "SFHQ_pt3_00000759.jpg"
+  },
+  {
+   "candidata": "0136.jpg",
+   "arquivo": "SFHQ_pt3_00000771.jpg"
+  },
+  {
+   "candidata": "0137.jpg",
+   "arquivo": "SFHQ_pt3_00000773.jpg"
+  },
+  {
+   "candidata": "0138.jpg",
+   "arquivo": "SFHQ_pt3_00000775.jpg"
+  },
+  {
+   "candidata": "0139.jpg",
+   "arquivo": "SFHQ_pt3_00000776.jpg"
+  },
+  {
+   "candidata": "0140.jpg",
+   "arquivo": "SFHQ_pt3_00000781.jpg"
+  },
+  {
+   "candidata": "0142.jpg",
+   "arquivo": "SFHQ_pt3_00000786.jpg"
+  },
+  {
+   "candidata": "0145.jpg",
+   "arquivo": "SFHQ_pt3_00000794.jpg"
+  },
+  {
+   "candidata": "0146.jpg",
+   "arquivo": "SFHQ_pt3_00000796.jpg"
+  },
+  {
+   "candidata": "0151.jpg",
+   "arquivo": "SFHQ_pt3_00000814.jpg"
+  },
+  {
+   "candidata": "0156.jpg",
+   "arquivo": "SFHQ_pt3_00000830.jpg"
+  },
+  {
+   "candidata": "0157.jpg",
+   "arquivo": "SFHQ_pt3_00000836.jpg"
+  },
+  {
+   "candidata": "0158.jpg",
+   "arquivo": "SFHQ_pt3_00000837.jpg"
+  },
+  {
+   "candidata": "0159.jpg",
+   "arquivo": "SFHQ_pt3_00000842.jpg"
+  },
+  {
+   "candidata": "0160.jpg",
+   "arquivo": "SFHQ_pt3_00000846.jpg"
+  },
+  {
+   "candidata": "0167.jpg",
+   "arquivo": "SFHQ_pt3_00000875.jpg"
+  },
+  {
+   "candidata": "0169.jpg",
+   "arquivo": "SFHQ_pt3_00000880.jpg"
+  },
+  {
+   "candidata": "0171.jpg",
+   "arquivo": "SFHQ_pt3_00000891.jpg"
+  },
+  {
+   "candidata": "0174.jpg",
+   "arquivo": "SFHQ_pt3_00000905.jpg"
+  },
+  {
+   "candidata": "0175.jpg",
+   "arquivo": "SFHQ_pt3_00000917.jpg"
+  },
+  {
+   "candidata": "0176.jpg",
+   "arquivo": "SFHQ_pt3_00000918.jpg"
+  },
+  {
+   "candidata": "0177.jpg",
+   "arquivo": "SFHQ_pt3_00000927.jpg"
+  },
+  {
+   "candidata": "0183.jpg",
+   "arquivo": "SFHQ_pt3_00000952.jpg"
+  },
+  {
+   "candidata": "0186.jpg",
+   "arquivo": "SFHQ_pt3_00000971.jpg"
+  },
+  {
+   "candidata": "0190.jpg",
+   "arquivo": "SFHQ_pt3_00000982.jpg"
+  },
+  {
+   "candidata": "0191.jpg",
+   "arquivo": "SFHQ_pt3_00000986.jpg"
+  },
+  {
+   "candidata": "0192.jpg",
+   "arquivo": "SFHQ_pt3_00000989.jpg"
+  },
+  {
+   "candidata": "0195.jpg",
+   "arquivo": "SFHQ_pt3_00001003.jpg"
+  },
+  {
+   "candidata": "0196.jpg",
+   "arquivo": "SFHQ_pt3_00001005.jpg"
+  },
+  {
+   "candidata": "0200.jpg",
+   "arquivo": "SFHQ_pt3_00001018.jpg"
+  },
+  {
+   "candidata": "0201.jpg",
+   "arquivo": "SFHQ_pt3_00001019.jpg"
+  },
+  {
+   "candidata": "0204.jpg",
+   "arquivo": "SFHQ_pt3_00001023.jpg"
+  },
+  {
+   "candidata": "0205.jpg",
+   "arquivo": "SFHQ_pt3_00001032.jpg"
+  },
+  {
+   "candidata": "0210.jpg",
+   "arquivo": "SFHQ_pt3_00001039.jpg"
+  },
+  {
+   "candidata": "0214.jpg",
+   "arquivo": "SFHQ_pt3_00001065.jpg"
+  },
+  {
+   "candidata": "0215.jpg",
+   "arquivo": "SFHQ_pt3_00001080.jpg"
+  },
+  {
+   "candidata": "0217.jpg",
+   "arquivo": "SFHQ_pt3_00001098.jpg"
+  },
+  {
+   "candidata": "0219.jpg",
+   "arquivo": "SFHQ_pt3_00001113.jpg"
+  },
+  {
+   "candidata": "0220.jpg",
+   "arquivo": "SFHQ_pt3_00001116.jpg"
+  },
+  {
+   "candidata": "0221.jpg",
+   "arquivo": "SFHQ_pt3_00001118.jpg"
+  },
+  {
+   "candidata": "0222.jpg",
+   "arquivo": "SFHQ_pt3_00001120.jpg"
+  },
+  {
+   "candidata": "0223.jpg",
+   "arquivo": "SFHQ_pt3_00001126.jpg"
+  },
+  {
+   "candidata": "0224.jpg",
+   "arquivo": "SFHQ_pt3_00001128.jpg"
+  },
+  {
+   "candidata": "0226.jpg",
+   "arquivo": "SFHQ_pt3_00001131.jpg"
+  },
+  {
+   "candidata": "0228.jpg",
+   "arquivo": "SFHQ_pt3_00001138.jpg"
+  },
+  {
+   "candidata": "0229.jpg",
+   "arquivo": "SFHQ_pt3_00001147.jpg"
+  },
+  {
+   "candidata": "0233.jpg",
+   "arquivo": "SFHQ_pt3_00001158.jpg"
+  },
+  {
+   "candidata": "0235.jpg",
+   "arquivo": "SFHQ_pt3_00001167.jpg"
+  },
+  {
+   "candidata": "0237.jpg",
+   "arquivo": "SFHQ_pt3_00001182.jpg"
+  },
+  {
+   "candidata": "0241.jpg",
+   "arquivo": "SFHQ_pt3_00001198.jpg"
+  },
+  {
+   "candidata": "0247.jpg",
+   "arquivo": "SFHQ_pt3_00001207.jpg"
+  },
+  {
+   "candidata": "0251.jpg",
+   "arquivo": "SFHQ_pt3_00001240.jpg"
+  },
+  {
+   "candidata": "0252.jpg",
+   "arquivo": "SFHQ_pt3_00001242.jpg"
+  },
+  {
+   "candidata": "0254.jpg",
+   "arquivo": "SFHQ_pt3_00001247.jpg"
+  },
+  {
+   "candidata": "0255.jpg",
+   "arquivo": "SFHQ_pt3_00001248.jpg"
+  },
+  {
+   "candidata": "0257.jpg",
+   "arquivo": "SFHQ_pt3_00001265.jpg"
+  },
+  {
+   "candidata": "0258.jpg",
+   "arquivo": "SFHQ_pt3_00001269.jpg"
+  },
+  {
+   "candidata": "0261.jpg",
+   "arquivo": "SFHQ_pt3_00001274.jpg"
+  },
+  {
+   "candidata": "0262.jpg",
+   "arquivo": "SFHQ_pt3_00001278.jpg"
+  },
+  {
+   "candidata": "0266.jpg",
+   "arquivo": "SFHQ_pt3_00001290.jpg"
+  },
+  {
+   "candidata": "0268.jpg",
+   "arquivo": "SFHQ_pt3_00001301.jpg"
+  },
+  {
+   "candidata": "0270.jpg",
+   "arquivo": "SFHQ_pt3_00001304.jpg"
+  },
+  {
+   "candidata": "0272.jpg",
+   "arquivo": "SFHQ_pt3_00001313.jpg"
+  },
+  {
+   "candidata": "0273.jpg",
+   "arquivo": "SFHQ_pt3_00001317.jpg"
+  },
+  {
+   "candidata": "0274.jpg",
+   "arquivo": "SFHQ_pt3_00001320.jpg"
+  },
+  {
+   "candidata": "0275.jpg",
+   "arquivo": "SFHQ_pt3_00001321.jpg"
+  },
+  {
+   "candidata": "0278.jpg",
+   "arquivo": "SFHQ_pt3_00001325.jpg"
+  },
+  {
+   "candidata": "0281.jpg",
+   "arquivo": "SFHQ_pt3_00001329.jpg"
+  },
+  {
+   "candidata": "0282.jpg",
+   "arquivo": "SFHQ_pt3_00001331.jpg"
+  },
+  {
+   "candidata": "0283.jpg",
+   "arquivo": "SFHQ_pt3_00001342.jpg"
+  },
+  {
+   "candidata": "0284.jpg",
+   "arquivo": "SFHQ_pt3_00001343.jpg"
+  },
+  {
+   "candidata": "0285.jpg",
+   "arquivo": "SFHQ_pt3_00001344.jpg"
+  },
+  {
+   "candidata": "0286.jpg",
+   "arquivo": "SFHQ_pt3_00001346.jpg"
+  },
+  {
+   "candidata": "0287.jpg",
+   "arquivo": "SFHQ_pt3_00001352.jpg"
+  },
+  {
+   "candidata": "0289.jpg",
+   "arquivo": "SFHQ_pt3_00001356.jpg"
+  },
+  {
+   "candidata": "0290.jpg",
+   "arquivo": "SFHQ_pt3_00001360.jpg"
+  },
+  {
+   "candidata": "0292.jpg",
+   "arquivo": "SFHQ_pt3_00001362.jpg"
+  },
+  {
+   "candidata": "0293.jpg",
+   "arquivo": "SFHQ_pt3_00001366.jpg"
+  },
+  {
+   "candidata": "0295.jpg",
+   "arquivo": "SFHQ_pt3_00001369.jpg"
+  },
+  {
+   "candidata": "0300.jpg",
+   "arquivo": "SFHQ_pt3_00001378.jpg"
+  },
+  {
+   "candidata": "0301.jpg",
+   "arquivo": "SFHQ_pt3_00001381.jpg"
+  },
+  {
+   "candidata": "0302.jpg",
+   "arquivo": "SFHQ_pt3_00001384.jpg"
+  },
+  {
+   "candidata": "0305.jpg",
+   "arquivo": "SFHQ_pt3_00001394.jpg"
+  },
+  {
+   "candidata": "0306.jpg",
+   "arquivo": "SFHQ_pt3_00001397.jpg"
+  },
+  {
+   "candidata": "0308.jpg",
+   "arquivo": "SFHQ_pt3_00001400.jpg"
+  },
+  {
+   "candidata": "0309.jpg",
+   "arquivo": "SFHQ_pt3_00001402.jpg"
+  },
+  {
+   "candidata": "0311.jpg",
+   "arquivo": "SFHQ_pt3_00001408.jpg"
+  },
+  {
+   "candidata": "0315.jpg",
+   "arquivo": "SFHQ_pt3_00001417.jpg"
+  },
+  {
+   "candidata": "0317.jpg",
+   "arquivo": "SFHQ_pt3_00001421.jpg"
+  },
+  {
+   "candidata": "0319.jpg",
+   "arquivo": "SFHQ_pt3_00001431.jpg"
+  },
+  {
+   "candidata": "0322.jpg",
+   "arquivo": "SFHQ_pt3_00001436.jpg"
+  },
+  {
+   "candidata": "0324.jpg",
+   "arquivo": "SFHQ_pt3_00001442.jpg"
+  },
+  {
+   "candidata": "0328.jpg",
+   "arquivo": "SFHQ_pt3_00001460.jpg"
+  },
+  {
+   "candidata": "0330.jpg",
+   "arquivo": "SFHQ_pt3_00001472.jpg"
+  },
+  {
+   "candidata": "0333.jpg",
+   "arquivo": "SFHQ_pt3_00001477.jpg"
+  },
+  {
+   "candidata": "0337.jpg",
+   "arquivo": "SFHQ_pt3_00001486.jpg"
+  },
+  {
+   "candidata": "0339.jpg",
+   "arquivo": "SFHQ_pt3_00001494.jpg"
+  },
+  {
+   "candidata": "0340.jpg",
+   "arquivo": "SFHQ_pt3_00001497.jpg"
+  },
+  {
+   "candidata": "0341.jpg",
+   "arquivo": "SFHQ_pt3_00001509.jpg"
+  },
+  {
+   "candidata": "0344.jpg",
+   "arquivo": "SFHQ_pt3_00001532.jpg"
+  },
+  {
+   "candidata": "0345.jpg",
+   "arquivo": "SFHQ_pt3_00001533.jpg"
+  },
+  {
+   "candidata": "0346.jpg",
+   "arquivo": "SFHQ_pt3_00001536.jpg"
+  },
+  {
+   "candidata": "0347.jpg",
+   "arquivo": "SFHQ_pt3_00001541.jpg"
+  },
+  {
+   "candidata": "0350.jpg",
+   "arquivo": "SFHQ_pt3_00001548.jpg"
+  },
+  {
+   "candidata": "0352.jpg",
+   "arquivo": "SFHQ_pt3_00001562.jpg"
+  },
+  {
+   "candidata": "0353.jpg",
+   "arquivo": "SFHQ_pt3_00001563.jpg"
+  },
+  {
+   "candidata": "0355.jpg",
+   "arquivo": "SFHQ_pt3_00001568.jpg"
+  },
+  {
+   "candidata": "0356.jpg",
+   "arquivo": "SFHQ_pt3_00001575.jpg"
+  },
+  {
+   "candidata": "0357.jpg",
+   "arquivo": "SFHQ_pt3_00001576.jpg"
+  },
+  {
+   "candidata": "0359.jpg",
+   "arquivo": "SFHQ_pt3_00001579.jpg"
+  },
+  {
+   "candidata": "0360.jpg",
+   "arquivo": "SFHQ_pt3_00001580.jpg"
+  },
+  {
+   "candidata": "0361.jpg",
+   "arquivo": "SFHQ_pt3_00001583.jpg"
+  },
+  {
+   "candidata": "0363.jpg",
+   "arquivo": "SFHQ_pt3_00001586.jpg"
+  },
+  {
+   "candidata": "0364.jpg",
+   "arquivo": "SFHQ_pt3_00001592.jpg"
+  },
+  {
+   "candidata": "0368.jpg",
+   "arquivo": "SFHQ_pt3_00001601.jpg"
+  },
+  {
+   "candidata": "0369.jpg",
+   "arquivo": "SFHQ_pt3_00001606.jpg"
+  },
+  {
+   "candidata": "0372.jpg",
+   "arquivo": "SFHQ_pt3_00001614.jpg"
+  },
+  {
+   "candidata": "0378.jpg",
+   "arquivo": "SFHQ_pt3_00001624.jpg"
+  },
+  {
+   "candidata": "0379.jpg",
+   "arquivo": "SFHQ_pt3_00001625.jpg"
+  },
+  {
+   "candidata": "0380.jpg",
+   "arquivo": "SFHQ_pt3_00001626.jpg"
+  },
+  {
+   "candidata": "0382.jpg",
+   "arquivo": "SFHQ_pt3_00001632.jpg"
+  }
+ ]
+}

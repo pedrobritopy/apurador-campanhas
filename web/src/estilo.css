@@ -310,12 +310,13 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .entrada-grupo > svg { position: absolute; left: 10px; color: var(--tinta-3); pointer-events: none; }
 .entrada-grupo > .entrada { padding-left: 32px; }
 .entrada-grupo .sufixo { position: absolute; right: 10px; color: var(--tinta-3); font-size: 12px; pointer-events: none; }
+.entrada-grupo.com-sufixo > .entrada { padding-right: 44px; }
 .alternador { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; user-select: none; }
 .alternador-trilho { width: 34px; height: 20px; border-radius: 99px; background: var(--superficie-3); position: relative; transition: background var(--dur) var(--curva); flex: none; box-shadow: inset 0 0 0 1px var(--borda); }
 .alternador-trilho::after { content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); transition: transform var(--dur) var(--curva-mola); }
 .alternador.ligado .alternador-trilho { background: var(--acento); }
 .alternador.ligado .alternador-trilho::after { transform: translateX(14px); }
-.segmentado { display: inline-flex; padding: 3px; border-radius: 9px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--borda); gap: 2px; position: relative; }
+.segmentado { display: inline-flex; padding: 3px; border-radius: 9px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--borda); gap: 2px; position: relative; align-self: flex-start; width: max-content; max-width: 100%; overflow-x: auto; scrollbar-width: none; }
 .segmentado button { position: relative; z-index: 1; border: 0; background: transparent; height: 28px; padding: 0 11px; border-radius: 7px; cursor: pointer; font-size: 12.5px; font-weight: 550; color: var(--tinta-2); display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 .segmentado button.ativo { color: var(--tinta); }
 .segmentado .marcador { position: absolute; z-index: 0; border-radius: 7px; background: var(--superficie-elevada); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 0 1px var(--borda); }
@@ -393,6 +394,25 @@ table.tabela { width: 100%; border-collapse: separate; border-spacing: 0; font-s
   position: fixed; z-index: 80; pointer-events: none; max-width: 320px; padding: 8px 10px; border-radius: 8px;
   background: var(--superficie-elevada); box-shadow: var(--sombra-2); font-size: 12px; color: var(--tinta);
 }
+/* "i" de explicação */
+.explica-botao {
+  display: inline-flex; align-items: center; justify-content: center; flex: none; width: 18px; height: 18px; margin-left: 2px;
+  border-radius: 50%; color: var(--tinta-3); cursor: help; vertical-align: middle; transition: color var(--dur) var(--curva), background var(--dur) var(--curva);
+}
+.explica-botao:hover, .explica-botao[aria-expanded="true"] { color: var(--acento-texto); background: var(--acento-lavagem); }
+.explica-botao:focus-visible { outline: 2px solid var(--acento-anel); outline-offset: 1px; }
+.com-explica, .cartao-titulo { display: flex; align-items: center; gap: 4px; }
+.explica-caixa {
+  position: fixed; z-index: 85; padding: 12px 14px; border-radius: 10px; background: var(--superficie-elevada); box-shadow: var(--sombra-3, var(--sombra-2));
+  font-size: 12.5px; line-height: 1.55; color: var(--tinta-2); font-weight: 400; text-align: left; letter-spacing: 0; text-transform: none;
+  display: flex; flex-direction: column; gap: 8px; animation: explica-entra .14s var(--curva);
+}
+.explica-titulo { font-size: 13px; font-weight: 600; color: var(--tinta); }
+.explica-texto { color: var(--tinta-2); }
+.explica-rotulo { display: block; font-size: 10.5px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--tinta-3); margin-bottom: 2px; }
+.explica-bloco ol { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 2px; }
+.explica-exemplo { padding: 8px 10px; border-radius: 8px; background: var(--superficie-2); color: var(--tinta); }
+@keyframes explica-entra { from { opacity: 0; transform: translateY(3px); } }
 .menu-lista { position: absolute; z-index: 40; min-width: 200px; padding: 5px; border-radius: 10px; background: var(--superficie-elevada); box-shadow: var(--sombra-2); }
 .menu-item { display: flex; align-items: center; gap: 9px; width: 100%; padding: 7px 9px; border: 0; background: transparent; border-radius: 7px; cursor: pointer; text-align: left; font-size: 13px; color: var(--tinta); }
 .menu-item:hover { background: var(--superficie-2); }
@@ -423,6 +443,8 @@ table.tabela { width: 100%; border-collapse: separate; border-spacing: 0; font-s
 .esqueleto { border-radius: 8px; background: linear-gradient(90deg, var(--superficie-2) 25%, var(--superficie-3) 37%, var(--superficie-2) 63%); background-size: 400% 100%; animation: brilho 1.4s ease infinite; }
 @keyframes brilho { 0% { background-position: 100% 50%; } 100% { background-position: 0 50%; } }
 .avatar { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-size: 11.5px; font-weight: 650; flex: none; background: var(--superficie-3); color: var(--tinta-2); }
+.avatar.com-foto { overflow: hidden; background: var(--superficie-3); box-shadow: 0 0 0 1px var(--borda); }
+.avatar.com-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .avatar.p { width: 24px; height: 24px; font-size: 10px; }
 .avatar.g { width: 40px; height: 40px; font-size: 14px; }
 .cor-faixa { width: 4px; align-self: stretch; border-radius: 4px; flex: none; }
@@ -451,7 +473,7 @@ kbd { font-family: var(--mono); font-size: 11px; }
 .grafico .serie-linha { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
 .grafico .serie-linha.tracejada { stroke-dasharray: 5 5; stroke-width: 1.75; }
 .grafico .serie-area { stroke: none; opacity: 0.1; }
-.grafico .desenhar { stroke-dasharray: var(--comp); stroke-dashoffset: var(--comp); animation: desenhar 1100ms var(--curva) forwards; }
+.grafico .desenhar { stroke-dasharray: 1; stroke-dashoffset: 1; animation: desenhar 1100ms var(--curva) forwards; }
 @keyframes desenhar { to { stroke-dashoffset: 0; } }
 .grafico .ponto-serie { stroke: var(--superficie); stroke-width: 2; }
 .grafico .marca-hoje { stroke: var(--tinta-3); stroke-width: 1; }
@@ -526,3 +548,75 @@ kbd { font-family: var(--mono); font-size: 11px; }
   body { background: #fff; }
   .cartao { box-shadow: none; border: 1px solid #ddd; break-inside: avoid; }
 }
+
+/* ---------------------------------------------------------------- frente textos: "i" de explicação nas telas */
+.passo-titulo.com-explica { display: flex; align-items: center; gap: 4px; }
+.kpi-rotulo .com-explica { max-width: 100%; }
+@media print {
+  .explica-botao { display: none !important; }
+}
+
+/* ---------------------------------------------------------------- frente conta corrente (ccr-) */
+.ccr-topo { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px; }
+@media (max-width: 1100px) { .ccr-topo { grid-template-columns: minmax(0, 1fr); } }
+.ccr-valor-heroi { font-size: 34px; font-weight: 650; letter-spacing: -0.03em; line-height: 1.05; color: var(--tinta); }
+.ccr-valor-heroi.negativo, .ccr-negativo { color: var(--critico-texto); }
+.ccr-atraso { color: var(--aviso-texto); }
+.ccr-frase { margin: 0; font-size: 13px; line-height: 1.55; color: var(--tinta-2); }
+.ccr-conta { display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; border-radius: 10px; background: var(--superficie-2); }
+.ccr-termo { display: grid; grid-template-columns: 14px minmax(0, 1fr) auto; align-items: center; gap: 8px; font-size: 13px; padding: 3px 0; }
+.ccr-termo .sinal { color: var(--tinta-3); font-weight: 600; text-align: center; }
+.ccr-termo .r { color: var(--tinta-2); display: flex; align-items: center; gap: 2px; }
+.ccr-termo .v { color: var(--tinta); }
+.ccr-termo.total { border-top: 1px solid var(--borda); margin-top: 4px; padding-top: 7px; font-weight: 650; }
+.ccr-termo.total .r, .ccr-termo.total .v { color: var(--tinta); }
+.ccr-mini { display: flex; flex-direction: column; gap: 2px; }
+.ccr-mini .r { font-size: 11px; color: var(--tinta-3); display: flex; align-items: center; gap: 2px; }
+.ccr-mini .v { font-weight: 650; font-variant-numeric: tabular-nums; }
+.ccr-rot { font-size: 10.5px; font-weight: 650; text-transform: uppercase; letter-spacing: 0.05em; color: var(--tinta-3); }
+.ccr-alerta { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 9px; background: var(--superficie-2); font-size: 13px; color: var(--tinta); text-align: left; border: 0; width: 100%; }
+.ccr-alerta.clicavel { cursor: pointer; transition: background var(--dur) var(--curva); }
+.ccr-alerta.clicavel:hover { background: var(--superficie-3); }
+.ccr-alerta .selo { flex: none; }
+.ccr-ficha { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 7px 16px; margin: 0; font-size: 13px; }
+.ccr-ficha > div { display: contents; }
+.ccr-ficha dt { color: var(--tinta-3); }
+.ccr-ficha dd { margin: 0; color: var(--tinta); }
+.ccr-saldo { display: flex; flex-direction: column; gap: 8px; padding: 12px 14px; border-radius: 12px; background: var(--superficie-2); font-size: 13px; }
+.ccr-saldo.compacto { padding: 10px 12px; gap: 6px; }
+.ccr-saldo-numeros { display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.ccr-saldo-numeros > div { display: flex; flex-direction: column; gap: 1px; }
+.ccr-saldo-numeros .r { font-size: 11px; color: var(--tinta-3); }
+.ccr-saldo-numeros .v { font-weight: 650; font-size: 15px; color: var(--tinta); }
+.ccr-saldo-veredito { display: flex; align-items: flex-start; gap: 8px; padding: 8px 10px; border-radius: 9px; line-height: 1.45; }
+.ccr-saldo-veredito svg { flex: none; margin-top: 1px; }
+.ccr-saldo-veredito.bom { background: var(--bom-lavagem); color: var(--bom-texto); }
+.ccr-saldo-veredito.aviso { background: var(--aviso-lavagem); color: var(--aviso-texto); }
+.ccr-saldo-veredito.critico { background: var(--critico-lavagem); color: var(--critico-texto); }
+
+/* ---------------------------------------------------------------- imagens de produto e logos (Imagens.jsx) */
+.foto-produto {
+  flex: none; display: inline-flex; align-items: center; justify-content: center; overflow: hidden;
+  border-radius: 8px; background: #ffffff; box-shadow: inset 0 0 0 1px var(--borda); vertical-align: middle;
+}
+.foto-produto img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.foto-produto-vazia { color: var(--tinta-3); font-weight: 650; letter-spacing: .02em; background: var(--superficie-2); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+.logo-empresa {
+  flex: none; display: inline-flex; align-items: center; justify-content: center; overflow: hidden;
+  border-radius: 7px; background: #ffffff; box-shadow: inset 0 0 0 1px var(--borda); vertical-align: middle;
+}
+.logo-empresa img { width: 86%; height: 86%; object-fit: contain; display: block; }
+.logo-monograma { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 700; letter-spacing: .02em; }
+.ms-chip > .foto-produto, .ms-chip > .logo-empresa { width: 18px !important; height: 18px !important; margin-left: -5px; border-radius: 4px; }
+.ms-opcao > .foto-produto, .ms-opcao > .logo-empresa { border-radius: 5px; }
+.cmp-amostra { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+.ig-sugestao { display: inline-flex; align-items: center; gap: 6px; height: 26px; max-width: 220px; padding: 0 9px 0 3px; border-radius: 13px; background: var(--superficie-2); font-size: 12px; font-weight: 550; color: var(--tinta-2); }
+.ig-sugestao > .foto-produto, .ig-sugestao > .logo-empresa { border-radius: 50%; }
+
+/* ---------------------------------------------------------------- carteiras de vendas */
+.cart-kpis { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.cart-equipe { display: flex; flex-direction: column; gap: 8px; padding: 10px 0 14px; border-top: 1px solid var(--borda); }
+.cart-equipe:first-child { border-top: 0; padding-top: 0; }
+.cart-cor { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+.ficha-acao { display: flex; gap: 8px; align-items: flex-start; padding: 8px 10px; border-radius: 9px; background: var(--superficie-2); }
+.ficha-acao > svg { flex: none; margin-top: 2px; color: var(--acento-texto); }

@@ -42,7 +42,7 @@ export const TABELAS_DADOS = {
       margem_bruta: 'REAL', valor_icms: 'REAL', valor_pis: 'REAL', valor_cofins: 'REAL', valor_impostos_total: 'REAL',
       id_canal: 'INTEGER', cfop: 'TEXT', numero_nf: 'TEXT', status: 'TEXT',
     },
-    indices: ['data_pedido', 'data_faturamento', 'id_produto', 'id_vendedor', 'id_cliente', 'id_pedido'],
+    indices: ['data_pedido', 'data_faturamento', 'id_produto', 'id_vendedor', 'id_cliente', 'id_pedido', 'data_pedido, id_produto', 'data_faturamento, id_produto', 'id_cliente, data_pedido', 'id_vendedor, data_pedido'],
   },
   fato_estoque: {
     pk: 'id_estoque',
@@ -144,117 +144,6 @@ CREATE TABLE IF NOT EXISTS grupo_produto (
   criado_em TEXT NOT NULL
 );
 
--- Perfil calculado de cada cliente (RFV, curva ABC, potencial). Recalculado a cada importação.
-CREATE TABLE IF NOT EXISTS cliente_perfil (
-  id_cliente INTEGER PRIMARY KEY,
-  id_vendedor INTEGER,
-  valor_90d REAL, pedidos_90d INTEGER, skus_90d INTEGER, marcas_90d INTEGER,
-  valor_30d REAL, valor_30d_ant REAL,
-  primeira_compra TEXT, ultima_compra TEXT, dias_sem_compra INTEGER,
-  intervalo_medio REAL,
-  curva TEXT, r INTEGER, f INTEGER, v INTEGER, segmento_rfv TEXT,
-  potencial_90d REAL, gap_90d REAL,
-  atualizado_em TEXT
-);
-CREATE INDEX IF NOT EXISTS ix_perfil_vendedor ON cliente_perfil(id_vendedor);
-
--- Regras de associação entre marcas (quem compra A também compra B)
-CREATE TABLE IF NOT EXISTS associacao_marca (
-  marca_a TEXT NOT NULL, marca_b TEXT NOT NULL,
-  clientes_a INTEGER, clientes_ab INTEGER, suporte REAL, confianca REAL, lift REAL,
-  PRIMARY KEY (marca_a, marca_b)
-);
-
--- Base de conhecimento (fatos pré-calculados e validados que alimentam a IA)
-CREATE TABLE IF NOT EXISTS fato_ia (
-  id TEXT PRIMARY KEY,
-  escopo TEXT NOT NULL,
-  chave TEXT,
-  tipo TEXT NOT NULL,
-  titulo TEXT NOT NULL,
-  texto TEXT NOT NULL,
-  dados TEXT,
-  termos TEXT,
-  relevancia REAL DEFAULT 0,
-  validado INTEGER NOT NULL DEFAULT 1,
-  validacao TEXT,
-  gerado_em TEXT NOT NULL
-);
-CREATE INDEX IF NOT EXISTS ix_fato_escopo ON fato_ia(escopo, chave);
-
-CREATE TABLE IF NOT EXISTS verificacao_dados (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  regra TEXT NOT NULL,
-  descricao TEXT,
-  valor_a REAL, valor_b REAL, divergencias INTEGER,
-  ok INTEGER NOT NULL,
-  detalhe TEXT,
-  criado_em TEXT NOT NULL
-);
-
--- Uso e custo da IA (controle de orçamento diário)
-CREATE TABLE IF NOT EXISTS uso_ia (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  tipo TEXT NOT NULL,
-  referencia TEXT,
-  modelo TEXT,
-  tokens_entrada INTEGER, tokens_saida INTEGER, tokens_cache_leitura INTEGER, tokens_cache_escrita INTEGER,
-  custo_usd REAL NOT NULL DEFAULT 0,
-  status TEXT NOT NULL,
-  erro TEXT,
-  criado_em TEXT NOT NULL
-);
-
--- Análises da IA guardadas (reaproveitadas enquanto os dados não mudam)
-CREATE TABLE IF NOT EXISTS analise_ia (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  tipo TEXT NOT NULL,
-  referencia TEXT,
-  assinatura TEXT NOT NULL,
-  resultado TEXT NOT NULL,
-  fatos TEXT,
-  custo_usd REAL,
-  criado_em TEXT NOT NULL
-);
-CREATE INDEX IF NOT EXISTS ix_analise_ref ON analise_ia(tipo, referencia, criado_em);
-
--- Recomendações (planos de ataque) e retroalimentação: convertida quando o cliente compra depois da sugestão
-CREATE TABLE IF NOT EXISTS recomendacao (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  origem TEXT NOT NULL,
-  tipo TEXT NOT NULL,
-  id_vendedor INTEGER,
-  id_cliente INTEGER,
-  id_campanha INTEGER,
-  produtos TEXT,
-  marcas TEXT,
-  motivo TEXT,
-  valor_potencial REAL,
-  score REAL,
-  status TEXT NOT NULL DEFAULT 'aberta',
-  convertida_em TEXT,
-  valor_convertido REAL,
-  criado_em TEXT NOT NULL,
-  expira_em TEXT
-);
-CREATE INDEX IF NOT EXISTS ix_recomendacao_status ON recomendacao(status, id_vendedor);
-
--- Farmácias ativas (Receita Federal) para prospecção e mapa
-CREATE TABLE IF NOT EXISTS rf_farmacia (
-  cnpj TEXT PRIMARY KEY,
-  cnpj_basico TEXT,
-  razao_social TEXT,
-  nome_fantasia TEXT,
-  matriz INTEGER,
-  cnae TEXT,
-  data_inicio TEXT,
-  porte TEXT,
-  capital_social REAL,
-  logradouro TEXT, numero TEXT, complemento TEXT, bairro TEXT, cep TEXT,
-  uf TEXT, municipio_codigo TEXT, municipio TEXT,
-  telefone TEXT, email TEXT,
-  id_cliente INTEGER
-);
-CREATE INDEX IF NOT EXISTS ix_rf_cidade ON rf_farmacia(uf, municipio);
-CREATE INDEX IF NOT EXISTS ix_rf_basico ON rf_farmacia(cnpj_basico);
+-- Tabelas de inteligência (perfil, conhecimento, IA, recomendações) e da Receita Federal
+-- são criadas pelos próprios módulos (server/perfil.js, conhecimento.js, ia.js, planos.js, receita.js).
 `;

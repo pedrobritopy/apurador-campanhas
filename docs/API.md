@@ -1,4 +1,4 @@
-# Contrato da API — Apurador de Campanhas
+# Contrato da API do Apurador de Campanhas
 
 Base: `/api`. Tudo em JSON (UTF-8). Datas `AAAA-MM-DD`. Valores monetários em R$ (número).
 Erros: HTTP 4xx/5xx com corpo `{ "erro": "mensagem amigável" }`.
@@ -71,7 +71,7 @@ Chaves de participante são sempre **string** (`"78"`, `"GO"`, `"empresa"`).
   "modelos": [ModeloCampanha]
 }
 ```
-`ModeloCampanha = { chave, nome, descricao, icone, categoria, definicao }` — modelos prontos (positivação, mix, venda casada, cesta, crescimento, ranking, meta geral, share, lançamento, recuperação de inativos, cobertura de carteira...).
+`ModeloCampanha = { chave, nome, descricao, icone, categoria, definicao }`: modelos prontos (positivação, mix, venda casada, cesta, crescimento, ranking, meta geral, share, lançamento, recuperação de inativos, cobertura de carteira...).
 
 ### `POST /api/catalogo/validar-formula` `{ expressao }` → `{ ok: true, variaveis: ["qtd", "valor{marca=Dorflex}"] }` ou `{ ok: false, erro }`
 
@@ -189,7 +189,7 @@ Body = prévia + `canal: "whatsapp"|"email"|"webhook"|"registro"`
 - `GET /api/conhecimento/fatos?escopo=&chave=&q=&limite=50` → `[Fato]`
 - `POST /api/conhecimento/atualizar` → `{ fatos, validados, invalidos, duracao_ms }`
 - `POST /api/ia/analisar` `{ tipo: "campanha"|"geral"|"vendedor", referencia?, forcar?: false }` → `AnaliseIA`
-  (reaproveita a última análise se os dados não mudaram — `reaproveitada: true`, custo 0)
+  (reaproveita a última análise se os dados não mudaram: `reaproveitada: true`, custo 0)
 - `GET /api/ia/analises?tipo=&referencia=` → `[AnaliseIA]` (sem `fatos_usados`)
 - `POST /api/ia/perguntar` `{ pergunta, historico: [{ papel: "usuario"|"ia", texto }], contexto?: { campanha?, vendedor? } }`
   → **SSE** (`text/event-stream`): `event: fatos` (`[Fato]`), `event: texto` (`{ "delta": "..." }`), `event: fim` (`{ custo_usd, verificacao }`), `event: erro` (`{ erro }`)
@@ -259,11 +259,15 @@ Body = prévia + `canal: "whatsapp"|"email"|"webhook"|"registro"`
   criterios: [Criterio],
   apuracao: { regra: "ponderada"|"todos"|"qualquer" },
   premiacao: {
-    tipo: "faixas"|"ranking"|"rateio"|"nenhuma",
+    tipo: "faixas"|"ranking"|"rateio"|"bloco"|"nenhuma",
     faixas: [{ min: 100, fixo: 200, variavel: 0.5, rotulo: "Ouro" }],
     variavel_sobre: "total"|"excedente", criterio_base: "c1",
-    ranking: { por: "score"|"realizado", minimo: 0, posicoes: [{ de: 1, ate: 1, valor: 1000 }] },
+    ranking: { por: "score"|"realizado", minimo: 0, posicoes: [{ de: 1, ate: 1, valor: 1000 }] },   // minimo 100 = só quem bateu a meta concorre
     rateio: { valor_total: 5000, minimo: 100, proporcional: "igual"|"realizado"|"score" },
+    // "a cada 15 un, R$ 10": prêmio = floor(realizado do critério-base / tamanho) × valor
+    bloco: { tamanho: 15, valor: 10, sobre: "total"|"excedente", exigencia: "nenhuma"|"quantidade"|"meta", minimo: 0, max_blocos: null },
+    // prêmio fixo para quem atingir `min`% da meta; soma com ranking, rateio ou bloco (ignorado em faixas)
+    bonus: { ativo: false, min: 100, valor: 50 },
     multiplicadores: [{ criterio: "c2", min: 100, fator: 1.2, senao: 0.5 }],
     teto_participante: null, orcamento: null
   }
@@ -289,7 +293,7 @@ Body = prévia + `canal: "whatsapp"|"email"|"webhook"|"registro"`
 ```
 
 ### Seletor
-`{ fabricantes: [], marcas: [], subcategorias: [], grupos: [ids], ids: [ids de produto], excluir: [ids] }` — filtros combinam com **E**; `ids` e `grupos` **adicionam**; vazio = todos.
+`{ fabricantes: [], marcas: [], subcategorias: [], grupos: [ids], ids: [ids de produto], excluir: [ids] }`: filtros combinam com **E**; `ids` e `grupos` **adicionam**; vazio = todos.
 
 ### Apuracao (resultado do motor)
 ```js
@@ -309,7 +313,11 @@ CriterioApurado = { id, nome, metrica, metrica_nome, formato, unidade, sentido, 
 LinhaParticipante = { chave, nome, grupo, id_grupo, contato: { telefone, email }, responsavel: { chave, nome, telefone, email }|null,
   criterios: [{ realizado, meta, atingimento, projecao, atingimento_proj, falta, ritmo_necessario, qtd, valor }],
   score, elegivel, score_proj, elegivel_proj, vendeu, premio, premio_proj, faixa, faixa_proj, multiplicador,
-  proxima_faixa: { indice, min, falta_pontos, falta_unidades, premio }|null,
+  premio_partes: [{ tipo: "faixa"|"posicao"|"rateio"|"bloco"|"bonus", rotulo, valor, blocos?, posicao? }], premio_partes_proj: [...],
+                                     // componentes antes de multiplicadores e teto; premio = soma × multiplicador, limitado ao teto
+  proxima_faixa: { tipo: "faixa"|"bloco"|"gatilho"|"bonus", indice?, min?, rotulo?, falta_pontos?, falta_unidades, premio,
+                   exigencia?, blocos?, tamanho?, valor_bloco?, valor? }|null,   // premio = prêmio total ao chegar lá
+  proximo_bonus: { tipo: "bonus", min, valor, falta_pontos, falta_unidades, premio }|null,
   status: "atingiu"|"no_ritmo"|"atencao"|"risco"|"nao_atingiu"|"sem_meta"|"aguardando",
   posicao, posicao_proj, posicao_anterior?, movimento? }
 ResumoApuracao = { participantes, com_venda, atingiram, no_ritmo, atencao, risco, nao_atingiu, sem_meta, aguardando,
@@ -324,7 +332,7 @@ ResumoApuracao = { participantes, com_venda, atingiram, no_ritmo, atencao, risco
   status, status_rotulo, posicao, total_participantes, movimento,
   score, score_proj, premio, premio_proj, proxima_faixa,
   criterios: [{ nome, unidade, formato, realizado, meta, atingimento, projecao, atingimento_proj, falta, ritmo_necessario,
-                texto: "32 de 40 un (80%) — faltam 8 un, 1/dia" }],
+                texto: "32 de 40 un (80%). Faltam 8 un (1/dia)" }],
   destaques: [{ tipo: "positivo"|"alerta"|"acao"|"info", texto }],   // frases geradas pelo motor (narrativa)
   comparativo: { media_score, lider_nome, lider_score, distancia_lider, percentil },
   oportunidades: [{ cliente, cidade, motivo, valor_hist, ultima }],  // top 5 clientes a atacar
@@ -349,3 +357,174 @@ ResumoApuracao = { participantes, com_venda, atingiram, no_ritmo, atencao, risco
   fatos_usados: [Fato],
   verificacao: { citacoes_validas, citacoes_invalidas, numeros_conferidos, numeros_nao_encontrados, aprovado } }
 ```
+
+---
+
+## 9. Adições posteriores ao contrato inicial
+
+### Fórmulas (biblioteca) e IA de fórmulas (`server/rotas/formulas.js`)
+- `GET /api/formulas` → `[{ id, nome, descricao, expressao, formato, totalizar, sentido, categoria, origem: "sistema"|"usuario"|"ia", pedido_ia, usos }]`
+- `POST /api/formulas` · `PUT /api/formulas/:id` (prontas não mudam) · `DELETE /api/formulas/:id` · `POST /api/formulas/:id/uso`
+- `POST /api/ia/formula` `{ pedido, expressao_atual? }` → `{ resultado: { expressao, nome, descricao, formato, totalizar, sentido, explicacao, suposicoes }, valida, erro_validacao, custo_usd, tentativas }`
+
+### Inteligência: extras (`server/rotas/inteligencia.js`)
+- `GET /api/insights/resumo`, `GET /api/ia/estimativa`, `GET /api/ia/analises/:id`, `GET /api/conhecimento/recuperar`, `GET /api/planos/tipos`
+- `/api/conhecimento/fatos` aceita `id` e `validados`; o evento `fim` do chat traz `truncada` e `status`.
+
+### Mapa: extras (`server/rotas/mapa.js`)
+- `GET /api/receita/status`, `GET /api/mapa/cidade/:ibge`, `GET /api/mapa/cidades?uf=`
+- `/api/prospeccao` devolve também `resumo`; `POST /api/receita/importar?assincrono=1` dispara e responde 202.
+- Pontos: `campos = [id, lat, lng, tipo, rede, score, nome]`; clientes vêm como `cli-<id>`.
+
+### Atendimento (`server/rotas/atendimento.js`, detalhes no topo do arquivo)
+- `GET /api/atendimento/resumo`, `GET /api/atendimento/conversas`, `GET /api/atendimento/conversas/:id`
+- `POST /api/atendimento/conversas/:id/mensagens | status | responsavel | etiquetas | prioridade | lida`
+- `GET /api/atendimento/contatos`, `PUT /api/atendimento/contatos/:id`, `GET /api/atendimento/contatos/:id/contexto`
+- `GET /api/atendimento/boletim?vendedor=&campanha=`, `GET /api/atendimento/respostas-rapidas`, `GET /api/atendimento/responsaveis`
+- `GET /api/atendimento/canais`, `POST /api/atendimento/canais/telegram/testar | email/testar | email/ler`
+- `POST /api/atendimento/simular`, `DELETE /api/atendimento/simulados`, `GET /api/atendimento/eventos` (SSE)
+
+### Outros
+- Imagens: `GET /imagens/vendedores/vendedor_{id}.jpg`; participantes de nível vendedor/equipe trazem `foto`.
+- Painel: `kpis.premio_proj_orcado` (prêmio projetado só das campanhas com orçamento).
+- Configuração: `telegram { token, ativo, nome_bot }`, `imap { host, porta, seguro, usuario, senha, pasta, ativo }`, `url_publica` (senhas/token mascarados no GET).
+
+## 10. Conta corrente de fabricantes (`server/contacorrente.js`, `server/rotas/contacorrente.js`)
+
+Verba de cada indústria (acordo comercial em % sobre compras, ND de verba negociada, VPC, bonificação em mercadoria,
+rebaixa de preço, orçamento interno) e o uso dela (campanhas, ações comerciais, descontos repassados, baixa de verba
+vencida). Tabelas `cc_conta` e `cc_lancamento`, criadas pelo módulo. Dados iniciais: `server/contacorrente-exemplo.js`
+(roda sozinho na primeira inicialização, quando `cc_conta` está vazia).
+
+**Lançamento**: `natureza` (`credito`|`debito`), `origem` (`acordo`, `nd`, `vpc`, `bonificacao`, `rebaixa`, `orcamento`,
+`campanha`, `acao_trade`, `repasse`, `expiracao`, `ajuste`, `estorno`), `situacao` (`previsto` = provisão,
+`a_receber` = ND emitida, `realizado`, `reservado`, `consumido` = reserva que virou débito, `liberado`, `cancelado`),
+`documento`, `emitido_em`, `vencimento` (da ND), `validade` (da verba), `liquidado_em`, `forma_liquidacao`
+(`abatimento_duplicata`|`deposito`|`mercadoria`), `comprovacao` (`pendente`|`enviada`|`aprovada`), `id_campanha`,
+`id_origem` (estornos e sobras), `excecao`, `justificativa`, `autorizado_por`. Nada é apagado: realizado se estorna.
+
+**Saldos** (`calcularSaldos`): `realizado` = créditos recebidos − débitos realizados; `a_receber`; `previsto`;
+`reservado` (reservas + débitos previstos); `vencido`/`vencendo` (consumo usa primeiro a verba que vence antes; janela
+de 45 dias); `disponivel` = base da política − reservado − vencido, onde a base é `realizado` (política `realizado`),
+`+ a_receber` (`confirmado`, padrão) ou `+ previsto` (`previsto`); `capacidade` = disponível + `limite`.
+Situação da conta: `ok`, `atencao` (ND vencida, verba vencendo ou vencida, saldo baixo), `no_limite`, `estourada`, `bloqueada`.
+
+**Campanhas** (ganchos em `server/rotas/campanhas.js`):
+- De qual conta sai a verba: `definicao.fabricante`; `varios_fornecedores` ou campanha geral → conta "Verba própria"
+  (`__propria__`); sem fabricante, pelo texto de `fornecedor` ou pelos produtos dos critérios.
+- Quanto reserva: `premiacao.orcamento`; senão ranking = soma das posições, rateio = verba total; senão prêmio projetado
+  + folga da conta (20%); campanha futura usa o último período completo; sem histórico, o prêmio se todos baterem a meta.
+- Ativar (POST/PUT com `status: 'ativa'`, ou `POST /api/campanhas/:id/status`) reserva. Sem capacidade: **409**
+  `{ erro, detalhes: { codigo: 'saldo_insuficiente', conta_corrente: { nome, disponivel, limite, capacidade, necessario,
+  falta, texto, ... } } }`. Para ativar mesmo assim, reenviar com `excecao_conta_corrente: { justificativa (≥ 10 letras),
+  autorizado_por }`. Editar sem mudar regras de prêmio/período/participantes/fornecedor não mexe na reserva.
+- Encerrar debita o prêmio apurado (comprovação pendente), consome a reserva e devolve a sobra (linha `liberado`).
+  Encerrar de novo estorna o débito anterior. Reabrir (encerrada → ativa) estorna o débito e reserva de novo.
+  Rascunho, arquivada ou exclusão liberam a reserva.
+- As respostas de POST/PUT/status/encerrar trazem `conta_corrente` (o que foi feito com a verba).
+
+**Endpoints**
+- `GET /api/conta-corrente` → `{ hoje, totais, contas: [{ conta, saldos, situacao, rotulo_situacao, reservas, serie, n_alertas }], alertas, origens, politicas, situacoes }`
+- `GET /api/conta-corrente/fabricantes` → fabricantes da base (+ verba própria) com `id_conta` quando existe
+- `GET /api/conta-corrente/saldo?fabricante=&valor=` → cobertura (`disponivel`, `capacidade`, `cobre`, `falta`, `situacao`)
+- `POST /api/conta-corrente/simular { definicao, id_campanha? }` → `{ fabricante, como, necessidade { valor, base, texto, aviso }, ja_reservado, delta, cobertura }`
+- `GET /api/conta-corrente/campanhas/:id` → verba da campanha (reservado, prêmio projetado, lançamentos)
+- `GET /api/conta-corrente/contas/:id` → conta, saldos, reservas, alertas, série mensal, `composicao_12m`
+- `GET /api/conta-corrente/contas/:id/extrato?de&ate&natureza&origem&situacao&busca&limite` → linhas com `saldo_realizado` acumulado
+- `POST /api/conta-corrente/contas { fabricante, ... }`, `PUT /api/conta-corrente/contas/:id { politica, limite, perc_acordo, validade_meses, prazo_nd_dias, margem_reserva, bloqueada, motivo_bloqueio, responsavel, contato, observacao }`
+- `POST /api/conta-corrente/contas/:id/lancamentos { origem, natureza?, valor, data, situacao, descricao, documento, vencimento, validade, forma_liquidacao, comprovacao, observacao, excecao? }` (débito sem saldo → 409, igual às campanhas)
+- `PUT /api/conta-corrente/lancamentos/:id { acao: 'emitir_nd' | 'liquidar' | 'cancelar' | 'comprovacao' | 'editar', ... }`
+- `POST /api/conta-corrente/lancamentos/:id/estornar { motivo }`, `POST /api/conta-corrente/contas/:id/baixar-vencidas`
+
+**Front**: `#/conta-corrente` e `#/conta-corrente/:id`. Componentes reutilizáveis em `web/src/paginas/contacorrente/`:
+`SaldoContaCorrente({ fabricante, valorNecessario })` ou `({ definicao, idCampanha })`, `ModalExcecao` e
+`bloqueioContaCorrente(erroApi)` (lê os detalhes do 409).
+
+## 11. Mapa: malhas, bairros e territórios (`server/malhas.js`, `server/territorios.js`, `server/rotas/territorios.js`)
+
+**Malhas** (IBGE, baixadas sob demanda para `dados/geo/`, ver `dados/geo/LEIAME.md`). Anéis vão como inteiros de
+1e-5 grau com deltas: `[x0, y0, dx1, dy1, ...]` (o primeiro par é absoluto).
+- `GET /api/mapa/contorno-ufs?qualidade=intermediaria|maxima` → `{ qualidade, fonte, ufs: [{ uf, a: [anel] }] }`
+- `GET /api/mapa/municipios/:uf?qualidade=intermediaria|maxima` → `{ uf, qualidade, fonte, municipios: [{ ibge, nome, a }] }` (gzip)
+- `GET /api/mapa/bairros/:ibge?atualizar=1` → `{ ibge, nome, uf, fonte: 'ibge-2022'|'osm'|null, fonte_info, aviso, clientes_sem_bairro,
+  bairros: [{ id, nome, a, farmacias, independentes, nao_clientes, novas_12m, clientes, clientes_ativos, valor_90d, penetracao }] }`.
+  Ordem das fontes: IBGE (Censo 2022) > OpenStreetMap (Overpass, uma consulta por vez) > nenhuma (cache negativo).
+  OpenStreetMap fora do ar → **503** `{ erro, temporario: true }`; IBGE fora do ar sem resultado no OSM → `aviso` e nada fica em cache.
+- `GET /api/mapa/malhas/status` → quantas UFs e cidades já estão em cache.
+- Manutenção automática (início do servidor e depois de cada geolocalização): `manutencaoGeo()` corrige farmácias fora do
+  próprio município (registro em `rf_correcao_geo`) e reposiciona clientes aproximados numa farmácia real do bairro/cidade.
+
+**Territórios e desenhos** (tabela `territorio`: `tipo` `territorio`|`anotacao`, `nome`, `id_vendedor`, `cor` `s1`..`s8` ou `#rrggbb`,
+`nota`, `forma` `poligono`|`laco`|`retangulo`|`bairro`|`cidade`|`misto`, `origem`, `geometria` = lista de anéis `[[lng, lat], ...]`, regra par-ímpar).
+- `GET /api/territorios?tipo=&vendedor=` → `{ territorios: [{ ...território, vendedor { id, nome, foto }, numeros (resumo) }], vendedores: [{ id, nome, foto, equipe, cor, territorios }] }`
+- `GET /api/territorios/:id` → território com `numeros` completos: `area_km2, farmacias, independentes, independentes_livres, nao_clientes,
+  novas_12m, clientes, clientes_ativos, clientes_aproximados, valor_90d, potencial_90d, penetracao, conflitos, conflitos_valor,
+  quem_atende [{ id, nome, foto, clientes, valor, dono }], lista_conflitos [{ id, nome, bairro, cidade, uf, valor_90d, vendedor, por: 'venda'|'cadastro' }],
+  fora { clientes_do_vendedor, dentro, fora, valor_fora, lista }, sobreposicoes [{ id, nome, cor, vendedor, farmacias, clientes }], cidades, prospects`
+- `POST /api/territorios/medir { geometria, id_vendedor?, id? }` → os mesmos números para uma área ainda não salva
+- `POST /api/territorios { tipo, nome, id_vendedor (obrigatório para território), cor, nota, forma, origem, geometria }` → 201 + território
+- `PUT /api/territorios/:id { campos parciais }`, `DELETE /api/territorios/:id`
+- `GET /api/territorios/forma/cidade/:ibge` e `GET /api/territorios/forma/bairro/:ibge/:id` → `{ geometria }` (contorno oficial para virar território)
+- `GET /api/territorios/:id/excel` → farmácias não clientes de dentro da área
+
+**Front** (`#/mapa`, `?territorio=:id` abre e enquadra um território): detalhe progressivo pelo zoom (UFs → divisas municipais a partir de
+k≈1,8 → malha máxima a partir de k≈20 → bairros a partir de k≈15), ferramentas Polígono, Laço livre e Retângulo, edição de vértices
+(arrastar, clicar no meio de um lado cria ponto, duplo clique apaga), lista com filtro por vendedor. Motor em `web/src/paginas/mapa/motorMapa.js`,
+painéis em `web/src/paginas/mapa/Territorios.jsx`.
+
+## 12. Pipeline de dados (`server/pipeline.js`, `server/etapas/*.js`, `server/rotas/pipeline.js`)
+
+Todo cálculo pesado roda em segundo plano, numa thread separada (`server/trabalhador.js`, tarefa `pipeline`), e é gravado
+no SQLite. As rotas leem o pronto; nada pesado acontece quando alguém abre uma tela, nem depois de reiniciar o servidor.
+
+**Etapas** (cada arquivo em `server/etapas/` chama `registrarEtapa`):
+
+| Etapa | Depende de | Gatilhos | Grava em |
+|---|---|---|---|
+| `base` | | importacao, config | `dado_pronto` (`status_dados`, `dimensoes`) |
+| `apuracao` | | importacao, dia, campanha, config | `apuracao_pronta` (resultado + estoque; hoje e 7 dias atrás) |
+| `insights`, `planos`, `conhecimento` | apuracao | importacao, dia, campanha, plano | `insight_pronto`, `plano_pronto`, `plano_insumo`, `fato_ia` (`etapas/inteligencia.js`) |
+| `mapa-*` | | receita, importacao, territorio | malhas, `mapa_resumo`, `bairro_numeros`, `territorio_numeros` (`etapas/mapa.js`) |
+| `detalhes` | apuracao | importacao, dia, campanha, config | `detalhe_pronto` (boletim e detalhe por participante), `var/prontos/excel/*.xlsx` |
+
+```js
+registrarEtapa({ nome, descricao, depende: [], gatilhos: [], ordem: 50,
+  assinatura: () => string,              // barata; igual à última execução bem-sucedida = etapa pulada
+  executar: async (ctx) => ({ linhas }), // ctx: { eventos, detalhes, escopo, forcar, pausa(), log() }
+  escopo: (detalheDoEvento) => any })    // opcional: recorte incremental
+dispararPipeline(evento, detalhe?, { forcar?, atraso? })   // agrupa eventos por 1,5 s; nunca bloqueia
+servirPronto(chave, { assinatura, calcular })               // { conteudo, atualizando }: pronto, ou o último + reprocessa
+lerPronto(chave) / gravarPronto(chave, assinatura, conteudo)
+assinaturaBase()        // persistente: última importação + MAX(rowid) das fatos + config que muda números
+```
+
+- Eventos: `importacao` (fim de importação ou mudança de config), `dia` (virada, conferida a cada minuto), `campanha`,
+  `plano`, `conta_corrente`, `config`, `receita`, `territorio`, `inicio` (ao subir: só roda o que tiver assinatura nova),
+  `manual`. As gravações são detectadas por um middleware (`server/rotas/_eventos.js`), sem mexer em cada rota.
+- Ordem: topológica pelas dependências; entre independentes, pelo campo `ordem` (as mais demoradas por último).
+- Vigia: etapa sem sinal por 20 min (`PIPELINE_LIMITE_ETAPA_MS`) é interrompida e marcada com erro; a fila segue.
+  `ctx.pausa()` também serve de sinal de vida.
+- `apurarComCache(definicao, { referencia, efemero, persistir })`: memória → `apuracao_pronta` → cálculo.
+  Lida do banco, a apuração não traz `_interno`; ele é recalculado sob demanda só por quem precisa (detalhe, oportunidades).
+  `efemero: true` (prévia do construtor) nunca consulta nem grava.
+
+| Método | Rota | Descrição |
+|---|---|---|
+| GET | `/api/pipeline` | `{ rodando, etapa_atual, pendente, ultima_execucao, etapas: [{ nome, descricao, depende, gatilhos, status, inicio, fim, duracao_ms, linhas, erro, execucoes }] }` |
+| GET | `/api/pipeline/resumo` | `{ rodando, etapa_atual, descricao, pendente, erros }` (indicador do topo) |
+| POST | `/api/pipeline/executar` | `{ forcar?: true }` processa agora (forçar refaz mesmo o que está em dia) |
+
+Status das etapas: `ok` (em dia), `rodando`, `pendente`, `aguardando` (dependência falhou), `erro`.
+Front: `useApi(caminho, { vivo: true })` refaz a busca em silêncio quando a pipeline termina (evento `dados-atualizados`).
+`APURADOR_SEM_TAREFAS=1` sobe uma instância só de leitura (sem agendador, bots e pipeline), útil para medições.
+
+## 13. Carteiras de vendas e ficha do cliente (`server/rotas/carteiras.js`)
+
+- `GET /api/carteiras` → resumo pronto: `{ referencia, empresa, sem_dono{..., areas[]}, regioes[], equipes[], carteiras[], sugestoes[], conferencia[], atualizando }`.
+  Cada carteira: `{ id, nome, cor, vendedor, gerente, coordenador, regras{cidades,bairros,...}, clientes, ativos, venda_90d, venda_dono, venda_outros, venda_fora, aderencia, farmacias, farmacias_livres, potencial_90d, penetracao, invasores[], clientes_invadidos[], indice_clientes, indice_potencial }`.
+- `GET /api/carteiras/:id` → carteira com `regras[]`, `indicadores` e `prospects[]`.
+- `POST /api/carteiras {id_vendedor, nome?, cor?}`, `PUT /api/carteiras/:id`, `DELETE /api/carteiras/:id`.
+- `POST /api/carteiras/:id/regras {nivel: uf|cidade|bairro|territorio, uf?, ibge?, bairro_id?, nome?, id_territorio?, mover?}` (409 `regra_de_outra` se a área for de outra carteira e `mover` não vier).
+- `DELETE /api/carteiras/regras/:idRegra`, `GET /api/carteiras/unidade?nivel=&ibge=&bairro_id=` (dono da área), `GET /api/carteiras/mapa` (dono de cada UF/cidade/bairro/território, para a camada do mapa).
+- `GET /api/clientes/:id/ficha` → ficha pronta + `acoes` do plano de ataque.
+- Pipeline: etapas `carteiras` (classificação + indicadores; tabelas `carteira`, `carteira_regra`, `carteira_cliente`, `carteira_farmacia`, `equipe_info`, `regiao_info`) e `clientes-ficha` (`dado_pronto` chave `ficha:<id>`); evento `carteira`.

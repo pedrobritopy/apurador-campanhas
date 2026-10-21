@@ -3,3 +3,12 @@ var/
 web/dist/
 *.log
 .env
+
+# dados grandes ou regeneráveis (fato_vendas/estoque passam de 100 MB; gere com npm run gerar-dados)
+dados/fato_vendas.csv
+dados/fato_estoque.csv
+dados/backup-*/
+dados/originais/
+*.db
+*.db-wal
+*.db-shm
